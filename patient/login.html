@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LocalCare | Patient | Sign In</title>
+    <!-- bootstrap css -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- custom css -->
+    <link href="../assets/css/style.css" rel="stylesheet">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- header -->
+    <nav class="main-navbar navbar navbar-expand-lg">
+        <div class="container">
+            <div class="navbar-row">
+                <a  href="index.html" class="navbar-brand">
+                    <img src="../assets/images/logo.png" class="localcare_logo" alt="Localcare Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="nav ms-auto nav-tabs" id="nav-tab" role="tablist">
+                    <li class="nav-item">
+                        <a href="login.html" class="nav-link active">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="register.html" class="nav-link">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="btn btn-dark" data-bs-toggle="button">Are you doctor or
+                            therapist?</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- header: ends here -->
+    <!-- main -->
+    <main class="login-main-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <div class="auth-box">
+                        <img src="../assets/images/login/patient-auth-banner.png" class="auth_img" alt="Auth Img">
+                    </div>
+                    <h1>Local <span>Care</span></h1>
+                    <p class="auth-lead">
+                        LocalCare is a community-driven platform dedicated to connecting individuals with trusted
+                        local
+                        caregivers and healthcare services. Whether you need home care assistance, medical support,
+                        or
+                        wellness services, LocalCare makes it easy to find reliable professionals in your area. Our
+                        mission is to ensure accessible, high-quality care for everyone.
+                    </p>
+
+                </div>
+                <div class="col-sm-12 col-md-6 auth-container">
+                    <div class="auth-box auth-right-box">
+                        <h4>Hi, Welcome Back</h4>
+                        <p>Login to continue using our platform</p>
+                        <form class="auth-form" method="POST">
+                            <div class="form-group mb-3">
+                                <input type="email" placeholder="Email" class="form-control" name="userEmail"
+                                    id="userEmail" aria-describedby="userEmail">
+                                <span class="user-icons"><img src="../assets/images/icon/email.png"
+                                        alt="Email Icon"></span>
+                            </div>
+                            <div class="form-group mb-3">
+                                <input type="password" placeholder="Password" class="form-control" name="userPassword"
+                                    id="userPassword">
+                                <span class="user-icons"><img src="../assets/images/icon/password_eye.png"
+                                        alt="Password Icon"></span>
+
+                            </div>
+                            <a href="forgotpassword.html" class="mb-3">Forgot Password?</a>
+                            <button type="submit" class="btn btn-dark">Login</button>
+                            <div class="or-separator">
+                                <span>OR</span>
+                            </div>
+                            <div class="social-authentication">
+                                <a href="#" class="social-icons"><img src="../assets/images/icon/apple.png"
+                                        alt="Apple Icon"></a>
+                                <a href="#" class="social-icons"><img src="../assets/images/icon/google.png"
+                                        alt="Apple Icon"></a>
+                                <a href="#" class="social-icons"><img src="../assets/images/icon/fb.png"
+                                        alt="Apple Icon"></a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
