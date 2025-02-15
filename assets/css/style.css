@@ -1,0 +1,449 @@
+:root {
+    --bs-body-font-size: 16px;
+    --bs-body-font-family: "Poppins", serif;
+    --bs-body-font-weight: 400;
+    --bs-body-color: #000000;
+    --bs-body-bg: #ffffff;
+
+    /* font weight */
+    --font-weight-thin: 100;
+    --font-weight-extralight: 200;
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --font-weight-extrabold: 800;
+    --font-weight-black: 900;
+
+    /* font size */
+    --font-size-large: 20px;
+    --font-size-h1: 48px;
+    --font-size-h4: 26px;
+    --font-size-p: 17px;
+
+    --font-size-md-h1: 34px;
+    --font-size-md-h4: 20px;
+    --font-size-md-p: 13px;
+
+    --font-size-sm-h1: 30px;
+    --font-size-sm-h4: 16px;
+    --font-size-sm-p: 13px;
+
+    /* colors */
+    --primary: #000000;
+    --secondary: #8c8c8c;
+    --info: #547DCB;
+    --danger: #BD4041;
+    --nav-border-color: #000000;
+}
+
+/* ==========common css=========== */
+body,
+html {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-family: var(--bs-body-font-family);
+    font-weight: var(--bs-body-font-weight);
+    font-style: normal;
+    font-size: var(--bs-body-font-size);
+    color: var(--bs-body-color);
+    text-align: var(--bs-body-text-align);
+    background-color: var(--bs-body-bg);
+}
+
+.btn {
+    border-radius: 52px;
+    height: 48px;
+    padding: 10px 15px;
+}
+
+h1 {
+    font-size: var(--font-size-h1);
+    font-weight: var(--font-weight-bold);
+    margin: 20px 0;
+    line-height: 60px;
+}
+
+h4 {
+    font-size: var(--font-size-h4);
+    font-weight: var(--font-weight-extrabold);
+    line-height: 33.93px;
+}
+
+h1 span {
+    color: var(--info);
+}
+
+p {
+    font-size: var(--font-size-p);
+    font-weight: var(--font-weight-regular);
+}
+
+form {
+    width: 100%;
+}
+
+/* ==========ends: common css=========== */
+
+/* ==========navbar css=========== */
+.main-navbar {
+    padding: 20px 0;
+}
+
+.main-navbar .localcare_logo {
+    height: 50px;
+}
+
+.main-navbar .nav-tabs {
+    border: 0;
+}
+
+.main-navbar .nav-link {
+    position: relative;
+    padding-bottom: 5px;
+    margin: 0 15px;
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight-semibold);
+    color: var(--secondary);
+    border: 0;
+}
+
+.main-navbar .nav-link.active {
+    color: var(--primary);
+}
+
+.main-navbar .nav-link::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+}
+
+.main-navbar .nav-link:hover::before,
+.main-navbar .nav-link.active::before {
+    transform: scaleX(1);
+    background-color: var(--nav-border-color);
+}
+
+.main-navbar .nav-link:hover::before {
+    transform: scaleX(0);
+    transition: transform 0.5s ease-in-out;
+}
+
+/* ==========ends: navbar css=========== */
+
+/* ==========patient login main content css=========== */
+.login-main-wrapper .auth-box {
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.login-main-wrapper .auth_img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    object-fit: contain;
+}
+
+.login-main-wrapper p.auth-lead {
+    max-width: 700px;
+    margin: 0;
+}
+
+.login-main-wrapper .auth-right-box {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    max-width: 500px;
+}
+
+.auth-right-box p {
+    text-align: center;
+    color: var(--secondary);
+}
+
+.auth-container {
+    justify-content: center;
+    display: flex;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-form .form-group {
+    position: relative;
+}
+
+.auth-form .user-icons {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+
+.auth-form .form-select,
+.auth-form .form-control {
+    border-radius: 50px;
+    height: 56px;
+    padding: 20px;
+    border-color: var(--secondary);
+}
+
+.auth-form .form-select {
+    padding: 10px 20px;
+    background-color: #B8B8B812;
+}
+
+.auth-form .phone-input {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.auth-form .phone-input select {
+    border: none;
+    background: transparent;
+    outline: none;
+    margin-right: 5px;
+}
+
+.auth-form .phone-input input {
+    border: none;
+    outline: none;
+    flex-grow: 1;
+    font-size: 16px;
+}
+
+.auth-form .phone-input .delete-icon {
+    cursor: pointer;
+}
+
+.auth-form .form-select:focus,
+.auth-form .form-select:active,
+.auth-form .form-control:active,
+.auth-form .form-control:focus {
+    border: 2px solid var(--primary);
+    box-shadow: none;
+}
+
+.auth-form a {
+    text-decoration: none;
+    text-align: center;
+    color: var(--danger);
+    line-height: 24px;
+    font-weight: var(--font-weight-semibold);
+}
+
+.auth-form .social-authentication {
+    display: flex;
+    justify-content: center;
+}
+
+.auth-form .social-authentication .social-icons {
+    margin: 0 10px;
+    display: block;
+}
+
+.auth-form .or-separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.auth-form .or-separator::before,
+.auth-form .or-separator::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #ccc;
+    margin: 0 10px;
+}
+
+/* ==========ends: Patient Login main content css=========== */
+
+
+/* ========== Doctor Login main content css=========== */
+
+.doctor-login-wrapper .form-container {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+}
+
+.doctor-login-wrapper .step-indicator {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border: 0;
+}
+
+.doctor-login-wrapper .form-check-label {
+    font-size: 14px;
+}
+
+.doctor-login-wrapper .custom-radio,
+.doctor-login-wrapper .form-select {
+    height: 45px;
+}
+
+.doctor-login-wrapper .custom-radio {
+    border-radius: 50px;
+    padding: 20px;
+    border: 1px solid var(--secondary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    background-color: #e0e0e073;
+}
+
+.doctor-login-wrapper .form-textarea {
+    border-radius: 16px;
+    padding: 15px;
+    background-color: #e0e0e073;
+}
+
+.doctor-login-wrapper .custom-radio label {
+    font-size: 14px;
+}
+
+.doctor-login-wrapper .step-indicator .nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.doctor-login-wrapper h6,
+.doctor-login-wrapper .step-indicator span {
+    font-size: 13px;
+}
+
+.doctor-login-wrapper .step-indicator .nav-link {
+    width: 40px;
+    height: 40px;
+    background: #ddd;
+    color: #000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    border: none;
+}
+
+.doctor-login-wrapper .step-indicator .nav-link.active {
+    background: #000;
+    color: #fff;
+}
+
+.doctor-login-wrapper .step-indicator span {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.auth-tab-content .tab-pane h4 {
+    text-align: center;
+}
+
+.auth-tab-content .auth-bottom-text a {
+    color: var(--bs-body-color);
+}
+
+.doctor-login-wrapper .auth-right-box {
+    max-width: 400px;
+}
+
+/* ==========ends: Doctor Login main content css=========== */
+
+@media (max-width: 1500px) {
+    h1 {
+        font-size: var(--font-size-md-h1);
+        line-height: 30px;
+    }
+
+    h4 {
+        font-size: var(--font-size-md-h4);
+        padding-top: 20px;
+    }
+
+    p {
+        font-size: var(--font-size-md-p);
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: var(--font-size-sm-h1);
+    }
+
+    h4 {
+        font-size: var(--font-size-sm-h4);
+        padding-top: 20px;
+    }
+
+    p {
+        font-size: var(--font-size-sm-p);
+    }
+
+    .main-navbar .nav-tabs {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-navbar .navbar-collapse {
+        background-color: #eee;
+        padding: 20px;
+        margin-top: 20px;
+        border-radius: 15px 0;
+    }
+
+    .main-navbar .nav-link:hover::before,
+    .main-navbar .nav-link.active::before {
+        background-color: transparent;
+    }
+
+    .main-navbar .nav-link {
+        margin: 0;
+        padding: 10px 15px;
+    }
+
+    .main-navbar .btn-dark {
+        margin-top: 10px;
+    }
+
+    .main-navbar .localcare_logo {
+        height: 35px;
+    }
+
+    .main-navbar .navbar-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .auth-form a {
+        font-size: 13px;
+    }
+
+    .auth-form .form-control {
+        font-size: 13px;
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+}
