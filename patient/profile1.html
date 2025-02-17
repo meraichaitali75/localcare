@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>LocalCare | Doctor | Home</title>
+    <title>LocalCare | Patient | Profile</title>
     <!-- bootstrap css -->
     <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
     <!-- swiper slider css -->
@@ -69,7 +69,7 @@
     </nav>
     <!-- header: ends here -->
     <!-- main -->
-    <main class="doctor-main-wrapper find-doctor-wrapper main-wrapper">
+    <main class="doctor-main-wrapper profile-patient-wrapper main-wrapper">
         <div class="container">
             <div class="row sub-header">
                 <div class="col-12 col-md-8">
@@ -91,276 +91,138 @@
                     </div>
                 </div>
             </div>
-            <!-- search symptoms section -->
-            <section class="search-section sections">
-                <div class="search-container">
-                    <div class="search-frm-container">
-                        <button type="submit" class="search-btn">Search for specialist</button>
-                        <input type="text" class="search-input" placeholder="Search for symptoms">
-                    </div>
-                    <a href="#" class="question-icon"><img src="../assets/images/icon/question.png"
-                            alt="Question Icon" /></a>
-                </div>
-                <div class="symptoms-frm-row">
-                    <select class="form-select mb-3 mb-ml-0">
-                        <option selected>Cardiology</option>
-                        <option>Dermatology</option>
-                        <option>Neurology</option>
-                        <option>Pediatrics</option>
-                    </select>
-                    <input type="number" class="form-control" name="form-contact-no"
-                        placeholder="Enter Location/Postal Code">
-                    <input type="date" class="form-control" name="form-date-time" placeholder="Select date">
-                    <button type="submit" class="btn btn-dark search-btn-symptoms"><img
-                            src="../assets/images/icon/search.png" alt="search icon" class="search-icon">Search</button>
-                </div>
-                <div class="row align-items-center mt-4">
-                    <div class="col-12 col-md-6">
-                        <label class="form-label">Distance</label>
-                        <div class="range-container">
-                            <input type="range" class="custom-range-slider" min="0" max="100" id="distanceRange"
-                                value="35">
-                            <p class="distance-value" id="distanceValue">35 km</p>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6">
-                        <select class="form-select">
-                            <option value="" disabled selected>Select insurance</option>
-                            <option value="insurance1">Insurance A</option>
-                            <option value="insurance2">Insurance B</option>
-                            <option value="insurance3">Insurance C</option>
-                        </select>
-                    </div>
-                </div>
-            </section>
-            <!-- search-top-row -->
-            <div class="search-top-row row">
-                <div class="col-12 col-md-8 col-lg-10">
-                    <h3 class="mb-4 mb-md-0">Showing 1-12 of 20 Results</h3>
-                </div>
-                <div class="col-12 col-md-4 col-lg-2">
-                    <select class="form-select">
-                        <option selected>Sort by</option>
-                        <option>Dermatology</option>
-                        <option>Neurology</option>
-                        <option>Pediatrics</option>
-                    </select>
-                </div>
-            </div>
-            <!-- seacrh cards -->
-            <div class="search-card-row">
-                <div class="search-card card">
-                    <div class="row">
-                        <div class="col-12 col-md-6 search-card-col">
-                            <div class="card-top-row">
-                                <img src="../assets/images/doctors/user1.png" class="rounded-circle" width="80"
-                                    height="80" alt="Doctor">
-                                <div class="card-detail-col">
-                                    <h6>Dr. Naidan Smith </h6>
-                                    <div class="clinic-row">
-                                        <span class="clinic-text">Pediatric Clinic</span>
-                                        <a href="#" class="available-link">Available Today</a>
-                                    </div>
-                                    <div class="card-row review-row">
-                                        <span class="badge rounded-pill text-bg-danger">
-                                            <img src="../assets/images/icon/star.png" alt="star icon">
-                                            <span>4.5</span>
-                                        </span>
-                                        <span class="badge-dot"></span>
-                                        <div class="review-row">
-                                            <img src="../assets/images/icon/message.png" alt="message icon">
+            <div class="profile-container">
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <div class="card profile-card">
+                            <img src="../assets/images/doctors/user1.png" alt="user1" />
+                            <h5>Harold Finney</h5>
+                            <div class="list-group list-group-flush" id="list-tab" role="tablist">
+                                <a class="list-group-item list-group-item-action" id="list-notifications-list"
+                                    data-bs-toggle="list" href="#list-notifications" role="tab"
+                                    aria-controls="list-notifications">
+                                    <div class="list-group-row">
+                                        <div>
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g opacity="0.8">
+                                                    <path d="M12 6.43945V9.76945" stroke="black" stroke-width="1.5"
+                                                        stroke-miterlimit="10" stroke-linecap="round" />
+                                                    <path
+                                                        d="M12.0199 2C8.3399 2 5.3599 4.98 5.3599 8.66V10.76C5.3599 11.44 5.0799 12.46 4.7299 13.04L3.4599 15.16C2.6799 16.47 3.2199 17.93 4.6599 18.41C9.4399 20 14.6099 20 19.3899 18.41C20.7399 17.96 21.3199 16.38 20.5899 15.16L19.3199 13.04C18.9699 12.46 18.6899 11.43 18.6899 10.76V8.66C18.6799 5 15.6799 2 12.0199 2Z"
+                                                        stroke="black" stroke-width="1.5" stroke-miterlimit="10"
+                                                        stroke-linecap="round" />
+                                                    <path
+                                                        d="M15.3299 18.8203C15.3299 20.6503 13.8299 22.1503 11.9999 22.1503C11.0899 22.1503 10.2499 21.7703 9.64992 21.1703C9.04992 20.5703 8.66992 19.7303 8.66992 18.8203"
+                                                        stroke="black" stroke-width="1.5" stroke-miterlimit="10" />
+                                                </g>
+                                            </svg>
+                                            <span>Notifications</span>
+
                                         </div>
-                                        <span class="span-text">35 Reviews</i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-badge-row">
-                                <span class="badge rounded-pill text-bg-dark">
-                                    <span>Cardiology</span>
-                                </span>
-                                <span class="badge rounded-pill text-bg-dark">
-                                    <span>Dermatology</span>
-                                </span>
-                                <span class="badge rounded-pill text-bg-dark">
-                                    <span>Family Medicine</span>
-                                </span>
-                            </div>
-                            <div class="card-badge-row">
-                                <p>Treats :</p>
-                                <span class="badge rounded-pill text-bg-light">
-                                    <span>Public Health Insurance</span>
-                                </span>
-                                <span class="badge rounded-pill text-bg-light">
-                                    <span>Private Patients</span>
-                                </span>
-                            </div>
-                            <div class="card-badge-row card-bottom-row">
-                                <div>
-                                    <img src="../assets/images/icon/location-blue.png" alt="location  icon">
-                                    <span class="clinic-text pe-2">2014 Joes Road Cambridge, NY 12816</span> |
-                                </div>
-                                <a href="#" class="available-link ps-2">View On Map
-                                    <img src="../assets/images/icon/routing.png" alt="routing  icon" />
-                                </a>
-
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 search-timeslot-col">
-                            <div class="date-row">
-                                <button id="prev-date">
-                                    <svg width="8" height="14" viewBox="0 0 8 14" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M0.445978 7.88455C0.258507 7.69703 0.153191 7.44272 0.153191 7.17755C0.153191 6.91239 0.258507 6.65808 0.445978 6.47055L6.10298 0.813554C6.19522 0.718043 6.30557 0.641861 6.42757 0.589452C6.54958 0.537043 6.6808 0.509458 6.81358 0.508304C6.94636 0.50715 7.07804 0.532452 7.20093 0.582732C7.32383 0.633013 7.43548 0.707267 7.52937 0.80116C7.62327 0.895053 7.69752 1.0067 7.7478 1.1296C7.79808 1.2525 7.82338 1.38418 7.82223 1.51696C7.82107 1.64973 7.79349 1.78096 7.74108 1.90296C7.68867 2.02496 7.61249 2.13531 7.51698 2.22755L2.56698 7.17755L7.51698 12.1276C7.69914 12.3162 7.79993 12.5688 7.79765 12.831C7.79537 13.0932 7.6902 13.344 7.5048 13.5294C7.31939 13.7148 7.06858 13.8199 6.80638 13.8222C6.54418 13.8245 6.29158 13.7237 6.10298 13.5416L0.445978 7.88455Z"
-                                            fill="black" />
-                                    </svg>
-                                </button>
-                                <p id="selected-date" class="mx-3 my-0">30-01-2025</p>
-                                <button id="next-date">
-                                    <svg width="8" height="14" viewBox="0 0 8 14" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M7.55402 7.88455C7.74149 7.69703 7.84681 7.44272 7.84681 7.17755C7.84681 6.91239 7.74149 6.65808 7.55402 6.47055L1.89702 0.813554C1.80478 0.718043 1.69443 0.641861 1.57243 0.589452C1.45042 0.537043 1.3192 0.509458 1.18642 0.508304C1.05364 0.50715 0.921965 0.532452 0.799068 0.582732C0.676172 0.633013 0.56452 0.707267 0.470627 0.80116C0.376734 0.895053 0.302481 1.0067 0.2522 1.1296C0.201919 1.2525 0.176618 1.38418 0.177772 1.51696C0.178925 1.64973 0.206512 1.78096 0.258921 1.90296C0.31133 2.02496 0.387512 2.13531 0.483022 2.22755L5.43302 7.17755L0.483022 12.1276C0.300864 12.3162 0.20007 12.5688 0.202348 12.831C0.204627 13.0932 0.309795 13.344 0.495204 13.5294C0.680612 13.7148 0.931424 13.8199 1.19362 13.8222C1.45582 13.8245 1.70842 13.7237 1.89702 13.5416L7.55402 7.88455Z"
-                                            fill="black" />
-                                    </svg>
-
-                                </button>
-                            </div>
-                            <div class="appointment-slot mt-4 text-center">
-                                <button class="slot btn-dark  btn btn-outline-secondary">9:00 AM</button>
-                                <button class="slot btn btn-outline-secondary">9:30 AM</button>
-                                <button class="slot btn btn-outline-secondary">10:00 AM</button>
-                                <button class="slot btn btn-outline-secondary">10:30 AM</button>
-                                <button class="slot btn btn-outline-secondary">11:00 AM</button>
-                                <button class="slot btn btn-outline-secondary">11:30 AM</button>
-                                <button class="slot btn btn-outline-secondary">12:00 PM</button>
-                                <button class="slot btn btn-outline-secondary">12:30 PM</button>
-                                <button class="slot btn btn-outline-secondary">1:00 PM</button>
-                                <button class="slot btn btn-outline-secondary">1:30 PM</button>
-                                <button class="slot btn btn-outline-secondary">2:00 PM</button>
-                                <button class="slot btn btn-outline-secondary">2:30 PM</button>
-                                <button class="slot btn btn-outline-secondary">3:00 PM</button>
-                                <button class="slot btn btn-outline-secondary">3:30 PM</button>
-                                <button class="slot btn btn-outline-secondary">4:30 PM</button>
-                            </div>
-                            <div class="btns-row">
-                                <button class="btn btn-light">Know More</button>
-                                <button type="button" class="btn btn-dark" data-bs-toggle="modal"
-                                    data-bs-target="#appointmentModal" style="display: block;">
-                                    Book Appointment
-                                </button>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- seacrh cards -->
-            <div class="search-card-row">
-                <div class="search-card card">
-                    <div class="row">
-                        <div class="col-12 col-md-6 search-card-col">
-                            <div class="card-top-row">
-                                <img src="../assets/images/doctors/user1.png" class="rounded-circle" width="80"
-                                    height="80" alt="Doctor">
-                                <div class="card-detail-col">
-                                    <h6>Dr. Naidan Smith </h6>
-                                    <div class="clinic-row">
-                                        <span class="clinic-text">Pediatric Clinic</span>
-                                        <a href="#" class="available-link">Available Today</a>
-                                    </div>
-                                    <div class="card-row review-row">
-                                        <span class="badge rounded-pill text-bg-danger">
-                                            <img src="../assets/images/icon/star.png" alt="star icon">
-                                            <span>4.5</span>
-                                        </span>
-                                        <span class="badge-dot"></span>
-                                        <div class="review-row">
-                                            <img src="../assets/images/icon/message.png" alt="message icon">
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input custom-switch" type="checkbox" role="switch"
+                                                id="customSwitch" checked>
+                                            <label class="form-check-label" for="customSwitch"></label>
                                         </div>
-                                        <span class="span-text">35 Reviews</i>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="card-badge-row">
-                                <span class="badge rounded-pill text-bg-dark">
-                                    <span>Cardiology</span>
-                                </span>
-                                <span class="badge rounded-pill text-bg-dark">
-                                    <span>Dermatology</span>
-                                </span>
-                                <span class="badge rounded-pill text-bg-dark">
-                                    <span>Family Medicine</span>
-                                </span>
-                            </div>
-                            <div class="card-badge-row">
-                                <p>Treats :</p>
-                                <span class="badge rounded-pill text-bg-light">
-                                    <span>Public Health Insurance</span>
-                                </span>
-                                <span class="badge rounded-pill text-bg-light">
-                                    <span>Private Patients</span>
-                                </span>
-                            </div>
-                            <div class="card-badge-row card-bottom-row">
-                                <div>
-                                    <img src="../assets/images/icon/location-blue.png" alt="location  icon">
-                                    <span class="clinic-text pe-2">2014 Joes Road Cambridge, NY 12816</span> |
-                                </div>
-                                <a href="#" class="available-link ps-2">View On Map
-                                    <img src="../assets/images/icon/routing.png" alt="routing  icon" />
                                 </a>
+                                <a class="list-group-item list-group-item-action" id="list-change-password-list"
+                                    data-bs-toggle="list" href="#list-change-password" role="tab"
+                                    aria-controls="list-change-password">
+                                    <div class="list-group-row">
+                                        <div>
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g opacity="0.8">
+                                                    <path
+                                                        d="M11.02 19.5H7.5C6.88 19.5 6.33 19.48 5.84 19.41C3.21 19.12 2.5 17.88 2.5 14.5V9.5C2.5 6.12 3.21 4.88 5.84 4.59C6.33 4.52 6.88 4.5 7.5 4.5H10.96"
+                                                        stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path
+                                                        d="M15.02 4.5H16.5C17.12 4.5 17.67 4.52 18.16 4.59C20.79 4.88 21.5 6.12 21.5 9.5V14.5C21.5 17.88 20.79 19.12 18.16 19.41C17.67 19.48 17.12 19.5 16.5 19.5H15.02"
+                                                        stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path d="M15 2V22" stroke="black" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M11.0946 12H11.1036" stroke="black" stroke-width="2"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M7.0946 12H7.10359" stroke="black" stroke-width="2"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </g>
+                                            </svg>
+                                            <span>Change password</span>
+                                        </div>
+                                        <svg width="13" height="11" viewBox="0 0 13 11" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M0 5.79492C0 5.51015 0.211615 5.2748 0.486172 5.23756L0.5625 5.23242L11.8125 5.23242C12.1232 5.23242 12.375 5.48426 12.375 5.79492C12.375 6.07969 12.1634 6.31504 11.8888 6.35229L11.8125 6.35742L0.5625 6.35742C0.25184 6.35742 0 6.10558 0 5.79492Z"
+                                                fill="black" />
+                                            <path
+                                                d="M6.87826 1.67435C6.65811 1.45516 6.65735 1.099 6.87654 0.878859C7.07581 0.678729 7.38827 0.659903 7.60883 0.822819L7.67204 0.877146L12.2095 5.39515C12.4103 5.59501 12.4285 5.9086 12.2643 6.12915L12.2096 6.19232L7.67207 10.7111C7.45195 10.9303 7.09579 10.9295 6.87658 10.7094C6.67729 10.5093 6.65978 10.1968 6.82363 9.97691L6.87822 9.91393L11.0152 5.79352L6.87826 1.67435Z"
+                                                fill="black" />
+                                        </svg>
+                                    </div>
+                                </a>
+                                <a class="list-group-item list-group-item-action" id="list-del-account-list"
+                                    data-bs-toggle="list" href="#list-del-account" role="tab"
+                                    aria-controls="list-del-account">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z"
+                                            stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M3.40991 22C3.40991 18.13 7.25991 15 11.9999 15C12.9599 15 13.8899 15.13 14.7599 15.37"
+                                            stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M22 18C22 18.32 21.96 18.63 21.88 18.93C21.79 19.33 21.63 19.72 21.42 20.06C20.73 21.22 19.46 22 18 22C16.97 22 16.04 21.61 15.34 20.97C15.04 20.71 14.78 20.4 14.58 20.06C14.21 19.46 14 18.75 14 18C14 16.92 14.43 15.93 15.13 15.21C15.86 14.46 16.88 14 18 14C19.18 14 20.25 14.51 20.97 15.33C21.61 16.04 22 16.98 22 18Z"
+                                            stroke="black" stroke-width="1.5" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M19.0299 16.9395L16.9199 19.0494" stroke="black" stroke-width="1.5"
+                                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M16.9399 16.959L19.0599 19.069" stroke="black" stroke-width="1.5"
+                                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <span>Delete Account</span>
+                                </a>
+                                <a class="list-group-item list-group-item-action" id="list-Logout-list"
+                                    data-bs-toggle="list" href="#list-Logout" role="tab" aria-controls="list-Logout">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M17.4399 14.62L19.9999 12.06L17.4399 9.5" stroke="black"
+                                            stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M9.76001 12.0605H19.93" stroke="black" stroke-width="1.5"
+                                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M11.76 20C7.34001 20 3.76001 17 3.76001 12C3.76001 7 7.34001 4 11.76 4"
+                                            stroke="black" stroke-width="1.5" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
 
+                                    <span>Logout</span>
+                                </a>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 search-timeslot-col">
-                            <div class="date-row">
-                                <button id="prev-date">
-                                    <svg width="8" height="14" viewBox="0 0 8 14" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M0.445978 7.88455C0.258507 7.69703 0.153191 7.44272 0.153191 7.17755C0.153191 6.91239 0.258507 6.65808 0.445978 6.47055L6.10298 0.813554C6.19522 0.718043 6.30557 0.641861 6.42757 0.589452C6.54958 0.537043 6.6808 0.509458 6.81358 0.508304C6.94636 0.50715 7.07804 0.532452 7.20093 0.582732C7.32383 0.633013 7.43548 0.707267 7.52937 0.80116C7.62327 0.895053 7.69752 1.0067 7.7478 1.1296C7.79808 1.2525 7.82338 1.38418 7.82223 1.51696C7.82107 1.64973 7.79349 1.78096 7.74108 1.90296C7.68867 2.02496 7.61249 2.13531 7.51698 2.22755L2.56698 7.17755L7.51698 12.1276C7.69914 12.3162 7.79993 12.5688 7.79765 12.831C7.79537 13.0932 7.6902 13.344 7.5048 13.5294C7.31939 13.7148 7.06858 13.8199 6.80638 13.8222C6.54418 13.8245 6.29158 13.7237 6.10298 13.5416L0.445978 7.88455Z"
-                                            fill="black" />
-                                    </svg>
-                                </button>
-                                <p id="selected-date" class="mx-3 my-0">30-01-2025</p>
-                                <button id="next-date">
-                                    <svg width="8" height="14" viewBox="0 0 8 14" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M7.55402 7.88455C7.74149 7.69703 7.84681 7.44272 7.84681 7.17755C7.84681 6.91239 7.74149 6.65808 7.55402 6.47055L1.89702 0.813554C1.80478 0.718043 1.69443 0.641861 1.57243 0.589452C1.45042 0.537043 1.3192 0.509458 1.18642 0.508304C1.05364 0.50715 0.921965 0.532452 0.799068 0.582732C0.676172 0.633013 0.56452 0.707267 0.470627 0.80116C0.376734 0.895053 0.302481 1.0067 0.2522 1.1296C0.201919 1.2525 0.176618 1.38418 0.177772 1.51696C0.178925 1.64973 0.206512 1.78096 0.258921 1.90296C0.31133 2.02496 0.387512 2.13531 0.483022 2.22755L5.43302 7.17755L0.483022 12.1276C0.300864 12.3162 0.20007 12.5688 0.202348 12.831C0.204627 13.0932 0.309795 13.344 0.495204 13.5294C0.680612 13.7148 0.931424 13.8199 1.19362 13.8222C1.45582 13.8245 1.70842 13.7237 1.89702 13.5416L7.55402 7.88455Z"
-                                            fill="black" />
-                                    </svg>
-
-                                </button>
-                            </div>
-                            <div class="appointment-slot mt-4 text-center">
-                                <button class="slot btn-dark  btn btn-outline-secondary">9:00 AM</button>
-                                <button class="slot btn btn-outline-secondary">9:30 AM</button>
-                                <button class="slot btn btn-outline-secondary">10:00 AM</button>
-                                <button class="slot btn btn-outline-secondary">10:30 AM</button>
-                                <button class="slot btn btn-outline-secondary">11:00 AM</button>
-                                <button class="slot btn btn-outline-secondary">11:30 AM</button>
-                                <button class="slot btn btn-outline-secondary">12:00 PM</button>
-                                <button class="slot btn btn-outline-secondary">12:30 PM</button>
-                                <button class="slot btn btn-outline-secondary">1:00 PM</button>
-                                <button class="slot btn btn-outline-secondary">1:30 PM</button>
-                                <button class="slot btn btn-outline-secondary">2:00 PM</button>
-                                <button class="slot btn btn-outline-secondary">2:30 PM</button>
-                                <button class="slot btn btn-outline-secondary">3:00 PM</button>
-                                <button class="slot btn btn-outline-secondary">3:30 PM</button>
-                                <button class="slot btn btn-outline-secondary">4:30 PM</button>
-                            </div>
-                            <div class="btns-row">
-                                <button class="btn btn-light">Know More</button>
-                                <button class="btn btn-dark">Book Appointment</button>
+                    </div>
+                    <div class="col-12 col-md-8">
+                        <div class="card profile-card">
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="list-notifications" role="tabpanel"
+                                    aria-labelledby="list-notifications">
+                                </div>
+                                <div class="tab-pane fade" id="list-change-password" role="tabpanel"
+                                    aria-labelledby="list-change-password">2</div>
+                                <div class="tab-pane fade" id="list-del-account" role="tabpanel"
+                                    aria-labelledby="list-del-account">...3</div>
+                                <div class="tab-pane fade" id="list-Logout" role="tabpanel"
+                                    aria-labelledby="list-Logout-list">..4.</div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="justify-content-center d-flex">
-                <button type="button" class="btn btn-light">LOAD MORE</button>
             </div>
         </div>
     </main>
