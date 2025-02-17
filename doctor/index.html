@@ -1,175 +1,398 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Selection Form</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <style>
-        body {
-            background: #f8f9fa;
-        }
-        .form-container {
-            background: #fff;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 100%;
-            max-width: 450px;
-            margin: auto;
-        }
-        .step-indicator {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-        .step-indicator .nav-link {
-            width: 40px;
-            height: 40px;
-            background: #ddd;
-            color: #000;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            font-size: 18px;
-            text-decoration: none;
-            border: none;
-        }
-        .step-indicator .nav-link.active {
-            background: #000;
-            color: #fff;
-        }
-        .step-indicator span {
-            flex-grow: 1;
-            text-align: center;
-            font-size: 14px;
-            margin-top: 5px;
-        }
-        .form-control {
-            border-radius: 25px;
-            padding: 12px 15px;
-        }
-        .custom-radio-group {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-        .custom-radio label {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: 1px solid #ccc;
-            border-radius: 25px;
-            padding: 10px 20px;
-            font-size: 14px;
-            cursor: pointer;
-            width: 45%;
-            text-align: center;
-            transition: 0.3s;
-        }
-        .custom-radio input {
-            display: none;
-        }
-        .custom-radio input:checked + label {
-            background: black;
-            color: white;
-            border-color: black;
-        }
-        .btn-custom {
-            border-radius: 25px;
-            padding: 12px;
-            font-size: 16px;
-            font-weight: bold;
-        }
-    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LocalCare | Doctor | Home</title>
+    <!-- bootstrap css -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- swiper slider css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- custom css -->
+    <link href="../assets/css/style.css" rel="stylesheet">
 </head>
+
 <body>
-
-<div class="container mt-5">
-    <div class="form-container">
-        <!-- Step Indicator -->
-        <ul class="nav nav-tabs step-indicator" id="profileTabs" role="tablist">
-            <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="step1-tab" data-bs-toggle="tab" data-bs-target="#step1" type="button" role="tab">
-                    1
+    <!-- header -->
+    <nav class="main-navbar secondary-navbar navbar navbar-expand-lg">
+        <div class="container">
+            <div class="navbar-row">
+                <a href="index.html" class="navbar-brand">
+                    <img src="../assets/images/logo.png" class="localcare_logo" alt="Localcare Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-            </li>
-            <span>Who you are?</span>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="step2-tab" data-bs-toggle="tab" data-bs-target="#step2" type="button" role="tab">
-                    2
-                </button>
-            </li>
-            <span class="fw-bold text-muted">Personal Info</span>
-        </ul>
-
-        <!-- Tab Content -->
-        <div class="tab-content mt-3" id="profileTabContent">
-            <!-- Step 1: Choose Profile -->
-            <div class="tab-pane fade show active" id="step1" role="tabpanel">
-                <h4 class="text-center fw-bold">Choose your Profile</h4>
-                <p class="text-center text-muted">Please select your profession profile.</p>
-                <form>
-                    <!-- Therapist Group -->
-                    <div class="mb-3">
-                        <label class="fw-bold">Choose the therapist group</label>
-                        <div class="custom-radio-group">
-                            <div class="custom-radio">
-                                <input type="radio" id="doctor" name="therapist" checked>
-                                <label for="doctor">Doctor</label>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="nav ms-auto nav-tabs" id="nav-tab" role="tablist">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="exploredoctor.html" class="nav-link">Explore Doctors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="appointments.html" class="nav-link">Appointments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="messages.html" class="nav-link">Messages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="btn btn-dark" data-bs-toggle="button">Are you a patient?
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- header: ends here -->
+    <!-- main -->
+    <main class="doctor-main-wrapper patient-main-wrapper main-wrapper">
+        <div class="container">
+            <!-- banner section -->
+            <section class="banner-section  sections">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 banner-columns">
+                        <h4>Optimize Your Practice Space with LoqalCare</h4>
+                        <h1>Maximize Your Practice’s Potential – Flexible Space Usage and Increased Profit.</h1>
+                        <p>Rent out unused rooms or find flexible spaces – no long-term commitments required.</p>
+                        <div class="btns-row">
+                            <button type="submit" class="btn btn-dark ">Register Now and Get Started</button>
+                            <button type="submit" class="btn btn-light ms-0 ms-md-3 mt-3 mt-md-0">Learn More</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <img src="../assets/images/home/doctor-banner.png" class="home-banner" alt="home-banner">
+                    </div>
+                </div>
+            </section>
+            <!-- choose us section -->
+            <section class="aboutus-section sections">
+                <h5><img src="../assets/images/icon/chooseus.png" alt="chooseus icon">Why LoqalCare?</h5>
+                <h1>The Solution for Modern Healthcare Professionals</h1>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-6">
+                        <div class="card">
+                            <img src="../assets/images/icon/chart.png" alt="Maximize Resource Utilization icon">
+                            <h5>Maximize Resource Utilization</h5>
+                            <p>Earn revenue from unused practice spaces. Save costs and avoid the responsibility of a
+                                fixed location.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="card">
+                            <img src="../assets/images/icon/flexibility.png" alt="Flexibility icon">
+                            <h5>Flexibility</h5>
+                            <p>Rent spaces by the day – ideal for occasional appointments. No long-term contracts or
+                                commitments</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="card">
+                            <img src="../assets/images/icon/network-expansion.png" alt="Network Expansion icon">
+                            <h5>Network Expansion</h5>
+                            <p>Collaborate with professionals across specialties. Increase visibility and boost referral
+                                opportunities.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="card">
+                            <img src="../assets/images/icon/cost-efficiency.png" alt="Cost Efficiency icon">
+                            <h5>Cost Efficiency</h5>
+                            <p>Reduce fixed costs through rental income. Pay only when you need a space.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- care section -->
+            <section class="aboutus-section sections">
+                <h5><img src="../assets/images/icon/chooseus.png" alt="chooseus icon">How Does LoqalCare Work?</h5>
+                <h1>For Doctors and Therapists without practice space</h1>
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <div class="card care-card">
+                            <img src="../assets/images/icon/symptomssearch.png" alt="Symptoms Search icon">
+                            <h5>Enter Symptoms or Search</h5>
+                            <p>Find specialists that match your needs.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card care-card">
+                            <img src="../assets/images/icon/comparebook.png" alt="Compare and Book icon">
+                            <h5>Compare and Book</h5>
+                            <p>Find specialists that match your needs.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card care-card">
+                            <img src="../assets/images/icon/stayconnected.png" alt="Stay Connected icon">
+                            <h5>Stay Connected</h5>
+                            <p>Confirm your appointment and securely communicate.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- care section -->
+            <section class="aboutus-section sections">
+                <h1>For Practice Owners</h1>
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <div class="card care-card">
+                            <img src="../assets/images/icon/create-profile.png" alt="Create Your Profile icon">
+                            <h5>Create Your Profile </h5>
+                            <p>Create your profile and list your available spaces</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card care-card">
+                            <img src="../assets/images/icon/rental-prices.png" alt="Set Rental Prices icon">
+                            <h5>Set Rental Prices</h5>
+                            <p>Find specialists that match your needs.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card care-card">
+                            <img src="../assets/images/icon/rent-space.png" alt="Rent Out Spaces icon">
+                            <h5>Rent Out Spaces</h5>
+                            <p>Rent out spaces efficiently and hassle-free.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- benefit banner section -->
+            <section class="banner-section sections">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 banner-columns">
+                        <h1>Your Benefits at a<br>Glance</h1>
+                        <h4>Your Success, Our Goal.</h4>
+                        <p>1. Up to 50% increased utilization through space rentals.</p>
+                        <p>2. Reduce fixed costs by up to 30%</p>
+                        <p>3. 100% flexible booking – no long-term commitments.</p>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <img src="../assets/images/home/benefit-banner.png" class="home-banner" alt="home-banner">
+                    </div>
+                </div>
+            </section>
+            <!-- testimonial section -->
+            <section class="testimonial-section sections">
+                <div class="testimonial-container text-center">
+                    <div class="testimonial-row">
+                        <div>
+                            <h5><img src="../assets/images/icon/chooseus.png" alt="chooseus icon" />Testimonials</h5>
+                            <h1 class="testimonial-title">What Our Users Are Saying.</h1>
+                        </div>
+                        <div>
+                            <div class="swiper-button-prev custom-prev">
+                                <img src="../assets/images/icon/right.svg" alt="right.png">
                             </div>
-                            <div class="custom-radio">
-                                <input type="radio" id="physiotherapist" name="therapist">
-                                <label for="physiotherapist">Physiotherapist</label>
-                            </div>
-                            <div class="custom-radio">
-                                <input type="radio" id="psychotherapist" name="therapist">
-                                <label for="psychotherapist">Psychotherapist</label>
-                            </div>
-                            <div class="custom-radio">
-                                <input type="radio" id="speech" name="therapist">
-                                <label for="speech">Speech Therapist</label>
+                            <div class="swiper-button-next custom-next">
+                                <img src="../assets/images/icon/left.svg" alt="left.png">
                             </div>
                         </div>
                     </div>
-
-                    <!-- Specialization Dropdown -->
-                    <div class="mb-3">
-                        <label class="fw-bold">Select your specialization</label>
-                        <select class="form-control">
-                            <option selected disabled>Select specialization</option>
-                            <option>Cardiologist</option>
-                            <option>Neurologist</option>
-                            <option>Dermatologist</option>
-                            <option>Orthopedic</option>
-                        </select>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide card">
+                                <div class="quote-icon">
+                                    <img src="../assets/images/icon/inverted-comma.png" alt="inverted comma icon">
+                                </div>
+                                <p>I’ve finally monetized unused rooms – a real boost for my practice!</p>
+                                <div class="rating">
+                                    <img src="../assets/images/icon/yellow-star.png" alt="star icon">
+                                    <img src="../assets/images/icon/yellow-star.png" alt="star icon">
+                                    <img src="../assets/images/icon/yellow-star.png" alt="star icon">
+                                    <img src="../assets/images/icon/yellow-star.png" alt="star icon">
+                                    <img src="../assets/images/icon/half-star.png" alt="half star icon">
+                                </div>
+                                <h6>
+                                    <svg width="32" height="3" viewBox="0 0 32 3" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect y="0.5" width="32" height="2" fill="#547DCB" />
+                                    </svg>
+                                    Dr. Müller, General Practitioner
+                                </h6>
+                            </div>
+                            <div class="swiper-slide card">
+                                <div class="quote-icon">
+                                    <img src="../assets/images/icon/inverted-comma.png" alt="inverted comma icon">
+                                </div>
+                                <p>As an independent therapist, I save so much time and money. Perfect for my flexible
+                                    schedule!</p>
+                                <div class="rating">
+                                    <img src="../assets/images/icon/yellow-star.png" alt="star icon">
+                                    <img src="../assets/images/icon/yellow-star.png" alt="star icon">
+                                    <img src="../assets/images/icon/yellow-star.png" alt="star icon">
+                                    <img src="../assets/images/icon/yellow-star.png" alt="star icon">
+                                    <img src="../assets/images/icon/half-star.png" alt="half star icon">
+                                </div>
+                                <h6>
+                                    <svg width="32" height="3" viewBox="0 0 32 3" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect y="0.5" width="32" height="2" fill="#547DCB" />
+                                    </svg>
+                                    Anna, Physiotherapist
+                                </h6>
+                            </div>
+                            <div class="swiper-slide card">
+                                <div class="quote-icon">
+                                    <img src="../assets/images/icon/inverted-comma.png" alt="inverted comma icon">
+                                </div>
+                                <p>I found the perfect doctor for my needs – hassle-free
+                                    and
+                                    fast!</p>
+                                <div class="rating">
+                                    <img src="../assets/images/icon/yellow-star.png" alt="star icon">
+                                    <img src="../assets/images/icon/yellow-star.png" alt="star icon">
+                                    <img src="../assets/images/icon/yellow-star.png" alt="star icon">
+                                    <img src="../assets/images/icon/yellow-star.png" alt="star icon">
+                                    <img src="../assets/images/icon/half-star.png" alt="half star icon">
+                                </div>
+                                <h6>
+                                    <svg width="32" height="3" viewBox="0 0 32 3" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect y="0.5" width="32" height="2" fill="#547DCB" />
+                                    </svg>
+                                    Tim Jones
+                                </h6>
+                            </div>
+                        </div>
                     </div>
-
-                    <!-- About Me Textarea -->
-                    <div class="mb-3">
-                        <label class="fw-bold">About me</label>
-                        <textarea class="form-control" rows="4" placeholder="Enter about yourself"></textarea>
+                </div>
+            </section>
+            <!-- benefit banner section -->
+            <section class="banner-section benefit-banner-section sections">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <img src="../assets/images/home/flexibility-banner.png" class="home-banner" alt="home-banner">
                     </div>
+                    <div class="col-sm-12 col-md-6 banner-columns">
+                        <h4>Appealing to Patients and Professionals</h4>
+                        <h1>Flexibility for You,<br>Availability for Your<br>Patients.</h1>
+                        <p>LoqalCare allows patients to benefit from more<br>appointment options and nearby services –
+                            while you<br>optimize your practice’s efficiency.</p>
 
-                    <button type="button" class="btn btn-dark w-100 btn-custom" data-bs-toggle="tab" data-bs-target="#step2">Next</button>
-                </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <!-- footer -->
+    <footer class="main-footer">
+        <div class="row footer-top-row">
+            <div class="col-12 col-md-6">
+                <a href="index.html" class="navbar-brand">
+                    <img src="../assets/images/loqalare-light-logo.png" class="localcare_logo" alt="Localcare Logo">
+                </a>
+                <p>
+                    Our company started with a simple vision of helping up-and-coming entrepreneurs and young
+                    professionals find a solid footprint for their business and enable them to expand their boundaries
+                    even while working remotely.
+                </p>
             </div>
-
-            <!-- Step 2: Personal Info (Placeholder) -->
-            <div class="tab-pane fade" id="step2" role="tabpanel">
-                <h4 class="text-center">Personal Info</h4>
-                <p class="text-center text-muted">Please fill your personal info</p>
-                <p class="text-center text-muted">[Step 2 content goes here...]</p>
-
-                <button type="button" class="btn btn-secondary w-100 btn-custom" data-bs-toggle="tab" data-bs-target="#step1">Back</button>
+            <div class="col-12 col-md-2">
+                <h5>Other Link 1</h5>
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#">FAQS</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-2">
+                <h5>Other Link 1</h5>
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#">FAQS</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-2">
+                <h5>Other Link 1</h5>
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#">FAQS</a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </div>
-</div>
-
+        <div class="footer-bottom-row">
+            <p>Copyright © 2025 <a href="#">LOQALCARE. </a> All rights reserved.</p>
+            <div class="social-icons-row">
+                <p>Follow us on</p>
+                <div class="social-icons-row">
+                    <a href="#">
+                        <img src="../assets/images/icon/fb-icon.png" alt="fb-icon">
+                    </a>
+                    <a href="#">
+                        <img src="../assets/images/icon/twitter-icon.png" alt="twitter-icon" />
+                    </a>
+                    <a href="#">
+                        <img src="../assets/images/icon/linkedin-icon.png" alt="linkedin-icon" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer -->
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var swiper = new Swiper(".swiper-container", {
+                slidesPerView: 1.5,
+                spaceBetween: 20,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                breakpoints: {
+                    768: { slidesPerView: 2 },
+                    1024: { slidesPerView: 3 },
+                },
+            });
+        });
+    </script>
 </body>
+
 </html>
