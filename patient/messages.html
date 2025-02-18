@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LocalCare | Patient | Messages</title>
+    <!-- bootstrap css -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- swiper slider css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- custom css -->
+    <link href="../assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- header -->
+    <nav class="main-navbar common-navbar secondary-navbar navbar navbar-expand-lg">
+        <div class="container">
+            <div class="navbar-row">
+                <a href="index.html" class="navbar-brand">
+                    <img src="../assets/images/logo.png" class="localcare_logo" alt="Localcare Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="nav ms-auto nav-tabs" id="nav-tab" role="tablist">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="exploredoctor.html" class="nav-link">Explore Doctors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="appointments.html" class="nav-link">Appointments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="messages.html" class="nav-link">Messages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="btn btn-dark" data-bs-toggle="button">Are you doctor or
+                            therapist?</a>
+                    </li>
+                    <li class="nav-item nav-item-user">
+                        <a href="message.html" class="notification-circle" data-bs-toggle="button">
+                            <img src="../assets/images/icon/notification.png" class="notification-icon"
+                                alt="Notification Icon">
+                        </a>
+                        <a href="profile.html" class="user-profile-row">
+                            <img src="../assets/images/icon/user-profile.png" class="user-profile" alt="User Profile">
+                            <span>Harold Finney</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- main -->
+    <main class="doctor-main-wrapper chat-wrapper main-wrapper">
+        <div class="sub-header">
+            <div class="container">
+                <div class="row align-items-center m-0">
+                    <div class="col-12 col-md-8">
+                        <h1>Messages</h1>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="d-flex align-items-center justify-content-end">
+                            <a href="#">
+                                <h6>Home
+                                    <svg width="8" height="14" viewBox="0 0 8 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M7.70685 6.29294C7.89433 6.48046 7.99964 6.73477 7.99964 6.99994C7.99964 7.2651 7.89433 7.51941 7.70685 7.70694L2.04985 13.3639C1.95761 13.4594 1.84726 13.5356 1.72526 13.588C1.60326 13.6404 1.47204 13.668 1.33926 13.6692C1.20648 13.6703 1.0748 13.645 0.951901 13.5948C0.829005 13.5445 0.717352 13.4702 0.623459 13.3763C0.529567 13.2824 0.455314 13.1708 0.405033 13.0479C0.354752 12.925 0.32945 12.7933 0.330604 12.6605C0.331758 12.5278 0.359344 12.3965 0.411753 12.2745C0.464162 12.1525 0.540344 12.0422 0.635854 11.9499L5.58586 6.99994L0.635854 2.04994C0.453696 1.86133 0.352902 1.60873 0.35518 1.34653C0.357459 1.08434 0.462628 0.833526 0.648036 0.648118C0.833444 0.46271 1.08426 0.357541 1.34645 0.355262C1.60865 0.352984 1.86125 0.453778 2.04985 0.635936L7.70685 6.29294Z"
+                                            fill="black" />
+                                    </svg>
+                                </h6>
+                            </a>
+                            <p>Messages</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container auth-form">
+                <!-- Sidebar Toggle Button -->
+                <div class="toggle-sidebar d-lg-none">☰</div>
+
+                <!-- Overlay -->
+                <div class="overlay"></div>
+
+                <div class="chat-container">
+                    <!-- Sidebar -->
+                    <div class="sidebar">
+                        <h4>Chats</h4>
+                        <div class="form-group d-flex w-100 ">
+                            <input type="text" placeholder="Write your message" class="form-control" name="usercomment"
+                                id="usercomment" aria-describedby="usercomment">
+                            <span class="user-icons">
+                                <svg width="22" height="23" viewBox="0 0 22 23" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.543 19.3835C15.3525 19.3835 19.2513 15.4846 19.2513 10.6751C19.2513 5.86565 15.3525 1.9668 10.543 1.9668C5.73351 1.9668 1.83466 5.86565 1.83466 10.6751C1.83466 15.4846 5.73351 19.3835 10.543 19.3835Z"
+                                        stroke="black" stroke-width="2.4553" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M20.168 20.3001L18.3347 18.4668" stroke="black" stroke-width="2.4553"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+
+                            </span>
+                        </div>
+                        <ul class="chat-list">
+                            <li>
+                                <img src="../assets/images/doctors/doctor1.png" alt="User">
+                                <div class="chat-info">
+                                    <h6>Jane Cooper <span class="time">5m ago</span></h6>
+                                    <p>Hey! Are you coming? <span class="badge">2</span></p>
+                                </div>
+
+                            </li>
+                            <li>
+                                <img src="../assets/images/doctors/doctor2.png" alt="User">
+                                <div class="chat-info">
+                                    <strong>Paul Pena</strong>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="../assets/images/doctors/doctor3.png" alt="User">
+                                <div class="chat-info">
+                                    <strong>Edward Carter</strong>
+                                    <p>Let’s catch up later! <span class="time">15m ago</span></p>
+                                </div>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <!-- Chat Box -->
+                    <div class="chat-box ">
+                        <div
+                            class="chat-header d-flex justify-content-between align-items-center p-3 border-bottom bg-white">
+                            <div class="chat-user d-flex align-items-center">
+                                <img src="../assets/images/doctors/usre3.jpeg" alt="User" class="rounded-circle me-2">
+                                <span class="fw-bold">Christopher Kauffman</span>
+                            </div>
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" id="chatDropdown"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    ⋮
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="chatDropdown">
+                                    <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="chat-messages">
+                            <div class="message sent">
+                                <p>Hello, How are you?</p>
+                                <span class="time">10:16 PM</span>
+                            </div>
+                            <div class="message received">
+                                <p>Yea, I am Good & How’s you?</p>
+                                <span class="time">10:17 PM</span>
+                            </div>
+                        </div>
+
+                        <div class="chat-input">
+                            <div class="form-group d-flex w-100 ">
+                                <input type="text" placeholder="Write your message" class="form-control"
+                                    name="usercomment" id="usercomment" aria-describedby="usercomment">
+                                <span class="user-icons"><img src="../assets/images/icon/paperclip.png"
+                                        alt="Email Icon"></span>
+                            </div>
+                            <button type="submit"><img src="../assets/images/icon/chat-send.png"
+                                    alt="chat-send"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="main-footer">
+        <div class="row footer-top-row">
+            <div class="col-12 col-md-6">
+                <a href="index.html" class="navbar-brand">
+                    <img src="../assets/images/loqalare-light-logo.png" class="localcare_logo" alt="Localcare Logo">
+                </a>
+                <p>
+                    Our company started with a simple vision of helping up-and-coming entrepreneurs and young
+                    professionals find a solid footprint for their business and enable them to expand their boundaries
+                    even while working remotely.
+                </p>
+            </div>
+            <div class="col-12 col-md-2">
+                <h5>Other Link 1</h5>
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#">FAQS</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-2">
+                <h5>Other Link 1</h5>
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#">FAQS</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-2">
+                <h5>Other Link 1</h5>
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#">FAQS</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom-row">
+            <p>Copyright © 2025 <a href="#">LOQALCARE. </a> All rights reserved.</p>
+            <div class="social-icons-row">
+                <p>Follow us on</p>
+                <div class="social-icons-row">
+                    <a href="#">
+                        <img src="../assets/images/icon/fb-icon.png" alt="fb-icon">
+                    </a>
+                    <a href="#">
+                        <img src="../assets/images/icon/twitter-icon.png" alt="twitter-icon" />
+                    </a>
+                    <a href="#">
+                        <img src="../assets/images/icon/linkedin-icon.png" alt="linkedin-icon" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer -->
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".toggle-sidebar").click(function () {
+                $(".sidebar").toggleClass("show");
+                $(".overlay").fadeToggle();
+            });
+
+            $(".overlay").click(function () {
+                $(".sidebar").removeClass("show");
+                $(".overlay").fadeOut();
+            });
+
+            $(".chat-input button").click(function () {
+                let newMessage = '<div class="message sent">New message</div>';
+                $(".chat-body").append(newMessage);
+                $(".chat-body").animate({ scrollTop: $(".chat-body")[0].scrollHeight }, 500);
+            });
+        });
+    </script>
+
+</body>
+
+</html>
