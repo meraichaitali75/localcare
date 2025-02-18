@@ -97,8 +97,76 @@ a {
     margin-bottom: 100px;
 }
 
+/* customized radio button */
+.custom-radio {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
 
-/* Remove default calendar icon for Chrome, Safari, Edge, and Opera */
+.custom-radio input[type="radio"] {
+    display: none;
+}
+
+.custom-radio label {
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.custom-radio span {
+    font-size: 14px;
+    color: var(--bs-body-color);
+    font-weight: var(--font-weight-medium);
+}
+
+.custom-radio label::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    background: transparent;
+}
+
+.custom-radio input[type="radio"]:checked+label::after {
+    content: "";
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    background: #000;
+    border-radius: 50%;
+}
+
+
+/* customized checkbox */
+.custom-checkbox .form-check-input {
+    width: 20px;
+    height: 20px;
+    background-color: #f5f5f5;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    appearance: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.custom-checkbox .form-check-input:checked {
+    background-color: black;
+    border-color: black;
+}
+
+/* Remove default calendar */
 input[type="date"]::-webkit-inner-spin-button,
 input[type="date"]::-webkit-calendar-picker-indicator {
     display: none;
@@ -118,13 +186,13 @@ input[type="date"] {
     padding-right: 40px;
 }
 
-/* Remove default dropdown arrow for Chrome, Safari, Edge, and Opera */
+/* Remove default dropdown */
 select.form-select {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    background-image: none; 
-    padding-right: 30px; 
+    background-image: none;
+    padding-right: 30px;
 }
 
 select::-ms-expand {
@@ -139,7 +207,13 @@ select::-ms-expand {
 
 .select-container select {
     width: 100%;
-    padding-right: 50px; 
+    padding-right: 50px;
+}
+
+.form-check-input:focus {
+    border: none;
+    outline: 0;
+    box-shadow: none;
 }
 
 /* Adding a custom dropdown icon */
@@ -147,9 +221,9 @@ select::-ms-expand {
     content: "";
     position: absolute;
     right: 15px;
-    top: 50%;
+    top: 40%;
     transform: translateY(-50%);
-    width: 20px; 
+    width: 20px;
     height: 20px;
     background: url("../images/icon/chevron-bottom.png") no-repeat center;
     background-size: contain;
@@ -196,14 +270,24 @@ select::-ms-expand {
     background-color: var(--text-bg-danger) !important;
 }
 
-
 .form-select,
 .form-control {
+    outline: none;
     border-radius: 52px;
     height: 56px;
     padding: 20px;
+    font-size: var(--btn-font-size);
+    font-weight: var(--font-weight-medium);
     border: 1px solid var(--secondary) !important;
-    background-color: #f1f1f1;
+    background-color: var(--bs-body-bg);
+}
+
+.auth-form .phone-input input {
+    border: none;
+    outline: none;
+    flex-grow: 1;
+    font-size: var(--btn-font-size);
+    font-weight: var(--font-weight-medium);
 }
 
 .form-select {
@@ -308,7 +392,7 @@ form {
 /* ==========navbar css=========== */
 .main-navbar {
     padding: 20px 0;
-    margin-bottom: 100px;
+    margin-bottom: 30px;
 }
 
 .main-navbar .localcare_logo {
@@ -464,10 +548,14 @@ form {
     width: 100%;
     max-width: 500px;
 }
-
+.auth-right-box  .auth-top-lead {
+    font-weight: var(--font-weight-regular);
+}
 .auth-right-box p {
     text-align: center;
     color: var(--secondary);
+    padding-top: 10px;
+    font-weight: var(--font-weight-medium);
 }
 
 .auth-container {
@@ -503,13 +591,6 @@ form {
     margin-right: 5px;
 }
 
-.auth-form .phone-input input {
-    border: none;
-    outline: none;
-    flex-grow: 1;
-    font-size: 16px;
-    background-color: #f1f1f1;
-}
 
 .auth-form .phone-input .delete-icon {
     cursor: pointer;
@@ -569,13 +650,6 @@ form {
     margin: auto;
 }
 
-.doctor-login-wrapper .step-indicator {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    border: 0;
-}
 
 .doctor-login-wrapper .form-check-label {
     font-size: 14px;
@@ -583,46 +657,63 @@ form {
 
 .doctor-login-wrapper .custom-radio,
 .doctor-login-wrapper .form-select {
-    height: 45px;
-    background-color: #f1f1f1;
+    /* height: 45px; */
+    background-color: var(--bs-body-bg);
 }
 
 .doctor-login-wrapper .custom-radio {
     border-radius: 50px;
+    /* height: 45px; */
     padding: 20px;
     border: 1px solid var(--secondary);
     display: flex;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
-    background-color: #e0e0e073;
 }
 
 .doctor-login-wrapper .form-textarea {
     border-radius: 16px;
     padding: 15px;
-    background-color: #e0e0e073;
+    background-color: var(--bs-body-bg);
 }
 
-.doctor-login-wrapper .custom-radio label {
-    font-size: 14px;
+.doctor-login-wrapper .step-indicator {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    padding: 20px 0;
+    border: 0;
 }
 
+.doctor-login-wrapper .step-indicator::before {
+    content: "";
+    position: absolute;
+    top: 40%;
+    left: 17%;
+    width: 70%;
+    height: 2px;
+    background: #ddd;
+    z-index: 0;
+    transform: translateY(-50%);
+}
+
+/* Step Item Styling */
 .doctor-login-wrapper .step-indicator .nav-item {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: relative;
+    z-index: 1;
 }
 
-.doctor-login-wrapper h6,
-.doctor-login-wrapper .step-indicator span {
-    font-size: 13px;
-}
-
+/* Circle Button Styling */
 .doctor-login-wrapper .step-indicator .nav-link {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     background: #ddd;
     color: #000;
     border-radius: 50%;
@@ -630,21 +721,28 @@ form {
     align-items: center;
     justify-content: center;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 24px;
     text-decoration: none;
     border: none;
 }
 
+/* Active Step */
 .doctor-login-wrapper .step-indicator .nav-link.active {
     background: #000;
     color: #fff;
 }
 
+/* Text Below Steps */
 .doctor-login-wrapper .step-indicator span {
-    flex-grow: 1;
     text-align: center;
-    font-size: 14px;
-    margin-top: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.doctor-login-wrapper h6,
+.doctor-login-wrapper .step-indicator span {
+    font-size: 13px;
+    font-weight: var(--font-weight-medium);
 }
 
 .auth-tab-content .tab-pane h4 {
@@ -1946,8 +2044,32 @@ form {
 }
 
 /* ==========ends: footer=========== */
+@media (max-width: 480px) {
+    .doctor-login-wrapper .step-indicator {
+        padding: 10px 0;
+    }
+
+    .doctor-login-wrapper .step-indicator::before {
+        left: 18%;
+        width: 64%;
+    }
+
+    .doctor-login-wrapper .step-indicator .nav-link {
+        width: 45px;
+        height: 45px;
+        font-size: 18px;
+    }
+
+    .doctor-login-wrapper .step-indicator span {
+        font-size: 12px;
+    }
+}
 
 @media (max-width: 767px) {
+    .auth-row {
+        flex-direction: column-reverse;
+    }
+
     .main-footer {
         padding: 20px;
         border-radius: 30px;
@@ -2035,6 +2157,8 @@ form {
 }
 
 @media (max-width: 768px) {
+
+
 
     .search-btn,
     .btn .form-control,
@@ -2290,7 +2414,25 @@ form {
         width: 100%;
     }
 
+    .doctor-login-wrapper .step-indicator {
+        width: 100%;
+        padding: 15px 0;
+    }
 
+    .doctor-login-wrapper .step-indicator::before {
+        left: 15%;
+        width: 70%;
+    }
+
+    .doctor-login-wrapper .step-indicator .nav-link {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    .doctor-login-wrapper .step-indicator span {
+        font-size: 14px;
+    }
 
 }
 

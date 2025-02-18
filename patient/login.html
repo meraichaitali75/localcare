@@ -24,7 +24,7 @@
     <nav class="main-navbar navbar navbar-expand-lg">
         <div class="container">
             <div class="navbar-row">
-                <a  href="index.html" class="navbar-brand">
+                <a href="index.html" class="navbar-brand">
                     <img src="../assets/images/logo.png" class="localcare_logo" alt="Localcare Logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -53,7 +53,7 @@
     <!-- main -->
     <main class="login-main-wrapper">
         <div class="container">
-            <div class="row">
+            <div class="row auth-row">
                 <div class="col-sm-12 col-md-6">
                     <div class="auth-box">
                         <img src="../assets/images/login/patient-auth-banner.png" class="auth_img" alt="Auth Img">
@@ -72,7 +72,7 @@
                 <div class="col-sm-12 col-md-6 auth-container">
                     <div class="auth-box auth-right-box">
                         <h4>Hi, Welcome Back</h4>
-                        <p>Login to continue using our platform</p>
+                        <p class="auth-top-lead">Login to continue using our platform</p>
                         <form class="auth-form" method="POST">
                             <div class="form-group mb-3">
                                 <input type="email" placeholder="Email" class="form-control" name="userEmail"
@@ -80,13 +80,15 @@
                                 <span class="user-icons"><img src="../assets/images/icon/email.png"
                                         alt="Email Icon"></span>
                             </div>
-                            <div class="form-group mb-3">
-                                <input type="password" placeholder="Password" class="form-control" name="userPassword"
-                                    id="userPassword">
-                                <span class="user-icons"><img src="../assets/images/icon/password_eye.png"
-                                        alt="Password Icon"></span>
-
+                            <div class="col-12">
+                                <div class="form-group mb-3 position-relative">
+                                    <input type="password" placeholder="Password" class="form-control password-input">
+                                    <span class="user-icons password-toggle">
+                                        <img src="../assets/images/icon/password_eye.png" alt="Toggle Password">
+                                    </span>
+                                </div>
                             </div>
+
                             <a href="forgotpassword.html" class="mb-3">Forgot Password?</a>
                             <button type="submit" class="btn btn-dark">Login</button>
                             <div class="or-separator">
@@ -108,6 +110,21 @@
     </main>
     <script src="https://code.jquery.com/jquery-3.7.1.slim.js"></script>
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.querySelectorAll('.password-toggle').forEach(toggle => {
+            toggle.addEventListener('click', function () {
+                let passwordInput = this.previousElementSibling;
+                let eyeIcon = this.querySelector("img");
+                if (passwordInput.type === "password") {
+                    passwordInput.type = "text";
+                    eyeIcon.src = "../assets/images/icon/eye-slash.png";
+                } else {
+                    passwordInput.type = "password";
+                    eyeIcon.src = "../assets/images/icon/password_eye.png";
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

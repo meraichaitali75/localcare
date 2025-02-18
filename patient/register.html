@@ -53,7 +53,7 @@
     <!-- main -->
     <main class="login-main-wrapper">
         <div class="container">
-            <div class="row">
+            <div class="row auth-row">
                 <div class="col-sm-12 col-md-6">
                     <div class="auth-box">
                         <img src="../assets/images/login/patient-auth-banner.png" class="auth_img" alt="Auth Img">
@@ -69,17 +69,17 @@
                     </p>
 
                 </div>
-                <div class="col-sm-12 col-md-6 auth-container">
+                <div class="col-sm-12 col-md-6 auth-container mb-3">
                     <div class="auth-box auth-right-box">
                         <h4>Create Account</h4>
-                        <p>Please create your account to continue.</p>
+                        <p class="auth-top-lead">Please create your account to continue.</p>
                         <form class="auth-form" method="POST">
                             <div class="row">
                                 <div class="col-sm-12 col-md-6">
                                     <div class="form-group mb-3">
                                         <input type="text" placeholder="First Name" class="form-control"
                                             name="userFirstName" aria-describedby="userFirstName">
-                                        <span class="user-icons"><img src="../assets/images/icon/email.png"
+                                        <span class="user-icons"><img src="../assets/images/icon/user-square.svg"
                                                 alt="Email Icon"></span>
                                     </div>
                                 </div>
@@ -87,7 +87,7 @@
                                     <div class="form-group mb-3">
                                         <input type="text" placeholder="Last Name" class="form-control"
                                             name="userLastName" aria-describedby="userLastName">
-                                        <span class="user-icons"><img src="../assets/images/icon/email.png"
+                                        <span class="user-icons"><img src="../assets/images/icon/user-square.svg"
                                                 alt="Email Icon"></span>
                                     </div>
                                 </div>
@@ -125,19 +125,24 @@
                                         </div>
                                     </div>
                                     <div class="col-12">
-                                        <div class="form-group mb-3">
-                                            <input type="password" placeholder="Password" class="form-control"
-                                                name="userPassword" id="userPassword">
-                                            <span class="user-icons"><img src="../assets/images/icon/password_eye.png"
-                                                    alt="Password Icon"></span>
+                                        <div class="form-group mb-3 position-relative">
+                                            <input type="password" placeholder="Password"
+                                                class="form-control password-input">
+                                            <span class="user-icons password-toggle">
+                                                <img src="../assets/images/icon/password_eye.png"
+                                                    alt="Toggle Password">
+                                            </span>
                                         </div>
                                     </div>
+
                                     <div class="col-12">
-                                        <div class="form-group mb-3">
-                                            <input type="password" placeholder="Confirm Password" class="form-control"
-                                                name="userConfirmPassword">
-                                            <span class="user-icons"><img src="../assets/images/icon/eye-slash.png"
-                                                    alt="Password Icon"></span>
+                                        <div class="form-group mb-3 position-relative">
+                                            <input type="password" placeholder="Confirm Password"
+                                                class="form-control password-input">
+                                            <span class="user-icons password-toggle">
+                                                <img src="../assets/images/icon/password_eye.png"
+                                                    alt="Toggle Password">
+                                            </span>
                                         </div>
                                     </div>
                                 </div>
@@ -150,6 +155,21 @@
     </main>
     <script src="https://code.jquery.com/jquery-3.7.1.slim.js"></script>
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.querySelectorAll('.password-toggle').forEach(toggle => {
+            toggle.addEventListener('click', function () {
+                let passwordInput = this.previousElementSibling;
+                let eyeIcon = this.querySelector("img");
+                if (passwordInput.type === "password") {
+                    passwordInput.type = "text";
+                    eyeIcon.src = "../assets/images/icon/eye-slash.png";
+                } else {
+                    passwordInput.type = "password";
+                    eyeIcon.src = "../assets/images/icon/password_eye.png";
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

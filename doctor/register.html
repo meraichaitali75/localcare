@@ -50,8 +50,8 @@
     <!-- main -->
     <main class="login-main-wrapper doctor-login-wrapper">
         <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-md-6">
+            <div class="row auth-row">
+                <div class="col-sm-12 col-lg-6">
                     <div class="auth-box">
                         <img src="../assets/images/login/doctor-auth-banner.png" class="auth_img" alt="Auth Img">
                     </div>
@@ -65,7 +65,7 @@
                         mission is to ensure accessible, high-quality care for everyone.
                     </p>
                 </div>
-                <div class="col-sm-12 col-md-6 auth-container">
+                <div class="col-sm-12 col-lg-6 auth-container">
                     <div class="auth-box auth-right-box">
                         <ul class="nav nav-tabs step-indicator" id="signupTabs" role="tablist">
                             <li class="nav-item" role="presentation">
@@ -83,41 +83,46 @@
                                 </button>
                                 <span>Personal Info</span>
                             </li>
-
                         </ul>
                         <!-- Tab Content -->
                         <div class="tab-content auth-tab-content mt-3" id="signupTabContent">
                             <!-- Step 1: Who You Are -->
                             <div class="tab-pane fade show active" id="step1" role="tabpanel">
                                 <h4>Choose your Profile</h4>
-                                <p>Please select your profession profile.</p>
+                                <p class="auth-top-lead">Please select your profession profile.</p>
                                 <form class="auth-form" method="POST">
                                     <h6>Choose the therapist group</h6>
-                                    <div class="row">
-                                        <div class="col-sm-12 col-md-6">
-                                            <!-- <div class="custom-radio-group"> -->
+                                    <div class="row auth-row">
+                                        <div class="col-12 col-md-6">
                                             <div class="custom-radio mb-3">
-                                                <label for="doctor">Doctor</label>
-                                                <input type="radio" id="doctor" name="therapist-grp" checked>
-                                            </div>
-                                            <!-- </div> -->
-                                        </div>
-                                        <div class="col-sm-12 col-md-6">
-                                            <div class="custom-radio mb-3">
-                                                <label for="Physiotherapist">Physiotherapist</label>
-                                                <input type="radio" id="Physiotherapist" name="therapist-grp" checked>
+                                                <input type="radio" id="doctor" name="therapist-grp">
+                                                <label for="doctor">
+                                                    <span>Doctor</span>
+                                                </label>
                                             </div>
                                         </div>
-                                        <div class="col-sm-12 col-md-6">
+                                        <div class="col-12 col-md-6">
                                             <div class="custom-radio mb-3">
-                                                <label for="Psychotherapist">Psychotherapist</label>
-                                                <input type="radio" id="Psychotherapist" name="therapist-grp" checked>
+                                                <input type="radio" id="Physiotherapist" name="therapist-grp">
+                                                <label for="Physiotherapist">
+                                                    <span>Physiotherapist</span>
+                                                </label>
                                             </div>
                                         </div>
-                                        <div class="col-sm-12 col-md-6">
+                                        <div class="col-12 col-md-6">
                                             <div class="custom-radio mb-3">
-                                                <label for="SpeechTherapist"> Speech Therapist</label>
-                                                <input type="radio" id="SpeechTherapist" name="therapist-grp" checked>
+                                                <input type="radio" id="Psychotherapist" name="therapist-grp">
+                                                <label for="Psychotherapist">
+                                                    <span>Psychotherapist</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <div class="custom-radio mb-3">
+                                                <input type="radio" id="SpeechTherapist" name="therapist-grp">
+                                                <label for="SpeechTherapist">
+                                                    <span>Speech Therapist</span>
+                                                </label>
                                             </div>
                                         </div>
                                     </div>
@@ -125,7 +130,8 @@
                                     <div class="row">
                                         <div class="col-12">
                                             <div class="select-container">
-                                                <select class="form-select mb-3 mb-ml-0" aria-label="Large select example">
+                                                <select class="form-select mb-3 mb-ml-0"
+                                                    aria-label="Large select example">
                                                     <option selected>Treats</option>
                                                     <option value="1">One</option>
                                                     <option value="2">Two</option>
@@ -138,16 +144,16 @@
                                     <textarea name="userTextarea" class="form-textarea mb-3" rows="6"
                                         placeholder="Enter about yourself "></textarea>
                                     <!-- <button type="submit" class="btn btn-dark mb-3">Next</button> -->
-                                    <button id="step2-tab" class="btn btn-dark mb-3" data-bs-toggle="tab" data-bs-target="#step2" type="button"
-                                        role="tab">
-                                       Next
+                                    <button id="step2-tab" class="btn btn-dark mb-3" data-bs-toggle="tab"
+                                        data-bs-target="#step2" type="button" role="tab">
+                                        Next
                                     </button>
                                 </form>
                             </div>
                             <!-- Step 2: Personal Info -->
                             <div class="tab-pane fade" id="step2" role="tabpanel">
                                 <h4>Personal Info</h4>
-                                <p>Please fill your personal info</p>
+                                <p class="auth-top-lead">Please fill your personal info</p>
                                 <form class="auth-form" method="POST">
                                     <div class="row">
                                         <div class="col-sm-12 col-md-6">
@@ -188,20 +194,24 @@
                                             </div>
                                         </div>
                                         <div class="col-12">
-                                            <div class="form-group mb-3">
-                                                <input type="password" placeholder="Password" class="form-control"
-                                                    name="userPassword" id="userPassword">
-                                                <span class="user-icons"><img
-                                                        src="../assets/images/icon/password_eye.png"
-                                                        alt="Password Icon"></span>
+                                            <div class="form-group mb-3 position-relative">
+                                                <input type="password" placeholder="Password"
+                                                    class="form-control password-input">
+                                                <span class="user-icons password-toggle">
+                                                    <img src="../assets/images/icon/password_eye.png"
+                                                        alt="Toggle Password">
+                                                </span>
                                             </div>
                                         </div>
+
                                         <div class="col-12">
-                                            <div class="form-group mb-3">
+                                            <div class="form-group mb-3 position-relative">
                                                 <input type="password" placeholder="Confirm Password"
-                                                    class="form-control" name="userConfirmPassword">
-                                                <span class="user-icons"><img src="../assets/images/icon/eye-slash.png"
-                                                        alt="Password Icon"></span>
+                                                    class="form-control password-input">
+                                                <span class="user-icons password-toggle">
+                                                    <img src="../assets/images/icon/password_eye.png"
+                                                        alt="Toggle Password">
+                                                </span>
                                             </div>
                                         </div>
                                     </div>
@@ -226,6 +236,21 @@
     </main>
     <script src="https://code.jquery.com/jquery-3.7.1.slim.js"></script>
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.querySelectorAll('.password-toggle').forEach(toggle => {
+            toggle.addEventListener('click', function () {
+                let passwordInput = this.previousElementSibling;
+                let eyeIcon = this.querySelector("img");
+                if (passwordInput.type === "password") {
+                    passwordInput.type = "text";
+                    eyeIcon.src = "../assets/images/icon/eye-slash.png";
+                } else {
+                    passwordInput.type = "password";
+                    eyeIcon.src = "../assets/images/icon/password_eye.png";
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
