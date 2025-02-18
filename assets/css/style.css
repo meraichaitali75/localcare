@@ -98,6 +98,65 @@ a {
 }
 
 
+/* Remove default calendar icon for Chrome, Safari, Edge, and Opera */
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+
+input[type="date"] {
+    position: relative;
+}
+
+input[type="date"]::-moz-calendar-picker-indicator {
+    display: none;
+}
+
+input[type="date"] {
+    background: none;
+    padding-right: 40px;
+}
+
+/* Remove default dropdown arrow for Chrome, Safari, Edge, and Opera */
+select.form-select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: none; 
+    padding-right: 30px; 
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+.select-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.select-container select {
+    width: 100%;
+    padding-right: 50px; 
+}
+
+/* Adding a custom dropdown icon */
+.select-container::after {
+    content: "";
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px; 
+    height: 20px;
+    background: url("../images/icon/chevron-bottom.png") no-repeat center;
+    background-size: contain;
+    pointer-events: none;
+}
+
+
 .sections h5 img {
     padding-right: 5px;
 }
@@ -979,6 +1038,14 @@ form {
     padding: 30px 0;
     align-items: center;
     background-color: #f9f9f9;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.sub-header-row {
+    display: flex;
+    justify-content: space-between;
 }
 
 .sub-header h6 {
@@ -1550,7 +1617,6 @@ form {
 }
 
 
-
 .chat-wrapper .chat-header {
     padding: 15px;
     border-bottom: 1px solid #ddd;
@@ -1683,8 +1749,7 @@ form {
 }
 
 .appointments-wrapper .card-badge-row h6 {
-    margin-left: auto; /* Pushes h6 to the right */
-    font-weight: bold; /* Optional for styling */
+    margin-left: auto;
 }
 
 .appointments-wrapper .card-bottom-row {
@@ -1712,9 +1777,11 @@ form {
 }
 
 .appointments-wrapper .sorting-row {
-    align-items: flex-end;
     display: flex;
     gap: 10px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-bottom: 20px;
 }
 
 .appointments-wrapper .tops-row {
@@ -1928,8 +1995,43 @@ form {
         align-items: center;
     }
 
-
     /* ends: appointment-card-modal */
+
+    .appointments-wrapper .tops-row {
+        flex-direction: column;
+    }
+
+    .appointments-wrapper .appointment-card .btns-row {
+        width: 100%;
+        overflow: scroll;
+        white-space: nowrap;
+        margin-bottom: 10px;
+    }
+
+    .appointments-wrapper .sorting-row {
+
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .appointments-wrapper .appointment-card .btns-row::-webkit-scrollbar {
+        display: none;
+    }
+
+    .appointments-wrapper .top-row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .appointments-wrapper .appointment-card h6 {
+        font-size: 16px;
+    }
+
+    .appointments-wrapper .appointment-card small {
+        font-size: 13px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -2188,6 +2290,8 @@ form {
         width: 100%;
     }
 
+
+
 }
 
 @media screen and (max-width: 1024px) and (min-width: 1024px) {
@@ -2231,5 +2335,13 @@ form {
     .doctor-main-wrapper .aboutus-section .card img {
         height: 70px;
         width: 70px;
+    }
+
+    .appointments-wrapper .appointment-card h6 {
+        font-size: 20px;
+    }
+
+    .appointments-wrapper .appointment-card small {
+        font-size: 18px;
     }
 }

@@ -94,100 +94,107 @@
                     </div>
                 </div>
             </div>
-            <div class="container auth-form">
-                <!-- Sidebar Toggle Button -->
-                <div class="toggle-sidebar d-lg-none">☰</div>
+        </div>
+        <div class="container auth-form">
+            <!-- Sidebar Toggle Button -->
+            <div class="toggle-sidebar d-lg-none">☰</div>
 
-                <!-- Overlay -->
-                <div class="overlay"></div>
+            <!-- Overlay -->
+            <div class="overlay"></div>
 
-                <div class="chat-container">
-                    <!-- Sidebar -->
-                    <div class="sidebar">
-                        <h4>Chats</h4>
+            <div class="chat-container">
+                <!-- Sidebar -->
+                <div class="sidebar">
+                    <h4>Chats</h4>
+                    <div class="form-group d-flex w-100 ">
+                        <input type="text" placeholder="Write your message" class="form-control" name="usercomment"
+                            id="usercomment" aria-describedby="usercomment">
+                        <span class="user-icons">
+                            <svg width="22" height="23" viewBox="0 0 22 23" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.543 19.3835C15.3525 19.3835 19.2513 15.4846 19.2513 10.6751C19.2513 5.86565 15.3525 1.9668 10.543 1.9668C5.73351 1.9668 1.83466 5.86565 1.83466 10.6751C1.83466 15.4846 5.73351 19.3835 10.543 19.3835Z"
+                                    stroke="black" stroke-width="2.4553" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M20.168 20.3001L18.3347 18.4668" stroke="black" stroke-width="2.4553"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+                        </span>
+                    </div>
+                    <ul class="chat-list">
+                        <li>
+                            <img src="../assets/images/doctors/doctor1.png" alt="User">
+                            <div class="chat-info">
+                                <h6>Jane Cooper <span class="time">5m ago</span></h6>
+                                <p>Hey! Are you coming? <span class="badge">2</span></p>
+                            </div>
+
+                        </li>
+                        <li>
+                            <img src="../assets/images/doctors/doctor1.png" alt="User">
+                            <div class="chat-info">
+                                <h6>Paul Pena</h6>
+                            </div>
+
+                        </li>
+
+                        <li>
+                            <img src="../assets/images/doctors/doctor3.png" alt="User">
+                            <div class="chat-info">
+                                <h6>Edward Carter</h6>
+                                <p>Let’s catch up later! <span class="time">15m ago</span></p>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Chat Box -->
+                <div class="chat-box ">
+                    <div
+                        class="chat-header d-flex justify-content-between align-items-center p-3 border-bottom bg-white">
+                        <div class="chat-user d-flex align-items-center">
+                            <img src="../assets/images/doctors/usre3.jpeg" alt="User" class="rounded-circle me-2">
+                            <span class="fw-bold">Christopher Kauffman</span>
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" id="chatDropdown"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                ⋮
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="chatDropdown">
+                                <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="chat-messages">
+                        <div class="message-container sent">
+                            <div class="message">
+                                <p>Hello, How are you?</p>
+                            </div>
+                            <span class="time">10:16 PM</span>
+                        </div>
+                    
+                        <div class="message-container received">
+                            <div class="message">
+                                <p>Yea, I am Good & How’s you?</p>
+                            </div>
+                            <span class="time">10:17 PM</span>
+                        </div>
+                    </div>
+                    
+
+                    <div class="chat-input">
                         <div class="form-group d-flex w-100 ">
                             <input type="text" placeholder="Write your message" class="form-control" name="usercomment"
                                 id="usercomment" aria-describedby="usercomment">
-                            <span class="user-icons">
-                                <svg width="22" height="23" viewBox="0 0 22 23" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M10.543 19.3835C15.3525 19.3835 19.2513 15.4846 19.2513 10.6751C19.2513 5.86565 15.3525 1.9668 10.543 1.9668C5.73351 1.9668 1.83466 5.86565 1.83466 10.6751C1.83466 15.4846 5.73351 19.3835 10.543 19.3835Z"
-                                        stroke="black" stroke-width="2.4553" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                    <path d="M20.168 20.3001L18.3347 18.4668" stroke="black" stroke-width="2.4553"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-
-                            </span>
+                            <span class="user-icons"><img src="../assets/images/icon/paperclip.png"
+                                    alt="Email Icon"></span>
                         </div>
-                        <ul class="chat-list">
-                            <li>
-                                <img src="../assets/images/doctors/doctor1.png" alt="User">
-                                <div class="chat-info">
-                                    <h6>Jane Cooper <span class="time">5m ago</span></h6>
-                                    <p>Hey! Are you coming? <span class="badge">2</span></p>
-                                </div>
-
-                            </li>
-                            <li>
-                                <img src="../assets/images/doctors/doctor2.png" alt="User">
-                                <div class="chat-info">
-                                    <strong>Paul Pena</strong>
-                                </div>
-                            </li>
-                            <li>
-                                <img src="../assets/images/doctors/doctor3.png" alt="User">
-                                <div class="chat-info">
-                                    <strong>Edward Carter</strong>
-                                    <p>Let’s catch up later! <span class="time">15m ago</span></p>
-                                </div>
-                            </li>
-
-                        </ul>
-
-                    </div>
-
-                    <!-- Chat Box -->
-                    <div class="chat-box ">
-                        <div
-                            class="chat-header d-flex justify-content-between align-items-center p-3 border-bottom bg-white">
-                            <div class="chat-user d-flex align-items-center">
-                                <img src="../assets/images/doctors/usre3.jpeg" alt="User" class="rounded-circle me-2">
-                                <span class="fw-bold">Christopher Kauffman</span>
-                            </div>
-                            <div class="dropdown">
-                                <button class="btn dropdown-toggle" type="button" id="chatDropdown"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    ⋮
-                                </button>
-                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="chatDropdown">
-                                    <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="chat-messages">
-                            <div class="message sent">
-                                <p>Hello, How are you?</p>
-                                <span class="time">10:16 PM</span>
-                            </div>
-                            <div class="message received">
-                                <p>Yea, I am Good & How’s you?</p>
-                                <span class="time">10:17 PM</span>
-                            </div>
-                        </div>
-
-                        <div class="chat-input">
-                            <div class="form-group d-flex w-100 ">
-                                <input type="text" placeholder="Write your message" class="form-control"
-                                    name="usercomment" id="usercomment" aria-describedby="usercomment">
-                                <span class="user-icons"><img src="../assets/images/icon/paperclip.png"
-                                        alt="Email Icon"></span>
-                            </div>
-                            <button type="submit"><img src="../assets/images/icon/chat-send.png"
-                                    alt="chat-send"></button>
-                        </div>
+                        <button type="submit"><img src="../assets/images/icon/chat-send.png" alt="chat-send"></button>
                     </div>
                 </div>
             </div>
