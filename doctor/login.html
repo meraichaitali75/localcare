@@ -41,7 +41,7 @@
                     <li class="nav-item">
                         <a href="register.html" class="nav-link">Register</a>
                     </li>
-                    
+
                 </ul>
             </div>
         </div>
@@ -74,15 +74,27 @@
                             <div class="form-group mb-3">
                                 <input type="email" placeholder="Email" class="form-control" name="userEmail"
                                     id="userEmail" aria-describedby="userEmail">
-                                <span class="user-icons"><img src="../assets/images/icon/email.png"
-                                        alt="Email Icon"></span>
+                                <span class="user-icons">
+                                    <svg width="22" height="23" viewBox="0 0 22 23" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M15.2308 18.2693H6.76922C4.23076 18.2693 2.53845 17 2.53845 14.0385V8.11541C2.53845 5.15387 4.23076 3.88464 6.76922 3.88464H15.2308C17.7692 3.88464 19.4615 5.15387 19.4615 8.11541V14.0385C19.4615 17 17.7692 18.2693 15.2308 18.2693Z"
+                                            stroke="black" stroke-width="1.5" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M15.2307 8.53845L12.5822 10.6538C11.7107 11.3477 10.2807 11.3477 9.40916 10.6538L6.76917 8.53845"
+                                            stroke="black" stroke-width="1.5" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+
+                                </span>
                             </div>
                             <div class="form-group mb-3">
                                 <input type="password" placeholder="Password" class="form-control" name="userPassword"
                                     id="userPassword">
-                                <span class="user-icons"><img src="../assets/images/icon/password_eye.png"
-                                        alt="Password Icon"></span>
-
+                                <span class="user-icons password-toggle">
+                                    <img src="../assets/images/icon/password_eye.svg" alt="Toggle Password">
+                                </span>
                             </div>
                             <a href="forgotpassword.html" class="mb-3">Forgot Password?</a>
                             <button type="submit" class="btn btn-dark">Login</button>
@@ -90,12 +102,51 @@
                                 <span>OR</span>
                             </div>
                             <div class="social-authentication">
-                                <a href="#" class="social-icons"><img src="../assets/images/icon/apple.png"
-                                        alt="Apple Icon"></a>
-                                <a href="#" class="social-icons"><img src="../assets/images/icon/google.png"
-                                        alt="Apple Icon"></a>
-                                <a href="#" class="social-icons"><img src="../assets/images/icon/fb.png"
-                                        alt="Apple Icon"></a>
+                                <a href="#" class="social-icons">
+                                    <svg width="61" height="61" viewBox="0 0 61 61" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="30.5" cy="30.5" r="30.5" fill="white" />
+                                        <circle cx="30.5" cy="30.5" r="29.8646" stroke="#19204C" stroke-opacity="0.1"
+                                            stroke-width="1.27083" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M36.2436 16.521C36.4937 18.2192 35.8024 19.8828 34.8906 21.0599C33.9151 22.3224 32.2336 23.2989 30.6044 23.2479C30.307 21.6221 31.0685 19.9469 31.995 18.8208C33.0114 17.578 34.7534 16.6246 36.2436 16.521ZM41.1379 40.4231C41.9778 39.1359 42.2916 38.4865 42.9436 37.0333C38.2015 35.2299 37.4416 28.4882 42.1347 25.9007C40.7033 24.1055 38.6917 23.0649 36.7929 23.0649C35.4248 23.0649 34.4873 23.422 33.6351 23.7466C32.9249 24.0171 32.2739 24.265 31.4822 24.265C30.6265 24.265 29.8688 23.9933 29.0754 23.7089C28.2036 23.3963 27.2887 23.0682 26.1534 23.0682C24.0226 23.0682 21.7545 24.3702 20.3165 26.5961C18.2951 29.731 18.6399 35.6245 21.9179 40.645C23.0895 42.4418 24.655 44.4606 26.7025 44.4786C27.5521 44.4871 28.1174 44.2335 28.7292 43.9591C29.4294 43.645 30.1905 43.3037 31.5083 43.2967C32.8338 43.2887 33.5829 43.6342 34.2739 43.9529C34.87 44.2279 35.4228 44.4828 36.2651 44.4737C38.3142 44.4573 39.9663 42.2199 41.1379 40.4231Z"
+                                            fill="#1C1C1C" />
+                                    </svg>
+
+                                </a>
+                                <a href="#" class="social-icons">
+                                    <svg width="62" height="61" viewBox="0 0 62 61" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="31" cy="30.5" r="30.5" fill="white" />
+                                        <circle cx="31" cy="30.5" r="29.8646" stroke="#19204C" stroke-opacity="0.1"
+                                            stroke-width="1.27083" />
+                                        <path
+                                            d="M30.9998 21.9258C33.6248 21.9258 35.3954 23.0597 36.4051 24.0071L40.3503 20.1551C37.9272 17.9029 34.7741 16.5205 30.9998 16.5205C25.5324 16.5205 20.8105 19.6581 18.5117 24.2246L23.0316 27.7349C24.1655 24.3644 27.3031 21.9258 30.9998 21.9258Z"
+                                            fill="#EA4335" />
+                                        <path
+                                            d="M44.4239 30.8096C44.4239 29.6602 44.3307 28.8215 44.1288 27.9517H31.0039V33.1395H38.708C38.5527 34.4287 37.7139 36.3702 35.85 37.6749L40.2612 41.0921C42.9017 38.6535 44.4239 35.0655 44.4239 30.8096Z"
+                                            fill="#4285F4" />
+                                        <path
+                                            d="M23.05 33.2635C22.7549 32.3937 22.584 31.4617 22.584 30.4987C22.584 29.5357 22.7549 28.6038 23.0345 27.734L18.5145 24.2236C17.5671 26.1186 17.0234 28.2465 17.0234 30.4987C17.0234 32.7509 17.5671 34.8789 18.5145 36.7738L23.05 33.2635Z"
+                                            fill="#FBBC05" />
+                                        <path
+                                            d="M31.0038 44.479C34.7781 44.479 37.9468 43.2365 40.2611 41.093L35.8499 37.6759C34.6694 38.4991 33.0851 39.0738 31.0038 39.0738C27.3071 39.0738 24.1695 36.6352 23.0512 33.2646L18.5312 36.775C20.83 41.3415 25.5364 44.479 31.0038 44.479Z"
+                                            fill="#34A853" />
+                                    </svg>
+
+                                </a>
+                                <a href="#" class="social-icons">
+                                    <svg width="61" height="61" viewBox="0 0 61 61" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="30.5" cy="30.5" r="30.5" fill="white" />
+                                        <circle cx="30.5" cy="30.5" r="29.8646" stroke="#19204C" stroke-opacity="0.1"
+                                            stroke-width="1.27083" />
+                                        <path
+                                            d="M32.5291 31.9031H35.6593L36.9114 26.8948H32.5291V24.3906C32.5291 23.101 32.5291 21.8865 35.0333 21.8865H36.9114V17.6795C36.5032 17.6256 34.9619 17.5042 33.3342 17.5042C29.9348 17.5042 27.5208 19.5789 27.5208 23.389V26.8948H23.7645V31.9031H27.5208V42.5458H32.5291V31.9031Z"
+                                            fill="#1877F2" />
+                                    </svg>
+
+                                </a>
                             </div>
                         </form>
                     </div>
@@ -105,6 +156,21 @@
     </main>
     <script src="https://code.jquery.com/jquery-3.7.1.slim.js"></script>
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.querySelectorAll('.password-toggle').forEach(toggle => {
+            toggle.addEventListener('click', function () {
+                let passwordInput = this.previousElementSibling;
+                let eyeIcon = this.querySelector("img");
+                if (passwordInput.type === "password") {
+                    passwordInput.type = "text";
+                    eyeIcon.src = "../assets/images/icon/eye-slash.svg";
+                } else {
+                    passwordInput.type = "password";
+                    eyeIcon.src = "../assets/images/icon/password_eye.svg";
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

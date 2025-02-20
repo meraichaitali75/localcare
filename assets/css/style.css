@@ -57,6 +57,7 @@
     --danger_shade1: #ED4A4A;
     --gray: #DDDDDD;
     --gray_shade1: #545454;
+    --dark-blue: #090A2D;
 
     --card: #F4F4F4;
     --card-border: #ECECEC;
@@ -166,25 +167,31 @@ a {
     border-color: black;
 }
 
-/* Remove default calendar */
-input[type="date"]::-webkit-inner-spin-button,
-input[type="date"]::-webkit-calendar-picker-indicator {
+input[type="datetime-local"]::-webkit-calendar-picker-indicator {
     display: none;
     -webkit-appearance: none;
 }
 
-input[type="date"] {
-    position: relative;
+input[type="datetime-local"] {
+    appearance: none;
+    -moz-appearance: textfield;
 }
 
-input[type="date"]::-moz-calendar-picker-indicator {
-    display: none;
+.user-icons.calendar-icon {
+    cursor: pointer;
 }
 
-input[type="date"] {
-    background: none;
-    padding-right: 40px;
+/* Hide number input arrows */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
 
 /* Remove default dropdown */
 select.form-select {
@@ -193,6 +200,7 @@ select.form-select {
     appearance: none;
     background-image: none;
     padding-right: 30px;
+    cursor: pointer;
 }
 
 select::-ms-expand {
@@ -225,11 +233,10 @@ select::-ms-expand {
     transform: translateY(-50%);
     width: 20px;
     height: 20px;
-    background: url("../images/icon/chevron-bottom.png") no-repeat center;
+    background: url("../images/icon/chevron-bottom.svg") no-repeat center;
     background-size: contain;
     pointer-events: none;
 }
-
 
 .sections h5 img {
     padding-right: 5px;
@@ -245,13 +252,20 @@ select::-ms-expand {
     justify-content: center;
 }
 
+.btn svg {
+    height: 20px;
+    width: 20px;
+    object-fit: contain;
+    margin-right: 5px;
+}
+
 .find-doctor-wrapper .btn {
-    padding: 10px 30px;
-    max-width: 220px;
+    /* padding: 10px 30px; */
+    /* max-width: 220px;
     border-radius: 62px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
 }
 
 .btn-light {
@@ -266,8 +280,18 @@ select::-ms-expand {
     box-shadow: var(--btn-box-shadow);
 }
 
+.search-section .btn:hover {
+    background-color: var(--bs-body-color);
+    color: var(--bs-body-bg);
+}
+
+
 .text-bg-danger {
     background-color: var(--text-bg-danger) !important;
+}
+
+.form-group {
+    position: relative;
 }
 
 .form-select,
@@ -276,10 +300,23 @@ select::-ms-expand {
     border-radius: 52px;
     height: 56px;
     padding: 20px;
+    color: #090A2D;
     font-size: var(--btn-font-size);
     font-weight: var(--font-weight-medium);
-    border: 1px solid var(--secondary) !important;
+    border: 1px solid #B8B8B8B2 !important;
     background-color: var(--bs-body-bg);
+}
+
+.form-select::placeholder,
+.form-control::placeholder {
+    color: #090A2D;
+    opacity: 0.6;
+}
+
+.form-group .postal-icon {
+    height: 20px;
+    width: 20px;
+    object-fit: contain;
 }
 
 .auth-form .phone-input input {
@@ -299,6 +336,11 @@ select::-ms-expand {
 .form-control:active {
     border: 1px solid var(--primary) !important;
     box-shadow: none !important;
+}
+
+.badge {
+    display: flex;
+    align-items: center;
 }
 
 h1 {
@@ -383,7 +425,7 @@ form {
 .range-container .distance-value {
     text-align: center;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: var(--font-weight-semibold);
     margin-top: 10px;
 }
 
@@ -548,9 +590,11 @@ form {
     width: 100%;
     max-width: 500px;
 }
-.auth-right-box  .auth-top-lead {
+
+.auth-right-box .auth-top-lead {
     font-weight: var(--font-weight-regular);
 }
+
 .auth-right-box p {
     text-align: center;
     color: var(--secondary);
@@ -572,7 +616,7 @@ form {
     position: relative;
 }
 
-.auth-form .user-icons {
+.user-icons {
     position: absolute;
     right: 20px;
     top: 15px;
@@ -812,7 +856,7 @@ form {
 
 .doctor-main-wrapper .search-section .form-control {
     border: 0;
-    background-color: #f1f1f1;
+    /* background-color: #f1f1f1; */
 }
 
 .doctor-main-wrapper .search-section .search-container {
@@ -849,8 +893,8 @@ form {
     background: var(--gray);
 }
 
-.doctor-main-wrapper .search-section .question-icon img {
-    padding-left: 10px;
+.doctor-main-wrapper .search-section .question-icon svg {
+    margin-left: 10px;
 }
 
 .doctor-main-wrapper .search-section .form-control {
@@ -866,10 +910,16 @@ form {
     padding-right: 10px;
 }
 
-.doctor-main-wrapper .search-section .symptoms-frm-row {
+.doctor-main-wrapper .search-section .symptoms-frm-row.row {
     display: flex;
     justify-content: space-between;
     padding-top: 20px;
+    margin: 0;
+}
+
+.doctor-main-wrapper .search-section .symptoms-frm-row div {
+    margin: 0;
+    padding: 0;
 }
 
 .doctor-main-wrapper .aboutus-section {
@@ -1210,6 +1260,8 @@ form {
 
 .search-card .available-link {
     text-decoration: underline;
+    font-weight: var(--font-weight-medium);
+    color: var(--info);
 }
 
 .search-card .badge-dot {
@@ -1229,6 +1281,8 @@ form {
 .search-card .card-badge-row p {
     margin: 0 10px 0 0;
     color: rgba(84, 84, 84, 1);
+    font-weight: var(--font-weight-medium);
+    font-size: 16px;
 }
 
 .search-top-row {
@@ -1245,11 +1299,13 @@ form {
 }
 
 .search-card .card-badge-row .text-bg-light {
-    background-color: #ededed !important;
+    background-color: rgba(184, 184, 184, 0.2) !important;
 }
 
-.search-card .card-badge-row span {
+.search-card span.clinic-text {
+    color: rgba(84, 84, 84, 1);
     font-weight: var(--font-weight-medium);
+    font-size: 16px;
     text-align: center;
 }
 
@@ -1724,7 +1780,6 @@ form {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
-    /* z-index: 1000; */
 }
 
 .chat-wrapper .chat-user img {
@@ -1741,21 +1796,55 @@ form {
 }
 
 .chat-wrapper .message {
-    max-width: 70%;
     padding: 12px 18px;
     border-radius: 10px;
     margin-bottom: 10px;
     font-size: 14px;
     border: 1px solid rgba(184, 184, 184, 0.7);
-    word-wrap: break-word;
+    position: relative;
 }
 
 .chat-wrapper .sent {
     align-self: flex-end;
     background: black;
     color: white;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 10px;
+    font-weight: 500;
+    padding: 12px 18px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    position: relative;
+}
+
+.chat-wrapper .received {
+    align-self: flex-start;
+    background-color: var(--bs-body-bg);
+    color: black;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 10px;
+    align-self: flex-start;
+    position: relative;
+}
+
+.chat-wrapper .received p,
+.chat-wrapper .sent p {
+    margin: 0;
+}
+
+.chat-wrapper .sent .time {
+    font-size: 12px;
+    color: #888;
+    margin-top: 5px;
+    position: absolute;
+    right: 8px;
+    bottom: -21px;
+    font-weight: var(--font-weight-regular);
+}
+
+.chat-wrapper .time {
+    font-size: 12px;
+    color: #888;
+    margin-top: 5px;
 }
 
 .chat-wrapper .sent p {
@@ -1766,19 +1855,7 @@ form {
     display: none;
 }
 
-.chat-wrapper .received {
-    align-self: flex-start;
-    background-color: var(--bs-body-bg);
-    color: black;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 10px;
-}
 
-.chat-wrapper .time {
-    font-size: 12px;
-    color: #888;
-    margin-top: 5px;
-}
 
 .chat-wrapper .chat-header img {
     width: 50px;
@@ -1794,22 +1871,6 @@ form {
     overflow-y: auto;
     display: flex;
     flex-direction: column;
-}
-
-.chat-wrapper .message {
-    max-width: 70%;
-    padding: 12px 18px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    font-size: 14px;
-    border: 1px solid rgba(184, 184, 184, 0.7);
-
-}
-
-
-.chat-wrapper .received {
-    background-color: var(--bs-body-bg);
-    align-self: flex-start;
 }
 
 .chat-wrapper .chat-input {
@@ -1859,12 +1920,13 @@ form {
 .appointments-wrapper .appointment-card h6 {
     font-weight: var(--font-weight-semibold);
     font-size: 22px;
+    color: var(--dark-blue);
 }
 
 .appointments-wrapper .appointment-card .available-link {
     color: var(--info);
     font-size: 14px;
-    font-weight: var(--font-weight-regular);
+    font-weight: var(--font-weight-medium);
 }
 
 .appointments-wrapper .appointment-card .btns-row {
@@ -1926,6 +1988,7 @@ form {
 .appointments-wrapper .appointment-card small {
     color: rgba(84, 84, 84, 1);
     font-size: 18px;
+    font-weight: var(--font-weight-medium);
 }
 
 .appointments-wrapper .appointment-card span {
@@ -2020,6 +2083,11 @@ form {
     font-weight: var(--font-weight-extralight);
 }
 
+.main-footer li a:hover {
+    color: var(--info);
+    font-weight: var(--font-weight-semibold);
+}
+
 .social-icons-row,
 .footer-bottom-row {
     display: flex;
@@ -2041,6 +2109,7 @@ form {
     text-decoration: none;
     margin: 0 10px;
     color: var(--info);
+    font-weight: var(--font-weight-semibold);
 }
 
 /* ==========ends: footer=========== */

@@ -98,25 +98,83 @@
                         <button type="submit" class="search-btn">Search for specialist</button>
                         <input type="text" class="search-input" placeholder="Search for symptoms">
                     </div>
-                    <a href="#" class="question-icon"><img src="../assets/images/icon/question.png"
-                            alt="Question Icon" /></a>
+                    <a href="#" class="question-icon">
+                        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M17.0002 2.83325C24.8244 2.83325 31.1668 9.17567 31.1668 16.9999C31.1668 24.8242 24.8244 31.1666 17.0002 31.1666C9.17591 31.1666 2.8335 24.8242 2.8335 16.9999C2.8335 9.17567 9.17591 2.83325 17.0002 2.83325ZM17.0002 5.66659C13.9944 5.66659 11.1117 6.86063 8.98629 8.98604C6.86087 11.1115 5.66683 13.9941 5.66683 16.9999C5.66683 20.0057 6.86087 22.8884 8.98629 25.0138C11.1117 27.1392 13.9944 28.3333 17.0002 28.3333C20.0059 28.3333 22.8886 27.1392 25.014 25.0138C27.1395 22.8884 28.3335 20.0057 28.3335 16.9999C28.3335 13.9941 27.1395 11.1115 25.014 8.98604C22.8886 6.86063 20.0059 5.66659 17.0002 5.66659ZM17.0002 22.6666C17.3759 22.6666 17.7362 22.8158 18.0019 23.0815C18.2676 23.3472 18.4168 23.7075 18.4168 24.0833C18.4168 24.459 18.2676 24.8193 18.0019 25.085C17.7362 25.3507 17.3759 25.4999 17.0002 25.4999C16.6244 25.4999 16.2641 25.3507 15.9984 25.085C15.7328 24.8193 15.5835 24.459 15.5835 24.0833C15.5835 23.7075 15.7328 23.3472 15.9984 23.0815C16.2641 22.8158 16.6244 22.6666 17.0002 22.6666ZM17.0002 9.20825C18.1934 9.20829 19.3494 9.62384 20.2695 10.3835C21.1897 11.1432 21.8166 12.1996 22.0425 13.3712C22.2685 14.5429 22.0794 15.7566 21.5077 16.804C20.936 17.8514 20.0175 18.667 18.9098 19.1108C18.7458 19.1711 18.5979 19.2685 18.4777 19.3955C18.4154 19.4663 18.4055 19.557 18.4069 19.6505L18.4168 19.8333C18.4164 20.1943 18.2782 20.5416 18.0303 20.8042C17.7824 21.0667 17.4436 21.2248 17.0832 21.2459C16.7227 21.2671 16.3678 21.1498 16.0909 20.918C15.814 20.6863 15.6361 20.3576 15.5934 19.999L15.5835 19.8333V19.4791C15.5835 17.8457 16.901 16.8653 17.8558 16.4814C18.2444 16.3262 18.5834 16.0681 18.8364 15.7348C19.0894 15.4015 19.2468 15.0056 19.2918 14.5895C19.3367 14.1735 19.2675 13.7531 19.0915 13.3735C18.9155 12.9938 18.6394 12.6693 18.2929 12.4347C17.9464 12.2001 17.5425 12.0643 17.1247 12.042C16.7068 12.0196 16.2908 12.1115 15.9212 12.3077C15.5516 12.504 15.2425 12.7972 15.027 13.1559C14.8115 13.5146 14.6978 13.9252 14.6981 14.3437C14.6981 14.7194 14.5488 15.0797 14.2831 15.3454C14.0175 15.6111 13.6571 15.7603 13.2814 15.7603C12.9057 15.7603 12.5454 15.6111 12.2797 15.3454C12.014 15.0797 11.8647 14.7194 11.8647 14.3437C11.8647 12.9817 12.4058 11.6755 13.3689 10.7124C14.332 9.7493 15.6382 9.20825 17.0002 9.20825Z"
+                                fill="black" />
+                        </svg>
+                    </a>
                 </div>
-                <div class="symptoms-frm-row">
-                    <div class="select-container">
-                        <select class="form-select mb-3 mb-ml-0" aria-label="Large select example">
-                            <option selected>Treats</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
+                <div class="symptoms-frm-row row">
+                    <div class="col-12 col-lg-3">
+                        <div class="select-container">
+                            <select class="form-select mb-3 mb-ml-0" aria-label="Large select example">
+                                <option selected>Treats</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
                     </div>
-                    <input type="number" class="form-control" name="form-contact-no"
-                        placeholder="Enter Location/Postal Code">
-                    <input type="date" class="form-control" name="form-date-time" placeholder="Select date">
-                    <button type="submit" class="btn btn-dark search-btn-symptoms"><img
-                            src="../assets/images/icon/search.png" alt="search icon" class="search-icon">Search</button>
+                    <div class="col-12 col-lg-3">
+                        <div class="form-group">
+                            <input type="number" class="form-control" name="form-contact-no"
+                                placeholder="Enter Location/Postal Code">
+                            <span class="user-icons postal-icon">
+                                <img src="../assets/images/icon/postal-code.svg" alt="postal-code icon" />
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3">
+                        <div class="form-group position-relative">
+                            <input type="datetime-local" class="form-control datetime-input" name="form-date-time"
+                                placeholder="Select date" />
+                            <span class="user-icons calendar-icon">
+                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.3335 1.8335V4.5835" stroke="black" stroke-width="1.5"
+                                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M14.6665 1.8335V4.5835" stroke="black" stroke-width="1.5"
+                                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M3.2085 8.33276H18.7918" stroke="black" stroke-width="1.5"
+                                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path
+                                        d="M19.25 7.79183V15.5835C19.25 18.3335 17.875 20.1668 14.6667 20.1668H7.33333C4.125 20.1668 2.75 18.3335 2.75 15.5835V7.79183C2.75 5.04183 4.125 3.2085 7.33333 3.2085H14.6667C17.875 3.2085 19.25 5.04183 19.25 7.79183Z"
+                                        stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M14.3869 12.5582H14.3951" stroke="black" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M14.3869 15.3082H14.3951" stroke="black" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M10.9958 12.5582H11.004" stroke="black" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M10.9958 15.3082H11.004" stroke="black" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M7.6032 12.5582H7.61143" stroke="black" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M7.6032 15.3082H7.61143" stroke="black" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-2 d-flex justify-content-end">
+                        <button type="submit" class="btn btn-dark search-btn-symptoms">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z"
+                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M22 22L20 20" stroke="white" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            Search
+                        </button>
+                    </div>
                 </div>
-                <div class="row align-items-center mt-4">
+                <div class="row align-items-center mt-3">
                     <div class="col-12 col-md-6">
                         <label class="form-label">Distance</label>
                         <div class="range-container">
@@ -169,12 +227,29 @@
                                     </div>
                                     <div class="card-row review-row">
                                         <span class="badge rounded-pill text-bg-danger">
-                                            <img src="../assets/images/icon/star.png" alt="star icon">
+                                            <svg width="17" height="18" viewBox="0 0 17 18" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M8.50014 12.7324L11.4397 14.5103C11.9781 14.8362 12.6368 14.3545 12.4951 13.7453L11.716 10.402L14.3156 8.14951C14.7901 7.73868 14.5351 6.95951 13.9118 6.90992L10.4906 6.61951L9.15181 3.46034C8.91098 2.88659 8.08931 2.88659 7.84848 3.46034L6.50973 6.61243L3.08848 6.90284C2.46514 6.95242 2.21014 7.73159 2.68473 8.14242L5.28431 10.3949L4.50514 13.7383C4.36348 14.3474 5.02223 14.8291 5.56056 14.5033L8.50014 12.7324Z"
+                                                    fill="white" />
+                                            </svg>
+
                                             <span>4.5</span>
                                         </span>
                                         <span class="badge-dot"></span>
                                         <div class="review-row">
-                                            <img src="../assets/images/icon/message.png" alt="message icon">
+                                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7.79183 17.4171H7.3335C3.66683 17.4171 1.8335 16.5004 1.8335 11.9171V7.33374C1.8335 3.66707 3.66683 1.83374 7.3335 1.83374H14.6668C18.3335 1.83374 20.1668 3.66707 20.1668 7.33374V11.9171C20.1668 15.5837 18.3335 17.4171 14.6668 17.4171H14.2085C13.9243 17.4171 13.6493 17.5546 13.4752 17.7837L12.1002 19.6171C11.4952 20.4237 10.5052 20.4237 9.90016 19.6171L8.52516 17.7837C8.3785 17.5821 8.03933 17.4171 7.79183 17.4171Z"
+                                                    stroke="#547DCB" stroke-width="1.5" stroke-miterlimit="10"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M6.4165 7.33374H15.5832" stroke="#547DCB" stroke-width="1.5"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M6.4165 11.9163H11.9165" stroke="#547DCB" stroke-width="1.5"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+
                                         </div>
                                         <span class="span-text">35 Reviews</i>
                                     </div>
@@ -202,11 +277,37 @@
                             </div>
                             <div class="card-badge-row card-bottom-row">
                                 <div>
-                                    <img src="../assets/images/icon/location-blue.png" alt="location  icon">
+                                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.9009 15.551L10.5522 14.887H10.5522L10.9009 15.551ZM10.0991 15.551L9.75038 16.215L9.75038 16.215L10.0991 15.551ZM15.875 7.875C15.875 9.77269 14.9216 11.335 13.7375 12.5447C12.5537 13.7541 11.1989 14.5473 10.5522 14.887L11.2496 16.215C11.9644 15.8396 13.4717 14.9607 14.8095 13.5939C16.1471 12.2273 17.375 10.3091 17.375 7.875H15.875ZM10.5 2.5C13.4685 2.5 15.875 4.90647 15.875 7.875H17.375C17.375 4.07804 14.297 1 10.5 1V2.5ZM5.125 7.875C5.125 4.90647 7.53147 2.5 10.5 2.5V1C6.70304 1 3.625 4.07804 3.625 7.875H5.125ZM10.4478 14.887C9.80107 14.5473 8.44627 13.7541 7.26245 12.5447C6.07842 11.335 5.125 9.77269 5.125 7.875H3.625C3.625 10.3091 4.85286 12.2273 6.19049 13.5939C7.52834 14.9607 9.03559 15.8396 9.75038 16.215L10.4478 14.887ZM10.5522 14.887C10.5183 14.9048 10.4817 14.9048 10.4478 14.887L9.75038 16.215C10.2209 16.4621 10.7791 16.4621 11.2496 16.215L10.5522 14.887ZM12.375 7.875C12.375 8.91053 11.5355 9.75 10.5 9.75V11.25C12.364 11.25 13.875 9.73896 13.875 7.875H12.375ZM10.5 6C11.5355 6 12.375 6.83947 12.375 7.875H13.875C13.875 6.01104 12.364 4.5 10.5 4.5V6ZM8.625 7.875C8.625 6.83947 9.46447 6 10.5 6V4.5C8.63604 4.5 7.125 6.01104 7.125 7.875H8.625ZM10.5 9.75C9.46447 9.75 8.625 8.91053 8.625 7.875H7.125C7.125 9.73896 8.63604 11.25 10.5 11.25V9.75Z"
+                                            fill="#547DCB" />
+                                        <path
+                                            d="M17.3199 15.3125C18.0111 15.7115 18.375 16.1642 18.375 16.625C18.375 17.0858 18.0111 17.5384 17.32 17.9375C16.6288 18.3366 15.6347 18.6679 14.4375 18.8983C13.2403 19.1287 11.8824 19.25 10.5 19.25C9.11765 19.25 7.75965 19.1287 6.5625 18.8983C5.36535 18.6679 4.37123 18.3366 3.68005 17.9375C2.98887 17.5384 2.625 17.0858 2.625 16.625C2.625 16.1642 2.98887 15.7116 3.68005 15.3125"
+                                            stroke="#547DCB" stroke-width="1.5" stroke-linecap="round" />
+                                    </svg>
+
                                     <span class="clinic-text pe-2">2014 Joes Road Cambridge, NY 12816</span> |
                                 </div>
                                 <a href="#" class="available-link ps-2">View On Map
-                                    <img src="../assets/images/icon/routing.png" alt="routing  icon" />
+                                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1.81105 4.02502C2.51105 0.99752 7.0698 0.99752 7.76105 4.02502C8.17231 5.80127 7.04355 7.30627 6.06355 8.24252C5.34605 8.92502 4.2173 8.91627 3.4998 8.24252C2.52855 7.30627 1.3998 5.80127 1.81105 4.02502Z"
+                                            stroke="#547DCB" stroke-width="1.5" />
+                                        <path
+                                            d="M13.1865 14.525C13.8865 11.4975 18.4715 11.4975 19.1715 14.525C19.5827 16.3013 18.454 17.8063 17.4652 18.7425C16.7477 19.425 15.6102 19.4163 14.8927 18.7425C13.904 17.8063 12.7752 16.3013 13.1865 14.525Z"
+                                            stroke="#547DCB" stroke-width="1.5" />
+                                        <path
+                                            d="M10.5 4.375H12.845C14.4637 4.375 15.2162 6.37875 14 7.44625L7.00873 13.5625C5.79248 14.6213 6.54498 16.625 8.15498 16.625H10.5"
+                                            stroke="#547DCB" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M4.80026 4.8125H4.81037" stroke="#547DCB" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M16.1753 15.3125H16.1854" stroke="#547DCB" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+
                                 </a>
 
                             </div>
@@ -581,8 +682,7 @@
                 </a>
                 <p>
                     Our company started with a simple vision of helping up-and-coming entrepreneurs and young
-                    professionals find a solid footprint for their business and enable them to expand their
-                    boundaries
+                    professionals find a solid footprint for their business and enable them to expand their boundaries
                     even while working remotely.
                 </p>
             </div>
@@ -644,13 +744,38 @@
                 <p>Follow us on</p>
                 <div class="social-icons-row">
                     <a href="#">
-                        <img src="../assets/images/icon/fb-icon.png" alt="fb-icon">
+                        <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="56" height="56" rx="10" fill="white" fill-opacity="0.13" />
+                            <path
+                                d="M38 28C38 22.48 33.52 18 28 18C22.48 18 18 22.48 18 28C18 32.84 21.44 36.87 26 37.8V31H24V28H26V25.5C26 23.57 27.57 22 29.5 22H32V25H30C29.45 25 29 25.45 29 26V28H32V31H29V37.95C34.05 37.45 38 33.19 38 28Z"
+                                fill="white" />
+                        </svg>
+
                     </a>
                     <a href="#">
-                        <img src="../assets/images/icon/twitter-icon.png" alt="twitter-icon" />
+                        <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="56" height="56" rx="10" fill="white" fill-opacity="0.13" />
+                            <g clip-path="url(#clip0_143_6459)">
+                                <path
+                                    d="M33.4625 19.3906H36.3766L30.0116 26.6843L37.5 36.6094H31.6373L27.0453 30.5888L21.7906 36.6094H18.8753L25.6832 28.8075L18.5 19.3906H24.5123L28.6626 24.8923L33.4625 19.3906ZM32.4413 34.8614H34.0563L23.6336 21.0472H21.9022L32.4413 34.8614Z"
+                                    fill="white" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_143_6459">
+                                    <rect width="19" height="19" fill="white" transform="translate(18.5 18.5)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+
                     </a>
                     <a href="#">
-                        <img src="../assets/images/icon/linkedin-icon.png" alt="linkedin-icon" />
+                        <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="56" height="56" rx="10" fill="white" fill-opacity="0.13" />
+                            <path
+                                d="M35 19C35.5304 19 36.0391 19.2107 36.4142 19.5858C36.7893 19.9609 37 20.4696 37 21V35C37 35.5304 36.7893 36.0391 36.4142 36.4142C36.0391 36.7893 35.5304 37 35 37H21C20.4696 37 19.9609 36.7893 19.5858 36.4142C19.2107 36.0391 19 35.5304 19 35V21C19 20.4696 19.2107 19.9609 19.5858 19.5858C19.9609 19.2107 20.4696 19 21 19H35ZM34.5 34.5V29.2C34.5 28.3354 34.1565 27.5062 33.5452 26.8948C32.9338 26.2835 32.1046 25.94 31.24 25.94C30.39 25.94 29.4 26.46 28.92 27.24V26.13H26.13V34.5H28.92V29.57C28.92 28.8 29.54 28.17 30.31 28.17C30.6813 28.17 31.0374 28.3175 31.2999 28.5801C31.5625 28.8426 31.71 29.1987 31.71 29.57V34.5H34.5ZM22.88 24.56C23.3256 24.56 23.7529 24.383 24.0679 24.0679C24.383 23.7529 24.56 23.3256 24.56 22.88C24.56 21.95 23.81 21.19 22.88 21.19C22.4318 21.19 22.0019 21.3681 21.685 21.685C21.3681 22.0019 21.19 22.4318 21.19 22.88C21.19 23.81 21.95 24.56 22.88 24.56ZM24.27 34.5V26.13H21.5V34.5H24.27Z"
+                                fill="white" />
+                        </svg>
+
                     </a>
                 </div>
             </div>
@@ -681,6 +806,10 @@
                 $('.slot').removeClass('btn-dark').addClass('btn-outline-secondary');
                 $(this).removeClass('btn-outline-secondary').addClass('btn-dark');
             });
+        });
+
+        document.querySelector('.calendar-icon').addEventListener('click', function () {
+            document.querySelector('.datetime-input').showPicker(); // Opens the datetime picker
         });
     </script>
 </body>

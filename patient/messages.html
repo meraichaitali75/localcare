@@ -112,14 +112,15 @@
                         <span class="user-icons">
                             <svg width="22" height="23" viewBox="0 0 22 23" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M10.543 19.3835C15.3525 19.3835 19.2513 15.4846 19.2513 10.6751C19.2513 5.86565 15.3525 1.9668 10.543 1.9668C5.73351 1.9668 1.83466 5.86565 1.83466 10.6751C1.83466 15.4846 5.73351 19.3835 10.543 19.3835Z"
-                                    stroke="black" stroke-width="2.4553" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path d="M20.168 20.3001L18.3347 18.4668" stroke="black" stroke-width="2.4553"
-                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <g opacity="0.3">
+                                    <path
+                                        d="M10.543 19.3835C15.3525 19.3835 19.2513 15.4846 19.2513 10.6751C19.2513 5.86565 15.3525 1.9668 10.543 1.9668C5.73351 1.9668 1.83466 5.86565 1.83466 10.6751C1.83466 15.4846 5.73351 19.3835 10.543 19.3835Z"
+                                        stroke="black" stroke-width="2.4553" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M20.168 20.3001L18.3347 18.4668" stroke="black" stroke-width="2.4553"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </g>
                             </svg>
-
                         </span>
                     </div>
                     <ul class="chat-list">
@@ -162,39 +163,62 @@
                         <div class="dropdown">
                             <button class="btn dropdown-toggle" type="button" id="chatDropdown"
                                 data-bs-toggle="dropdown" aria-expanded="false">
-                                ⋮
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11.9991 5.92C12.2537 5.92 12.4979 5.81886 12.6779 5.63882C12.8579 5.45879 12.9591 5.21461 12.9591 4.96C12.9591 4.70539 12.8579 4.46121 12.6779 4.28118C12.4979 4.10114 12.2537 4 11.9991 4C11.7445 4 11.5003 4.10114 11.3202 4.28118C11.1402 4.46121 11.0391 4.70539 11.0391 4.96C11.0391 5.21461 11.1402 5.45879 11.3202 5.63882C11.5003 5.81886 11.7445 5.92 11.9991 5.92ZM11.9991 12.96C12.2537 12.96 12.4979 12.8589 12.6779 12.6788C12.8579 12.4988 12.9591 12.2546 12.9591 12C12.9591 11.7454 12.8579 11.5012 12.6779 11.3212C12.4979 11.1411 12.2537 11.04 11.9991 11.04C11.7445 11.04 11.5003 11.1411 11.3202 11.3212C11.1402 11.5012 11.0391 11.7454 11.0391 12C11.0391 12.2546 11.1402 12.4988 11.3202 12.6788C11.5003 12.8589 11.7445 12.96 11.9991 12.96ZM11.9991 20C12.2537 20 12.4979 19.8989 12.6779 19.7188C12.8579 19.5388 12.9591 19.2946 12.9591 19.04C12.9591 18.7854 12.8579 18.5412 12.6779 18.3612C12.4979 18.1811 12.2537 18.08 11.9991 18.08C11.7445 18.08 11.5003 18.1811 11.3202 18.3612C11.1402 18.5412 11.0391 18.7854 11.0391 19.04C11.0391 19.2946 11.1402 19.5388 11.3202 19.7188C11.5003 19.8989 11.7445 20 11.9991 20Z"
+                                        stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
                             </button>
                             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="chatDropdown">
                                 <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
                             </ul>
                         </div>
                     </div>
-
                     <div class="chat-messages">
-                        <div class="message-container sent">
-                            <div class="message">
-                                <p>Hello, How are you?</p>
-                            </div>
+                        <div class="sent">
+                            <p>Hello, How are you?</p>
                             <span class="time">10:16 PM</span>
                         </div>
-                    
-                        <div class="message-container received">
+                        <div class="received">
                             <div class="message">
                                 <p>Yea, I am Good & How’s you?</p>
                             </div>
-                            <span class="time">10:17 PM</span>
                         </div>
                     </div>
-                    
-
                     <div class="chat-input">
                         <div class="form-group d-flex w-100 ">
                             <input type="text" placeholder="Write your message" class="form-control" name="usercomment"
                                 id="usercomment" aria-describedby="usercomment">
-                            <span class="user-icons"><img src="../assets/images/icon/paperclip.png"
-                                    alt="Email Icon"></span>
+                            <span class="user-icons">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.5">
+                                        <path
+                                            d="M11.9697 12V15.5C11.9697 17.43 13.5397 19 15.4697 19C17.3997 19 18.9697 17.43 18.9697 15.5V10C18.9697 6.13 15.8397 3 11.9697 3C8.09973 3 4.96973 6.13 4.96973 10V16C4.96973 19.31 7.65973 22 10.9697 22"
+                                            stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </g>
+                                </svg>
+                            </span>
                         </div>
-                        <button type="submit"><img src="../assets/images/icon/chat-send.png" alt="chat-send"></button>
+                        <button type="submit">
+                            <svg width="56" height="56" viewBox="0 0 56 56" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect width="56" height="56" rx="28" fill="black" />
+                                <mask id="mask0_199_1299" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="12"
+                                    y="12" width="33" height="33">
+                                    <rect x="12.3201" y="12.3203" width="32.0674" height="32.0674" fill="#C4C4C4" />
+                                </mask>
+                                <g mask="url(#mask0_199_1299)">
+                                    <path
+                                        d="M40.4212 18.4931L33.2022 39.6842C32.4889 41.7782 29.5527 41.8475 28.7413 39.7895L25.5478 31.6897C25.3062 31.0769 24.8212 30.5919 24.2085 30.3503L16.1081 27.1565C14.0501 26.345 14.1195 23.4088 16.2135 22.6955L37.405 15.4769C39.2726 14.8407 41.0574 16.6255 40.4212 18.4931Z"
+                                        fill="white" />
+                                </g>
+                            </svg>
+
+                        </button>
                     </div>
                 </div>
             </div>
@@ -272,13 +296,38 @@
                 <p>Follow us on</p>
                 <div class="social-icons-row">
                     <a href="#">
-                        <img src="../assets/images/icon/fb-icon.png" alt="fb-icon">
+                        <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="56" height="56" rx="10" fill="white" fill-opacity="0.13" />
+                            <path
+                                d="M38 28C38 22.48 33.52 18 28 18C22.48 18 18 22.48 18 28C18 32.84 21.44 36.87 26 37.8V31H24V28H26V25.5C26 23.57 27.57 22 29.5 22H32V25H30C29.45 25 29 25.45 29 26V28H32V31H29V37.95C34.05 37.45 38 33.19 38 28Z"
+                                fill="white" />
+                        </svg>
+
                     </a>
                     <a href="#">
-                        <img src="../assets/images/icon/twitter-icon.png" alt="twitter-icon" />
+                        <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="56" height="56" rx="10" fill="white" fill-opacity="0.13" />
+                            <g clip-path="url(#clip0_143_6459)">
+                                <path
+                                    d="M33.4625 19.3906H36.3766L30.0116 26.6843L37.5 36.6094H31.6373L27.0453 30.5888L21.7906 36.6094H18.8753L25.6832 28.8075L18.5 19.3906H24.5123L28.6626 24.8923L33.4625 19.3906ZM32.4413 34.8614H34.0563L23.6336 21.0472H21.9022L32.4413 34.8614Z"
+                                    fill="white" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_143_6459">
+                                    <rect width="19" height="19" fill="white" transform="translate(18.5 18.5)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+
                     </a>
                     <a href="#">
-                        <img src="../assets/images/icon/linkedin-icon.png" alt="linkedin-icon" />
+                        <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="56" height="56" rx="10" fill="white" fill-opacity="0.13" />
+                            <path
+                                d="M35 19C35.5304 19 36.0391 19.2107 36.4142 19.5858C36.7893 19.9609 37 20.4696 37 21V35C37 35.5304 36.7893 36.0391 36.4142 36.4142C36.0391 36.7893 35.5304 37 35 37H21C20.4696 37 19.9609 36.7893 19.5858 36.4142C19.2107 36.0391 19 35.5304 19 35V21C19 20.4696 19.2107 19.9609 19.5858 19.5858C19.9609 19.2107 20.4696 19 21 19H35ZM34.5 34.5V29.2C34.5 28.3354 34.1565 27.5062 33.5452 26.8948C32.9338 26.2835 32.1046 25.94 31.24 25.94C30.39 25.94 29.4 26.46 28.92 27.24V26.13H26.13V34.5H28.92V29.57C28.92 28.8 29.54 28.17 30.31 28.17C30.6813 28.17 31.0374 28.3175 31.2999 28.5801C31.5625 28.8426 31.71 29.1987 31.71 29.57V34.5H34.5ZM22.88 24.56C23.3256 24.56 23.7529 24.383 24.0679 24.0679C24.383 23.7529 24.56 23.3256 24.56 22.88C24.56 21.95 23.81 21.19 22.88 21.19C22.4318 21.19 22.0019 21.3681 21.685 21.685C21.3681 22.0019 21.19 22.4318 21.19 22.88C21.19 23.81 21.95 24.56 22.88 24.56ZM24.27 34.5V26.13H21.5V34.5H24.27Z"
+                                fill="white" />
+                        </svg>
+
                     </a>
                 </div>
             </div>
