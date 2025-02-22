@@ -22,28 +22,29 @@
 
 <body>
     <!-- header -->
-    <nav class="main-navbar navbar navbar-expand-lg">
-        <div class="container">
+    <nav class="main-navbar navbar">
+        <div class="container main-navbar-container">
             <div class="navbar-row">
-                <a href="index.html" class="navbar-brand">
+                <a href="index.html" class="navbar-brand me-0">
                     <img src="../assets/images/logo.png" class="localcare_logo" alt="Localcare Logo">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                </button>
+                </button> -->
             </div>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="nav ms-auto nav-tabs" id="nav-tab" role="tablist">
-                    <li class="nav-item">
-                        <a href="login.html" class="nav-link">Login</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="register.html" class="nav-link active">Register</a>
-                    </li>
-                </ul>
-            </div>
+            <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent"> -->
+            <ul class="nav ms-md-auto nav-tabs" id="nav-tab" role="tablist">
+                <li class="nav-item">
+                    <a href="login.html" class="nav-link">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a href="register.html" class="nav-link active">Register</a>
+                </li>
+
+            </ul>
+            <!-- </div> -->
         </div>
     </nav>
     <!-- header: ends here -->
@@ -51,7 +52,7 @@
     <main class="login-main-wrapper doctor-login-wrapper">
         <div class="container">
             <div class="row auth-row">
-                <div class="col-sm-12 col-lg-6">
+                <div class="col-12 col-md-6">
                     <div class="auth-box">
                         <img src="../assets/images/login/doctor-auth-banner.png" class="auth_img" alt="Auth Img">
                     </div>
@@ -65,7 +66,7 @@
                         mission is to ensure accessible, high-quality care for everyone.
                     </p>
                 </div>
-                <div class="col-sm-12 col-lg-6 auth-container">
+                <div class="col-12 col-md-6 auth-container">
                     <div class="auth-box auth-right-box">
                         <ul class="nav nav-tabs step-indicator" id="signupTabs" role="tablist">
                             <li class="nav-item" role="presentation">
@@ -95,7 +96,7 @@
                                     <div class="row auth-row">
                                         <div class="col-12 col-md-6">
                                             <div class="custom-radio mb-3">
-                                                <input type="radio" id="doctor" name="therapist-grp">
+                                                <input type="radio" id="doctor" name="therapist-grp" checked>
                                                 <label for="doctor">
                                                     <span>Doctor</span>
                                                 </label>
@@ -127,10 +128,10 @@
                                         </div>
                                     </div>
                                     <h6>Select your specialization</h6>
-                                    <div class="row">
+                                    <div class="row doctor-register-row">
                                         <div class="col-12">
                                             <div class="select-container">
-                                                <select class="form-select mb-3 mb-ml-0"
+                                                <select class="secondary-form-select mb-3 mb-ml-0"
                                                     aria-label="Large select example">
                                                     <option selected>Treats</option>
                                                     <option value="1">One</option>
@@ -160,16 +161,52 @@
                                             <div class="form-group mb-3">
                                                 <input type="text" placeholder="First Name" class="form-control"
                                                     name="userFirstName" aria-describedby="userFirstName">
-                                                <span class="user-icons"><img src="../assets/images/icon/email.png"
-                                                        alt="Email Icon"></span>
+                                                <span class="user-icons">
+                                                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <g opacity="0.5">
+                                                            <path
+                                                                d="M15.6161 18.5167C14.8828 18.7333 14.0161 18.8334 12.9995 18.8334H7.99948C6.98281 18.8334 6.11615 18.7333 5.38281 18.5167C5.56615 16.35 7.79115 14.6417 10.4995 14.6417C13.2078 14.6417 15.4328 16.35 15.6161 18.5167Z"
+                                                                stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                                                stroke-linejoin="round" />
+                                                            <path
+                                                                d="M12.9993 2.16669H7.99935C3.83268 2.16669 2.16602 3.83335 2.16602 8.00002V13C2.16602 16.15 3.11602 17.875 5.38268 18.5167C5.56602 16.35 7.79102 14.6417 10.4993 14.6417C13.2077 14.6417 15.4327 16.35 15.616 18.5167C17.8827 17.875 18.8327 16.15 18.8327 13V8.00002C18.8327 3.83335 17.166 2.16669 12.9993 2.16669ZM10.4993 12.3083C8.84935 12.3083 7.51601 10.9667 7.51601 9.3167C7.51601 7.6667 8.84935 6.33335 10.4993 6.33335C12.1493 6.33335 13.4827 7.6667 13.4827 9.3167C13.4827 10.9667 12.1493 12.3083 10.4993 12.3083Z"
+                                                                stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                                                stroke-linejoin="round" />
+                                                            <path
+                                                                d="M13.4842 9.31666C13.4842 10.9667 12.1509 12.3083 10.5009 12.3083C8.85091 12.3083 7.51758 10.9667 7.51758 9.31666C7.51758 7.66666 8.85091 6.33331 10.5009 6.33331C12.1509 6.33331 13.4842 7.66666 13.4842 9.31666Z"
+                                                                stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                                                stroke-linejoin="round" />
+                                                        </g>
+                                                    </svg>
+
+                                                </span>
                                             </div>
                                         </div>
                                         <div class="col-sm-12 col-md-6">
                                             <div class="form-group mb-3">
                                                 <input type="text" placeholder="Last Name" class="form-control"
                                                     name="userLastName" aria-describedby="userLastName">
-                                                <span class="user-icons"><img src="../assets/images/icon/email.png"
-                                                        alt="Email Icon"></span>
+                                                <span class="user-icons">
+                                                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <g opacity="0.5">
+                                                            <path
+                                                                d="M15.6161 18.5167C14.8828 18.7333 14.0161 18.8334 12.9995 18.8334H7.99948C6.98281 18.8334 6.11615 18.7333 5.38281 18.5167C5.56615 16.35 7.79115 14.6417 10.4995 14.6417C13.2078 14.6417 15.4328 16.35 15.6161 18.5167Z"
+                                                                stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                                                stroke-linejoin="round" />
+                                                            <path
+                                                                d="M12.9993 2.16669H7.99935C3.83268 2.16669 2.16602 3.83335 2.16602 8.00002V13C2.16602 16.15 3.11602 17.875 5.38268 18.5167C5.56602 16.35 7.79102 14.6417 10.4993 14.6417C13.2077 14.6417 15.4327 16.35 15.616 18.5167C17.8827 17.875 18.8327 16.15 18.8327 13V8.00002C18.8327 3.83335 17.166 2.16669 12.9993 2.16669ZM10.4993 12.3083C8.84935 12.3083 7.51601 10.9667 7.51601 9.3167C7.51601 7.6667 8.84935 6.33335 10.4993 6.33335C12.1493 6.33335 13.4827 7.6667 13.4827 9.3167C13.4827 10.9667 12.1493 12.3083 10.4993 12.3083Z"
+                                                                stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                                                stroke-linejoin="round" />
+                                                            <path
+                                                                d="M13.4842 9.31666C13.4842 10.9667 12.1509 12.3083 10.5009 12.3083C8.85091 12.3083 7.51758 10.9667 7.51758 9.31666C7.51758 7.66666 8.85091 6.33331 10.5009 6.33331C12.1509 6.33331 13.4842 7.66666 13.4842 9.31666Z"
+                                                                stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                                                stroke-linejoin="round" />
+                                                        </g>
+                                                    </svg>
+
+                                                </span>
                                             </div>
                                         </div>
                                         <div class="col-12">

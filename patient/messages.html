@@ -39,7 +39,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="nav ms-auto nav-tabs" id="nav-tab" role="tablist">
                     <li class="nav-item">
-                        <a href="index.html" class="nav-link active">Home</a>
+                        <a href="index.html" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
                         <a href="exploredoctor.html" class="nav-link">Explore Doctors</a>
@@ -48,7 +48,7 @@
                         <a href="appointments.html" class="nav-link">Appointments</a>
                     </li>
                     <li class="nav-item">
-                        <a href="messages.html" class="nav-link">Messages</a>
+                        <a href="messages.html" class="nav-link active">Messages</a>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="btn btn-dark" data-bs-toggle="button">Are you doctor or
@@ -72,26 +72,20 @@
     <!-- main -->
     <main class="doctor-main-wrapper chat-wrapper main-wrapper">
         <div class="sub-header">
-            <div class="container">
-                <div class="row align-items-center m-0">
-                    <div class="col-12 col-md-8">
-                        <h1>Messages</h1>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="d-flex align-items-center justify-content-end">
-                            <a href="#">
-                                <h6>Home
-                                    <svg width="8" height="14" viewBox="0 0 8 14" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M7.70685 6.29294C7.89433 6.48046 7.99964 6.73477 7.99964 6.99994C7.99964 7.2651 7.89433 7.51941 7.70685 7.70694L2.04985 13.3639C1.95761 13.4594 1.84726 13.5356 1.72526 13.588C1.60326 13.6404 1.47204 13.668 1.33926 13.6692C1.20648 13.6703 1.0748 13.645 0.951901 13.5948C0.829005 13.5445 0.717352 13.4702 0.623459 13.3763C0.529567 13.2824 0.455314 13.1708 0.405033 13.0479C0.354752 12.925 0.32945 12.7933 0.330604 12.6605C0.331758 12.5278 0.359344 12.3965 0.411753 12.2745C0.464162 12.1525 0.540344 12.0422 0.635854 11.9499L5.58586 6.99994L0.635854 2.04994C0.453696 1.86133 0.352902 1.60873 0.35518 1.34653C0.357459 1.08434 0.462628 0.833526 0.648036 0.648118C0.833444 0.46271 1.08426 0.357541 1.34645 0.355262C1.60865 0.352984 1.86125 0.453778 2.04985 0.635936L7.70685 6.29294Z"
-                                            fill="black" />
-                                    </svg>
-                                </h6>
-                            </a>
-                            <p>Messages</p>
-                        </div>
-                    </div>
+            <div class="container sub-header-row">
+                <h1>Messages</h1>
+                <div class="d-flex align-items-center justify-content-end">
+                    <a href="#">
+                        <h6>Home
+                            <svg width="8" height="14" viewBox="0 0 8 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M7.70685 6.29294C7.89433 6.48046 7.99964 6.73477 7.99964 6.99994C7.99964 7.2651 7.89433 7.51941 7.70685 7.70694L2.04985 13.3639C1.95761 13.4594 1.84726 13.5356 1.72526 13.588C1.60326 13.6404 1.47204 13.668 1.33926 13.6692C1.20648 13.6703 1.0748 13.645 0.951901 13.5948C0.829005 13.5445 0.717352 13.4702 0.623459 13.3763C0.529567 13.2824 0.455314 13.1708 0.405033 13.0479C0.354752 12.925 0.32945 12.7933 0.330604 12.6605C0.331758 12.5278 0.359344 12.3965 0.411753 12.2745C0.464162 12.1525 0.540344 12.0422 0.635854 11.9499L5.58586 6.99994L0.635854 2.04994C0.453696 1.86133 0.352902 1.60873 0.35518 1.34653C0.357459 1.08434 0.462628 0.833526 0.648036 0.648118C0.833444 0.46271 1.08426 0.357541 1.34645 0.355262C1.60865 0.352984 1.86125 0.453778 2.04985 0.635936L7.70685 6.29294Z"
+                                    fill="black" />
+                            </svg>
+                        </h6>
+                    </a>
+                    <p>Messages</p>
                 </div>
             </div>
         </div>
@@ -107,7 +101,7 @@
                 <div class="sidebar">
                     <h4>Chats</h4>
                     <div class="form-group d-flex w-100 ">
-                        <input type="text" placeholder="Write your message" class="form-control" name="usercomment"
+                        <input type="text" placeholder="Search message" class="form-control" name="usercomment"
                             id="usercomment" aria-describedby="usercomment">
                         <span class="user-icons">
                             <svg width="22" height="23" viewBox="0 0 22 23" fill="none"
@@ -124,7 +118,7 @@
                         </span>
                     </div>
                     <ul class="chat-list">
-                        <li>
+                        <li class="active">
                             <img src="../assets/images/doctors/doctor1.png" alt="User">
                             <div class="chat-info">
                                 <h6>Jane Cooper <span class="time">5m ago</span></h6>
@@ -149,9 +143,7 @@
                         </li>
 
                     </ul>
-
                 </div>
-
                 <!-- Chat Box -->
                 <div class="chat-box ">
                     <div

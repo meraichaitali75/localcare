@@ -21,32 +21,35 @@
 
 <body>
     <!-- header -->
-    <nav class="main-navbar navbar navbar-expand-lg">
-        <div class="container">
+    
+
+    <nav class="main-navbar navbar">
+        <div class="container main-navbar-container">
             <div class="navbar-row">
-                <a href="index.html" class="navbar-brand">
+                <a href="index.html" class="navbar-brand me-0">
                     <img src="../assets/images/logo.png" class="localcare_logo" alt="Localcare Logo">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                </button>
+                </button> -->
             </div>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="nav ms-auto nav-tabs" id="nav-tab" role="tablist">
-                    <li class="nav-item">
-                        <a href="login.html" class="nav-link">Login</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="register.html" class="nav-link active">Register</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="btn btn-dark" data-bs-toggle="button">Are you doctor or
-                            therapist?</a>
-                    </li>
-                </ul>
-            </div>
+            <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent"> -->
+            <ul class="nav ms-md-auto nav-tabs" id="nav-tab" role="tablist">
+                <li class="nav-item">
+                    <a href="login.html" class="nav-link">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a href="register.html" class="nav-link active">Register</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="btn btn-dark" data-bs-toggle="button">Are you doctor or
+                        therapist?</a>
+                </li>
+
+            </ul>
+            <!-- </div> -->
         </div>
     </nav>
     <!-- header: ends here -->
@@ -77,7 +80,7 @@
                             <div class="row">
                                 <div class="col-sm-12 col-md-6">
                                     <div class="form-group mb-3">
-                                        <input type="text" placeholder="First Name" class="form-control"
+                                        <input type="text" placeholder="First Name" class="secondary-form-control"
                                             name="userFirstName" aria-describedby="userFirstName">
                                         <span class="user-icons">
                                             <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
@@ -103,7 +106,7 @@
                                 </div>
                                 <div class="col-sm-12 col-md-6">
                                     <div class="form-group mb-3">
-                                        <input type="text" placeholder="Last Name" class="form-control"
+                                        <input type="text" placeholder="Last Name" class="secondary-form-control"
                                             name="userLastName" aria-describedby="userLastName">
                                         <span class="user-icons">
                                             <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
@@ -129,7 +132,7 @@
                                 </div>
                                 <div class="col-12">
                                     <div class="form-group mb-3">
-                                        <input type="email" placeholder="Email" class="form-control" name="userEmail"
+                                        <input type="email" placeholder="Email" class="secondary-form-control" name="userEmail"
                                             id="userEmail" aria-describedby="userEmail">
                                         <span class="user-icons">
                                             <svg width="22" height="23" viewBox="0 0 22 23" fill="none"
@@ -148,7 +151,7 @@
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <div class="form-control phone-input mb-3">
+                                    <div class="secondary-form-control phone-input mb-3">
                                         <select>
                                             <option selected>+41</option>
                                             <option>+1</option>
@@ -175,38 +178,37 @@
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <div class="col-12">
-                                        <div class="select-container">
-                                            <select class="form-select form-select-sm mb-3"
-                                                aria-label="Large select example">
-                                                <option selected>Cardiology</option>
-                                                <option>Dermatology</option>
-                                                <option>Neurology</option>
-                                                <option>Pediatrics</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-group mb-3 position-relative">
-                                            <input type="password" placeholder="Password"
-                                                class="form-control password-input">
-                                            <span class="user-icons password-toggle">
-                                                <img src="../assets/images/icon/password_eye.svg" alt="Toggle Password">
-                                            </span>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-12">
-                                        <div class="form-group mb-3 position-relative">
-                                            <input type="password" placeholder="Confirm Password"
-                                                class="form-control password-input">
-                                            <span class="user-icons password-toggle">
-                                                <img src="../assets/images/icon/password_eye.svg" alt="Toggle Password">
-                                            </span>
-                                        </div>
+                                    <div class="select-container">
+                                        <select class="secondary-form-select form-select-sm mb-3"
+                                            aria-label="Large select example">
+                                            <option selected>Cardiology</option>
+                                            <option>Dermatology</option>
+                                            <option>Neurology</option>
+                                            <option>Pediatrics</option>
+                                        </select>
                                     </div>
                                 </div>
-                                <button type="submit" class="btn btn-dark">Sign Up</button>
+                                <div class="col-12">
+                                    <div class="form-group mb-3 position-relative">
+                                        <input type="password" placeholder="Password"
+                                            class="secondary-form-control password-input">
+                                        <span class="user-icons password-toggle">
+                                            <img src="../assets/images/icon/password_eye.svg" alt="Toggle Password">
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group mb-3 position-relative">
+                                        <input type="password" placeholder="Confirm Password"
+                                            class="secondary-form-control password-input">
+                                        <span class="user-icons password-toggle">
+                                            <img src="../assets/images/icon/password_eye.svg" alt="Toggle Password">
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-dark w-100">Sign Up</button>
+                                </div>
                         </form>
                     </div>
                 </div>

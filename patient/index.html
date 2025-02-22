@@ -129,27 +129,34 @@
 
                     </a>
                 </div>
-                <div class="symptoms-frm-row">
-                    <div class="select-container">
-                        <select class="form-select form-select-sm  mb-3" aria-label="Large select example">
-                            <option selected>Treats</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
+                <div class="patient-frm-row row">
+                    <div class="col-12 col-md-5">
+                        <div class="select-container">
+                            <select class="secondary-form-select form-select-sm mb-3 mb-md-0"
+                                aria-label="Large select example">
+                                <option selected>Select specialist</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
                     </div>
-                    <input type="text" class="form-control" placeholder="Enter Location/Postal Code">
-                    <button type="submit" class="btn btn-dark search-btn-symptoms">
-                        <!-- <img src="../assets/images/icon/search.png" alt="search icon" class="search-icon" /> -->
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z"
-                                stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M22 22L20 20" stroke="white" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-
-                        Search</button>
+                    <div class="col-12 col-md-5">
+                        <input type="text" class="secondary-form-control  mb-3 mb-md-0"
+                            placeholder="Enter Location/Postal Code" />
+                    </div>
+                    <div class="col-12 col-md-2 d-flex justify-content-end">
+                        <button type="submit" class="btn btn-dark search-btn-symptoms">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z"
+                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M22 22L20 20" stroke="white" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            Search</button>
+                    </div>
                 </div>
             </section>
             <!-- choose us section -->
@@ -171,7 +178,7 @@
                 <h1>Why LoqalCare?</h1>
                 <div class="row justify-content-center">
                     <div class="col-12 col-md-4">
-                        <div class="card">
+                        <div class="healthcare-card card">
                             <!-- <img src="../assets/images/icon/accesstopdoctors.png" alt="Access top doctors icon"> -->
                             <svg width="110" height="110" viewBox="0 0 110 110" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -191,7 +198,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-4">
-                        <div class="card">
+                        <div class="healthcare-card card">
                             <!-- <img src="../assets/images/icon/fastappointments.png" alt="fast appointments icon"> -->
                             <svg width="110" height="110" viewBox="0 0 110 110" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -273,7 +280,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-4">
-                        <div class="card">
+                        <div class="healthcare-card card">
                             <!-- <img src="../assets/images/icon/fastsearch.png" alt="Convenient Search icon"> -->
                             <svg width="110" height="110" viewBox="0 0 110 110" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -296,7 +303,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-4">
-                        <div class="card">
+                        <div class="healthcare-card card">
                             <!-- <img src="../assets/images/icon/accesstopdoctors.png" alt="Direct Communication"> -->
                             <svg width="110" height="110" viewBox="0 0 110 110" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -320,7 +327,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-4">
-                        <div class="card">
+                        <div class="healthcare-card card">
                             <!-- <img src="../assets/images/icon/directcommunication.png" alt="direct communication icon"> -->
                             <svg width="110" height="110" viewBox="0 0 110 110" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -344,8 +351,16 @@
                         <h1>Top Rated Doctors</h1>
                     </div>
                     <div class="col-12 col-md-2">
-                        <a href="#" class="viewall-link">View All<img src="../assets/images/icon/view.png" class="ps-2"
-                                alt="View All Icon"></a>
+                        <a href="#" class="viewall-link mb-3 mb-md-0">View All
+                            <span class="viewall-arrow">
+                                <svg width="45" height="35" viewBox="0 0 45 35" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M34.5 17.5H12H5H2M34.5 17.5L27.5 12M34.5 17.5L27.5 23.5M14.8791 8.5C17.6901 4.56509 22.2955 2 27.5 2C36.0604 2 43 8.93959 43 17.5C43 26.0604 36.0604 33 27.5 33C22.2955 33 17.6901 30.4349 14.8791 26.5"
+                                        stroke="black" stroke-width="2.5" stroke-linecap="round" />
+                                </svg>
+                            </span>
+                        </a>
                     </div>
                 </div>
                 <div class="row">
@@ -959,113 +974,119 @@
         </div>
     </main>
     <!-- footer -->
-    <footer class="main-footer">
-        <div class="row footer-top-row">
-            <div class="col-12 col-md-6">
-                <a href="index.html" class="navbar-brand">
-                    <img src="../assets/images/loqalare-light-logo.png" class="localcare_logo" alt="Localcare Logo">
-                </a>
-                <p>
-                    Our company started with a simple vision of helping up-and-coming entrepreneurs and young
-                    professionals find a solid footprint for their business and enable them to expand their boundaries
-                    even while working remotely.
-                </p>
-            </div>
-            <div class="col-12 col-md-2">
-                <h5>Other Link 1</h5>
-                <ul>
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">About Us</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                    <li>
-                        <a href="#">FAQS</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-12 col-md-2">
-                <h5>Other Link 1</h5>
-                <ul>
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">About Us</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                    <li>
-                        <a href="#">FAQS</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-12 col-md-2">
-                <h5>Other Link 1</h5>
-                <ul>
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">About Us</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                    <li>
-                        <a href="#">FAQS</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom-row">
-            <p>Copyright © 2025 <a href="#">LOQALCARE. </a> All rights reserved.</p>
-            <div class="social-icons-row">
-                <p>Follow us on</p>
-                <div class="social-icons-row">
-                    <a href="#">
-                        <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="56" height="56" rx="10" fill="white" fill-opacity="0.13" />
-                            <path
-                                d="M38 28C38 22.48 33.52 18 28 18C22.48 18 18 22.48 18 28C18 32.84 21.44 36.87 26 37.8V31H24V28H26V25.5C26 23.57 27.57 22 29.5 22H32V25H30C29.45 25 29 25.45 29 26V28H32V31H29V37.95C34.05 37.45 38 33.19 38 28Z"
-                                fill="white" />
-                        </svg>
-
+    <div class="container">
+        <footer class="main-footer">
+            <div class="row footer-top-row">
+                <div class="col-12 col-md-6">
+                    <a href="index.html" class="navbar-brand">
+                        <img src="../assets/images/loqalare-light-logo.png" class="localcare_logo" alt="Localcare Logo">
                     </a>
-                    <a href="#">
-                        <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="56" height="56" rx="10" fill="white" fill-opacity="0.13" />
-                            <g clip-path="url(#clip0_143_6459)">
-                                <path
-                                    d="M33.4625 19.3906H36.3766L30.0116 26.6843L37.5 36.6094H31.6373L27.0453 30.5888L21.7906 36.6094H18.8753L25.6832 28.8075L18.5 19.3906H24.5123L28.6626 24.8923L33.4625 19.3906ZM32.4413 34.8614H34.0563L23.6336 21.0472H21.9022L32.4413 34.8614Z"
-                                    fill="white" />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_143_6459">
-                                    <rect width="19" height="19" fill="white" transform="translate(18.5 18.5)" />
-                                </clipPath>
-                            </defs>
-                        </svg>
-
-                    </a>
-                    <a href="#">
-                        <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="56" height="56" rx="10" fill="white" fill-opacity="0.13" />
-                            <path
-                                d="M35 19C35.5304 19 36.0391 19.2107 36.4142 19.5858C36.7893 19.9609 37 20.4696 37 21V35C37 35.5304 36.7893 36.0391 36.4142 36.4142C36.0391 36.7893 35.5304 37 35 37H21C20.4696 37 19.9609 36.7893 19.5858 36.4142C19.2107 36.0391 19 35.5304 19 35V21C19 20.4696 19.2107 19.9609 19.5858 19.5858C19.9609 19.2107 20.4696 19 21 19H35ZM34.5 34.5V29.2C34.5 28.3354 34.1565 27.5062 33.5452 26.8948C32.9338 26.2835 32.1046 25.94 31.24 25.94C30.39 25.94 29.4 26.46 28.92 27.24V26.13H26.13V34.5H28.92V29.57C28.92 28.8 29.54 28.17 30.31 28.17C30.6813 28.17 31.0374 28.3175 31.2999 28.5801C31.5625 28.8426 31.71 29.1987 31.71 29.57V34.5H34.5ZM22.88 24.56C23.3256 24.56 23.7529 24.383 24.0679 24.0679C24.383 23.7529 24.56 23.3256 24.56 22.88C24.56 21.95 23.81 21.19 22.88 21.19C22.4318 21.19 22.0019 21.3681 21.685 21.685C21.3681 22.0019 21.19 22.4318 21.19 22.88C21.19 23.81 21.95 24.56 22.88 24.56ZM24.27 34.5V26.13H21.5V34.5H24.27Z"
-                                fill="white" />
-                        </svg>
-
-                    </a>
+                    <p>
+                        Our company started with a simple vision of helping up-and-coming entrepreneurs and young
+                        professionals find a solid footprint for their business and enable them to expand their
+                        boundaries
+                        even while working remotely.
+                    </p>
+                </div>
+                <div class="col-12 col-md-2">
+                    <h5>Other Link 1</h5>
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#">FAQS</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-2">
+                    <h5>Other Link 1</h5>
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#">FAQS</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-2">
+                    <h5>Other Link 1</h5>
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#">FAQS</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </footer>
+            <div class="footer-bottom-row">
+                <p>Copyright © 2025 <a href="#">LOQALCARE. </a> All rights reserved.</p>
+                <div class="social-icons-row">
+                    <p>Follow us on</p>
+                    <div class="social-icons-row">
+                        <a href="#">
+                            <svg width="56" height="56" viewBox="0 0 56 56" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect width="56" height="56" rx="10" fill="white" fill-opacity="0.13" />
+                                <path
+                                    d="M38 28C38 22.48 33.52 18 28 18C22.48 18 18 22.48 18 28C18 32.84 21.44 36.87 26 37.8V31H24V28H26V25.5C26 23.57 27.57 22 29.5 22H32V25H30C29.45 25 29 25.45 29 26V28H32V31H29V37.95C34.05 37.45 38 33.19 38 28Z"
+                                    fill="white" />
+                            </svg>
+
+                        </a>
+                        <a href="#">
+                            <svg width="56" height="56" viewBox="0 0 56 56" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect width="56" height="56" rx="10" fill="white" fill-opacity="0.13" />
+                                <g clip-path="url(#clip0_143_6459)">
+                                    <path
+                                        d="M33.4625 19.3906H36.3766L30.0116 26.6843L37.5 36.6094H31.6373L27.0453 30.5888L21.7906 36.6094H18.8753L25.6832 28.8075L18.5 19.3906H24.5123L28.6626 24.8923L33.4625 19.3906ZM32.4413 34.8614H34.0563L23.6336 21.0472H21.9022L32.4413 34.8614Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_143_6459">
+                                        <rect width="19" height="19" fill="white" transform="translate(18.5 18.5)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+
+                        </a>
+                        <a href="#">
+                            <svg width="56" height="56" viewBox="0 0 56 56" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect width="56" height="56" rx="10" fill="white" fill-opacity="0.13" />
+                                <path
+                                    d="M35 19C35.5304 19 36.0391 19.2107 36.4142 19.5858C36.7893 19.9609 37 20.4696 37 21V35C37 35.5304 36.7893 36.0391 36.4142 36.4142C36.0391 36.7893 35.5304 37 35 37H21C20.4696 37 19.9609 36.7893 19.5858 36.4142C19.2107 36.0391 19 35.5304 19 35V21C19 20.4696 19.2107 19.9609 19.5858 19.5858C19.9609 19.2107 20.4696 19 21 19H35ZM34.5 34.5V29.2C34.5 28.3354 34.1565 27.5062 33.5452 26.8948C32.9338 26.2835 32.1046 25.94 31.24 25.94C30.39 25.94 29.4 26.46 28.92 27.24V26.13H26.13V34.5H28.92V29.57C28.92 28.8 29.54 28.17 30.31 28.17C30.6813 28.17 31.0374 28.3175 31.2999 28.5801C31.5625 28.8426 31.71 29.1987 31.71 29.57V34.5H34.5ZM22.88 24.56C23.3256 24.56 23.7529 24.383 24.0679 24.0679C24.383 23.7529 24.56 23.3256 24.56 22.88C24.56 21.95 23.81 21.19 22.88 21.19C22.4318 21.19 22.0019 21.3681 21.685 21.685C21.3681 22.0019 21.19 22.4318 21.19 22.88C21.19 23.81 21.95 24.56 22.88 24.56ZM24.27 34.5V26.13H21.5V34.5H24.27Z"
+                                    fill="white" />
+                            </svg>
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
     <!-- footer -->
     <script src="https://code.jquery.com/jquery-3.7.1.slim.js"></script>
     <script src="../assets/js/bootstrap.bundle.min.js"></script>

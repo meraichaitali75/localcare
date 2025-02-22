@@ -22,8 +22,9 @@
 </head>
 
 <body>
+
     <!-- header -->
-    <nav class="main-navbar common-navbar secondary-navbar navbar navbar-expand-lg">
+    <nav class="main-navbar common-navbar  secondary-navbar navbar navbar-expand-lg">
         <div class="container">
             <div class="navbar-row">
                 <a href="index.html" class="navbar-brand">
@@ -38,13 +39,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="nav ms-auto nav-tabs" id="nav-tab" role="tablist">
                     <li class="nav-item">
-                        <a href="index.html" class="nav-link active">Home</a>
+                        <a href="index.html" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
                         <a href="exploredoctor.html" class="nav-link">Explore Doctors</a>
                     </li>
                     <li class="nav-item">
-                        <a href="appointments.html" class="nav-link">Appointments</a>
+                        <a href="appointments.html" class="nav-link active">Appointments</a>
                     </li>
                     <li class="nav-item">
                         <a href="messages.html" class="nav-link">Messages</a>
@@ -73,7 +74,7 @@
         <!-- bredcrumb -->
         <div class="sub-header">
             <div class="container sub-header-row">
-                <h1>Profile</h1>
+                <h1>Appointments</h1>
                 <div class="d-flex align-items-center justify-content-end">
                     <a href="#">
                         <h6>Home
@@ -92,7 +93,7 @@
         <div class="container appointments-container">
             <div class="sorting-row flex-grow-1">
                 <div class="select-container">
-                    <select class="form-select form-select-sm" aria-label="Large select example">
+                    <select class="secondary-form-select form-select-sm" aria-label="Large select example">
                         <option selected>Treats</option>
                         <option value="1">One</option>
                         <option value="2">Two</option>
@@ -100,15 +101,15 @@
                     </select>
                 </div>
                 <div class="select-container">
-                    <select class="form-select form-select-sm" aria-label="Large select example">
-                        <option selected>Treats</option>
+                    <select class="secondary-form-select form-select-sm" aria-label="Large select example">
+                        <option selected>Sort by</option>
                         <option value="1">One</option>
                         <option value="2">Two</option>
                         <option value="3">Three</option>
                     </select>
                 </div>
                 <button type="submit">
-                    <img src="../assets/images/icon/filter-icon.svg" alt="filter" class="doctor-img me-3">
+                    <img src="../assets/images/icon/filter-icon.svg" alt="filter" class="doctor-img">
                 </button>
             </div>
             <!-- Appointment Card upcoming -->
@@ -140,26 +141,26 @@
                                     stroke="#547DCB" stroke-width="1.5" stroke-linecap="round" />
                             </svg>
                             <span class="clinic-text pe-2">2014 Joes Road Cambridge, NY 12816</span> |
+                            <a href="#" class="available-link ps-2">View On Map
+                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M1.8113 4.02453C2.5113 0.997031 7.07005 0.997031 7.7613 4.02453C8.17255 5.80078 7.0438 7.30578 6.0638 8.24203C5.3463 8.92453 4.21755 8.91578 3.50005 8.24203C2.5288 7.30578 1.40005 5.80078 1.8113 4.02453Z"
+                                        stroke="#547DCB" stroke-width="1.5" />
+                                    <path
+                                        d="M13.1862 14.5245C13.8862 11.497 18.4712 11.497 19.1712 14.5245C19.5825 16.3008 18.4537 17.8058 17.465 18.742C16.7475 19.4245 15.61 19.4158 14.8925 18.742C13.9037 17.8058 12.775 16.3008 13.1862 14.5245Z"
+                                        stroke="#547DCB" stroke-width="1.5" />
+                                    <path
+                                        d="M10.5 4.375H12.845C14.4637 4.375 15.2162 6.37875 14 7.44625L7.00873 13.5625C5.79248 14.6213 6.54498 16.625 8.15498 16.625H10.5"
+                                        stroke="#547DCB" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M4.8005 4.8125H4.81061" stroke="#547DCB" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M16.1755 15.3125H16.1856" stroke="#547DCB" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
                         </div>
-                        <a href="#" class="available-link ps-2">View On Map
-                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M1.8113 4.02453C2.5113 0.997031 7.07005 0.997031 7.7613 4.02453C8.17255 5.80078 7.0438 7.30578 6.0638 8.24203C5.3463 8.92453 4.21755 8.91578 3.50005 8.24203C2.5288 7.30578 1.40005 5.80078 1.8113 4.02453Z"
-                                    stroke="#547DCB" stroke-width="1.5" />
-                                <path
-                                    d="M13.1862 14.5245C13.8862 11.497 18.4712 11.497 19.1712 14.5245C19.5825 16.3008 18.4537 17.8058 17.465 18.742C16.7475 19.4245 15.61 19.4158 14.8925 18.742C13.9037 17.8058 12.775 16.3008 13.1862 14.5245Z"
-                                    stroke="#547DCB" stroke-width="1.5" />
-                                <path
-                                    d="M10.5 4.375H12.845C14.4637 4.375 15.2162 6.37875 14 7.44625L7.00873 13.5625C5.79248 14.6213 6.54498 16.625 8.15498 16.625H10.5"
-                                    stroke="#547DCB" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path d="M4.8005 4.8125H4.81061" stroke="#547DCB" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M16.1755 15.3125H16.1856" stroke="#547DCB" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </a>
                         <h6>€50</h6>
                     </div>
                     <div class="card-bottom-row">
@@ -186,7 +187,7 @@
                     <div class="top-row">
                         <img src="../assets/images/doctors/doctor1.png" alt="Doctor" class="doctor-img me-3">
                         <div>
-                            <h6>Dr. Naidan Smith <span class="status rejected">Upcoming</span></h6>
+                            <h6>Dr. Naidan Smith <span class="status rejected">Rejected</span></h6>
                             <small class="mb-1">Pediatric Clinic</small>
                         </div>
                     </div>
@@ -208,27 +209,28 @@
                             </svg>
 
                             <span class="clinic-text pe-2">2014 Joes Road Cambridge, NY 12816</span> |
-                        </div>
-                        <a href="#" class="available-link ps-2">View On Map
-                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M1.8113 4.02453C2.5113 0.997031 7.07005 0.997031 7.7613 4.02453C8.17255 5.80078 7.0438 7.30578 6.0638 8.24203C5.3463 8.92453 4.21755 8.91578 3.50005 8.24203C2.5288 7.30578 1.40005 5.80078 1.8113 4.02453Z"
-                                    stroke="#547DCB" stroke-width="1.5" />
-                                <path
-                                    d="M13.1862 14.5245C13.8862 11.497 18.4712 11.497 19.1712 14.5245C19.5825 16.3008 18.4537 17.8058 17.465 18.742C16.7475 19.4245 15.61 19.4158 14.8925 18.742C13.9037 17.8058 12.775 16.3008 13.1862 14.5245Z"
-                                    stroke="#547DCB" stroke-width="1.5" />
-                                <path
-                                    d="M10.5 4.375H12.845C14.4637 4.375 15.2162 6.37875 14 7.44625L7.00873 13.5625C5.79248 14.6213 6.54498 16.625 8.15498 16.625H10.5"
-                                    stroke="#547DCB" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path d="M4.8005 4.8125H4.81061" stroke="#547DCB" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M16.1755 15.3125H16.1856" stroke="#547DCB" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
 
-                        </a>
+                            <a href="#" class="available-link ps-2">View On Map
+                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M1.8113 4.02453C2.5113 0.997031 7.07005 0.997031 7.7613 4.02453C8.17255 5.80078 7.0438 7.30578 6.0638 8.24203C5.3463 8.92453 4.21755 8.91578 3.50005 8.24203C2.5288 7.30578 1.40005 5.80078 1.8113 4.02453Z"
+                                        stroke="#547DCB" stroke-width="1.5" />
+                                    <path
+                                        d="M13.1862 14.5245C13.8862 11.497 18.4712 11.497 19.1712 14.5245C19.5825 16.3008 18.4537 17.8058 17.465 18.742C16.7475 19.4245 15.61 19.4158 14.8925 18.742C13.9037 17.8058 12.775 16.3008 13.1862 14.5245Z"
+                                        stroke="#547DCB" stroke-width="1.5" />
+                                    <path
+                                        d="M10.5 4.375H12.845C14.4637 4.375 15.2162 6.37875 14 7.44625L7.00873 13.5625C5.79248 14.6213 6.54498 16.625 8.15498 16.625H10.5"
+                                        stroke="#547DCB" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M4.8005 4.8125H4.81061" stroke="#547DCB" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M16.1755 15.3125H16.1856" stroke="#547DCB" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+
+                            </a>
+                        </div>
                         <h6>€50</h6>
                     </div>
                     <div class="card-bottom-row">
@@ -287,27 +289,28 @@
                         <div>
                             <img src="../assets/images/icon/location-blue.png" alt="location  icon">
                             <span class="clinic-text pe-2">2014 Joes Road Cambridge, NY 12816</span> |
-                        </div>
-                        <a href="#" class="available-link ps-2">View On Map
-                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M1.8113 4.02453C2.5113 0.997031 7.07005 0.997031 7.7613 4.02453C8.17255 5.80078 7.0438 7.30578 6.0638 8.24203C5.3463 8.92453 4.21755 8.91578 3.50005 8.24203C2.5288 7.30578 1.40005 5.80078 1.8113 4.02453Z"
-                                    stroke="#547DCB" stroke-width="1.5" />
-                                <path
-                                    d="M13.1862 14.5245C13.8862 11.497 18.4712 11.497 19.1712 14.5245C19.5825 16.3008 18.4537 17.8058 17.465 18.742C16.7475 19.4245 15.61 19.4158 14.8925 18.742C13.9037 17.8058 12.775 16.3008 13.1862 14.5245Z"
-                                    stroke="#547DCB" stroke-width="1.5" />
-                                <path
-                                    d="M10.5 4.375H12.845C14.4637 4.375 15.2162 6.37875 14 7.44625L7.00873 13.5625C5.79248 14.6213 6.54498 16.625 8.15498 16.625H10.5"
-                                    stroke="#547DCB" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path d="M4.8005 4.8125H4.81061" stroke="#547DCB" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M16.1755 15.3125H16.1856" stroke="#547DCB" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
 
-                        </a>
+                            <a href="#" class="available-link ps-2">View On Map
+                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M1.8113 4.02453C2.5113 0.997031 7.07005 0.997031 7.7613 4.02453C8.17255 5.80078 7.0438 7.30578 6.0638 8.24203C5.3463 8.92453 4.21755 8.91578 3.50005 8.24203C2.5288 7.30578 1.40005 5.80078 1.8113 4.02453Z"
+                                        stroke="#547DCB" stroke-width="1.5" />
+                                    <path
+                                        d="M13.1862 14.5245C13.8862 11.497 18.4712 11.497 19.1712 14.5245C19.5825 16.3008 18.4537 17.8058 17.465 18.742C16.7475 19.4245 15.61 19.4158 14.8925 18.742C13.9037 17.8058 12.775 16.3008 13.1862 14.5245Z"
+                                        stroke="#547DCB" stroke-width="1.5" />
+                                    <path
+                                        d="M10.5 4.375H12.845C14.4637 4.375 15.2162 6.37875 14 7.44625L7.00873 13.5625C5.79248 14.6213 6.54498 16.625 8.15498 16.625H10.5"
+                                        stroke="#547DCB" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M4.8005 4.8125H4.81061" stroke="#547DCB" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M16.1755 15.3125H16.1856" stroke="#547DCB" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+
+                            </a>
+                        </div>
                         <h6>€50</h6>
                     </div>
                     <div class="card-bottom-row">
@@ -332,113 +335,119 @@
     </main>
 
     <!-- footer -->
-    <footer class="main-footer">
-        <div class="row footer-top-row">
-            <div class="col-12 col-md-6">
-                <a href="index.html" class="navbar-brand">
-                    <img src="../assets/images/loqalare-light-logo.png" class="localcare_logo" alt="Localcare Logo">
-                </a>
-                <p>
-                    Our company started with a simple vision of helping up-and-coming entrepreneurs and young
-                    professionals find a solid footprint for their business and enable them to expand their boundaries
-                    even while working remotely.
-                </p>
-            </div>
-            <div class="col-12 col-md-2">
-                <h5>Other Link 1</h5>
-                <ul>
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">About Us</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                    <li>
-                        <a href="#">FAQS</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-12 col-md-2">
-                <h5>Other Link 1</h5>
-                <ul>
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">About Us</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                    <li>
-                        <a href="#">FAQS</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-12 col-md-2">
-                <h5>Other Link 1</h5>
-                <ul>
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">About Us</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                    <li>
-                        <a href="#">FAQS</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom-row">
-            <p>Copyright © 2025 <a href="#">LOQALCARE. </a> All rights reserved.</p>
-            <div class="social-icons-row">
-                <p>Follow us on</p>
-                <div class="social-icons-row">
-                    <a href="#">
-                        <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="56" height="56" rx="10" fill="white" fill-opacity="0.13" />
-                            <path
-                                d="M38 28C38 22.48 33.52 18 28 18C22.48 18 18 22.48 18 28C18 32.84 21.44 36.87 26 37.8V31H24V28H26V25.5C26 23.57 27.57 22 29.5 22H32V25H30C29.45 25 29 25.45 29 26V28H32V31H29V37.95C34.05 37.45 38 33.19 38 28Z"
-                                fill="white" />
-                        </svg>
-
+    <div class="container">
+        <footer class="main-footer">
+            <div class="footer-top-row">
+                <div class="footer-blocks">
+                    <a href="index.html" class="navbar-brand">
+                        <img src="../assets/images/loqalare-light-logo.png" class="localcare_logo" alt="Localcare Logo">
                     </a>
-                    <a href="#">
-                        <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="56" height="56" rx="10" fill="white" fill-opacity="0.13" />
-                            <g clip-path="url(#clip0_143_6459)">
-                                <path
-                                    d="M33.4625 19.3906H36.3766L30.0116 26.6843L37.5 36.6094H31.6373L27.0453 30.5888L21.7906 36.6094H18.8753L25.6832 28.8075L18.5 19.3906H24.5123L28.6626 24.8923L33.4625 19.3906ZM32.4413 34.8614H34.0563L23.6336 21.0472H21.9022L32.4413 34.8614Z"
-                                    fill="white" />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_143_6459">
-                                    <rect width="19" height="19" fill="white" transform="translate(18.5 18.5)" />
-                                </clipPath>
-                            </defs>
-                        </svg>
-
-                    </a>
-                    <a href="#">
-                        <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="56" height="56" rx="10" fill="white" fill-opacity="0.13" />
-                            <path
-                                d="M35 19C35.5304 19 36.0391 19.2107 36.4142 19.5858C36.7893 19.9609 37 20.4696 37 21V35C37 35.5304 36.7893 36.0391 36.4142 36.4142C36.0391 36.7893 35.5304 37 35 37H21C20.4696 37 19.9609 36.7893 19.5858 36.4142C19.2107 36.0391 19 35.5304 19 35V21C19 20.4696 19.2107 19.9609 19.5858 19.5858C19.9609 19.2107 20.4696 19 21 19H35ZM34.5 34.5V29.2C34.5 28.3354 34.1565 27.5062 33.5452 26.8948C32.9338 26.2835 32.1046 25.94 31.24 25.94C30.39 25.94 29.4 26.46 28.92 27.24V26.13H26.13V34.5H28.92V29.57C28.92 28.8 29.54 28.17 30.31 28.17C30.6813 28.17 31.0374 28.3175 31.2999 28.5801C31.5625 28.8426 31.71 29.1987 31.71 29.57V34.5H34.5ZM22.88 24.56C23.3256 24.56 23.7529 24.383 24.0679 24.0679C24.383 23.7529 24.56 23.3256 24.56 22.88C24.56 21.95 23.81 21.19 22.88 21.19C22.4318 21.19 22.0019 21.3681 21.685 21.685C21.3681 22.0019 21.19 22.4318 21.19 22.88C21.19 23.81 21.95 24.56 22.88 24.56ZM24.27 34.5V26.13H21.5V34.5H24.27Z"
-                                fill="white" />
-                        </svg>
-
-                    </a>
+                    <p>
+                        Our company started with a simple vision of helping up-and-coming entrepreneurs and young
+                        professionals find a solid footprint for their business and enable them to expand their
+                        boundaries
+                        even while working remotely.
+                    </p>
+                </div>
+                <div class="footer-ul-blocks">
+                    <h5>Other Link 1</h5>
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#">FAQS</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-ul-blocks">
+                    <h5 class="mt-4 mt-md-0">Other Link 1</h5>
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#">FAQS</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-ul-blocks">
+                    <h5 class="mt-4 mt-md-0">Other Link 1</h5>
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#">FAQS</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </footer>
+            <div class="footer-bottom-row">
+                <p class="followus-lead">Copyright © 2025 <a href="#">LOQALCARE. </a> All rights reserved.</p>
+                <div class="social-icons-row">
+                    <p>Follow us on</p>
+                    <div class="social-icons-row social-icons-col">
+                        <a href="#">
+                            <svg width="56" height="56" viewBox="0 0 56 56" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect width="56" height="56" rx="10" fill="white" fill-opacity="0.13" />
+                                <path
+                                    d="M38 28C38 22.48 33.52 18 28 18C22.48 18 18 22.48 18 28C18 32.84 21.44 36.87 26 37.8V31H24V28H26V25.5C26 23.57 27.57 22 29.5 22H32V25H30C29.45 25 29 25.45 29 26V28H32V31H29V37.95C34.05 37.45 38 33.19 38 28Z"
+                                    fill="white" />
+                            </svg>
+
+                        </a>
+                        <a href="#">
+                            <svg width="56" height="56" viewBox="0 0 56 56" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect width="56" height="56" rx="10" fill="white" fill-opacity="0.13" />
+                                <g clip-path="url(#clip0_143_6459)">
+                                    <path
+                                        d="M33.4625 19.3906H36.3766L30.0116 26.6843L37.5 36.6094H31.6373L27.0453 30.5888L21.7906 36.6094H18.8753L25.6832 28.8075L18.5 19.3906H24.5123L28.6626 24.8923L33.4625 19.3906ZM32.4413 34.8614H34.0563L23.6336 21.0472H21.9022L32.4413 34.8614Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_143_6459">
+                                        <rect width="19" height="19" fill="white" transform="translate(18.5 18.5)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+
+                        </a>
+                        <a href="#">
+                            <svg width="56" height="56" viewBox="0 0 56 56" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect width="56" height="56" rx="10" fill="white" fill-opacity="0.13" />
+                                <path
+                                    d="M35 19C35.5304 19 36.0391 19.2107 36.4142 19.5858C36.7893 19.9609 37 20.4696 37 21V35C37 35.5304 36.7893 36.0391 36.4142 36.4142C36.0391 36.7893 35.5304 37 35 37H21C20.4696 37 19.9609 36.7893 19.5858 36.4142C19.2107 36.0391 19 35.5304 19 35V21C19 20.4696 19.2107 19.9609 19.5858 19.5858C19.9609 19.2107 20.4696 19 21 19H35ZM34.5 34.5V29.2C34.5 28.3354 34.1565 27.5062 33.5452 26.8948C32.9338 26.2835 32.1046 25.94 31.24 25.94C30.39 25.94 29.4 26.46 28.92 27.24V26.13H26.13V34.5H28.92V29.57C28.92 28.8 29.54 28.17 30.31 28.17C30.6813 28.17 31.0374 28.3175 31.2999 28.5801C31.5625 28.8426 31.71 29.1987 31.71 29.57V34.5H34.5ZM22.88 24.56C23.3256 24.56 23.7529 24.383 24.0679 24.0679C24.383 23.7529 24.56 23.3256 24.56 22.88C24.56 21.95 23.81 21.19 22.88 21.19C22.4318 21.19 22.0019 21.3681 21.685 21.685C21.3681 22.0019 21.19 22.4318 21.19 22.88C21.19 23.81 21.95 24.56 22.88 24.56ZM24.27 34.5V26.13H21.5V34.5H24.27Z"
+                                    fill="white" />
+                            </svg>
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
     <!-- footer -->
     <script src="https://code.jquery.com/jquery-3.7.1.slim.js"></script>
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
