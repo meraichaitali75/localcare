@@ -2493,6 +2493,9 @@ form {
     .main-footer h5 {
         font-size: 16px;
     } */
+    .profile-patient-wrapper .profile-card {
+        padding: 10px;
+    }
 }
 
 @media (max-width: 993px) {
