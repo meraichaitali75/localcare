@@ -56,7 +56,7 @@
                     <div class="auth-box">
                         <img src="../assets/images/login/doctor-auth-banner.png" class="auth_img" alt="Auth Img">
                     </div>
-                    <h1>Local <span>Care</span></h1>
+                    <h1 class="mt-5">Local <span>Care</span></h1>
                     <p class="auth-lead">
                         LocalCare is a community-driven platform dedicated to connecting individuals with trusted
                         local
@@ -91,7 +91,7 @@
                             <div class="tab-pane fade show active" id="step1" role="tabpanel">
                                 <h4>Choose your Profile</h4>
                                 <p class="auth-top-lead">Please select your profession profile.</p>
-                                <form class="auth-form" method="POST">
+                                <form class="auth-form"  action="#" method="POST">
                                     <h6>Choose the therapist group</h6>
                                     <div class="row auth-row">
                                         <div class="col-12 col-md-6">
@@ -133,7 +133,7 @@
                                             <div class="select-container">
                                                 <select class="secondary-form-select mb-3 mb-ml-0"
                                                     aria-label="Large select example">
-                                                    <option selected>Treats</option>
+                                                    <option selected>Select specialization</option>
                                                     <option value="1">One</option>
                                                     <option value="2">Two</option>
                                                     <option value="3">Three</option>
@@ -155,12 +155,13 @@
                             <div class="tab-pane fade" id="step2" role="tabpanel">
                                 <h4>Personal Info</h4>
                                 <p class="auth-top-lead">Please fill your personal info</p>
-                                <form class="auth-form" method="POST">
+                                <form class="auth-form" action="#" method="POST">
                                     <div class="row">
                                         <div class="col-sm-12 col-md-6">
                                             <div class="form-group mb-3">
-                                                <input type="text" placeholder="First Name" class="form-control"
-                                                    name="userFirstName" aria-describedby="userFirstName">
+                                                <input type="text" placeholder="First Name"
+                                                    class="secondary-form-control" name="userFirstName"
+                                                    aria-describedby="userFirstName">
                                                 <span class="user-icons">
                                                     <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
                                                         xmlns="http://www.w3.org/2000/svg">
@@ -185,8 +186,9 @@
                                         </div>
                                         <div class="col-sm-12 col-md-6">
                                             <div class="form-group mb-3">
-                                                <input type="text" placeholder="Last Name" class="form-control"
-                                                    name="userLastName" aria-describedby="userLastName">
+                                                <input type="text" placeholder="Last Name"
+                                                    class="secondary-form-control" name="userLastName"
+                                                    aria-describedby="userLastName">
                                                 <span class="user-icons">
                                                     <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
                                                         xmlns="http://www.w3.org/2000/svg">
@@ -211,14 +213,14 @@
                                         </div>
                                         <div class="col-12">
                                             <div class="form-group mb-3">
-                                                <input type="email" placeholder="Email" class="form-control"
+                                                <input type="email" placeholder="Email" class="secondary-form-control"
                                                     name="userEmail" id="userEmail" aria-describedby="userEmail">
                                                 <span class="user-icons"><img src="../assets/images/icon/email.png"
                                                         alt="Email Icon"></span>
                                             </div>
                                         </div>
                                         <div class="col-12">
-                                            <div class="form-control phone-input mb-3">
+                                            <div class="secondary-form-select phone-input mb-3">
                                                 <select>
                                                     <option selected>+41</option>
                                                     <option>+1</option>
@@ -233,7 +235,7 @@
                                         <div class="col-12">
                                             <div class="form-group mb-3 position-relative">
                                                 <input type="password" placeholder="Password"
-                                                    class="form-control password-input">
+                                                    class="secondary-form-control password-input">
                                                 <span class="user-icons password-toggle">
                                                     <img src="../assets/images/icon/password_eye.png"
                                                         alt="Toggle Password">
@@ -244,7 +246,7 @@
                                         <div class="col-12">
                                             <div class="form-group mb-3 position-relative">
                                                 <input type="password" placeholder="Confirm Password"
-                                                    class="form-control password-input">
+                                                    class="secondary-form-control password-input">
                                                 <span class="user-icons password-toggle">
                                                     <img src="../assets/images/icon/password_eye.png"
                                                         alt="Toggle Password">
@@ -259,7 +261,7 @@
                                                 Policy</strong>
                                         </label>
                                     </div>
-                                    <button type="submit" class="btn btn-dark">Sign Up</button>
+                                    <button type="button" class="btn btn-dark">Sign Up</button>
                                     <p class="auth-bottom-text">Already have an account? <a href="login.html">Sign
                                             In</a></p>
                                 </form>

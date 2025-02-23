@@ -668,6 +668,10 @@ form {
 .login-main-wrapper p.auth-lead {
     max-width: 700px;
     margin: 0;
+    font-weight: var(--font-weight-regular);
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
 }
 
 .login-main-wrapper .auth-right-box {
@@ -902,6 +906,16 @@ form {
     font-weight: var(--font-weight-medium);
 }
 
+.doctor-login-wrapper .step-indicator span {
+    color: #090A2D;
+    opacity: 0.6;
+}
+
+.doctor-login-wrapper .step-indicator .nav-link.active+span {
+    color: #000000;
+    opacity: 1;
+}
+
 .auth-tab-content .tab-pane h4 {
     text-align: center;
 }
@@ -1044,6 +1058,10 @@ form {
     justify-content: space-between;
     padding-top: 20px;
     margin: 0;
+}
+
+.doctor-main-wrapper .search-section .select-container::after {
+    top: 50%;
 }
 
 .doctor-main-wrapper .search-section .symptoms-frm-row div {
@@ -2267,6 +2285,7 @@ form {
 
 .footer-top-row .footer-blocks {
     width: 355px;
+    margin-right: 20px;
 }
 
 .footer-top-row .footer-ul-blocks {
@@ -2403,6 +2422,10 @@ form {
         flex-direction: column-reverse;
     }
 
+    .top-rated-doctors-section .doctors-card {
+        max-width: 100%;
+    }
+
     .main-footer {
         padding: 20px;
         border-radius: 30px;
@@ -2441,6 +2464,9 @@ form {
 }
 
 @media (max-width: 993px) {
+    .doctor-main-wrapper .search-section .select-container::after {
+        top: 40%;
+    }
 
     .patient-main-wrapper .btns-row {
         flex-direction: column;
@@ -2603,8 +2629,12 @@ form {
     .main-navbar .navbar-row {
         display: flex;
         align-items: center;
-        justify-content: center;
-        /* width: 100%; */
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .main-navbar .nav-tabs {
+        margin: 20px 0;
     }
 
     .auth-form a {
@@ -2795,6 +2825,10 @@ form {
         font-size: 14px;
     }
 
+    .doctor-login-wrapper .form-check-label {
+        font-size: 11px;
+    }
+
 }
 
 @media (max-width: 1400px) {
@@ -2807,7 +2841,7 @@ form {
         font-size: 11px;
     }
 
-    .main-footer p {
+    /* .main-footer p {
         max-width: 200px;
     }
 
@@ -2834,7 +2868,7 @@ form {
 
     .main-footer h5 {
         font-size: 16px;
-    }
+    } */
 }
 
 @media (max-width: 1500px) {
@@ -2861,7 +2895,7 @@ form {
     }
 
     .localcare_logo {
-        width: 230px;
+        width: 200px;
         object-fit: contain;
     }
 
@@ -2884,4 +2918,29 @@ form {
     .appointments-wrapper .appointment-card small {
         font-size: 18px;
     }
+
+    .login-main-wrapper p.auth-lead {
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    /* footer css */
+    .main-footer h5 {
+        font-size: 16px;
+    }
+
+    .main-footer li a {
+        font-size: 13px;
+    }
+
+    .footer-bottom-row a,
+    .footer-bottom-row p {
+        font-size: 12px;
+    }
+
+    .main-footer p {
+        font-size: 13px;
+    }
+
+    /* ends: footer css */
 }

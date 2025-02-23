@@ -130,14 +130,15 @@
                     </a>
                 </div>
                 <div class="patient-frm-row row">
+
                     <div class="col-12 col-md-5">
                         <div class="select-container">
                             <select class="secondary-form-select form-select-sm mb-3 mb-md-0"
                                 aria-label="Large select example">
                                 <option selected>Select specialist</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
+                                <option>Dermatology</option>
+                                <option>Neurology</option>
+                                <option>Pediatrics</option>
                             </select>
                         </div>
                     </div>
@@ -145,7 +146,7 @@
                         <input type="text" class="secondary-form-control  mb-3 mb-md-0"
                             placeholder="Enter Location/Postal Code" />
                     </div>
-                    <div class="col-12 col-md-2 d-flex justify-content-end">
+                    <div class="col-12 col-md-2 d-flex justify-content-center">
                         <button type="submit" class="btn btn-dark search-btn-symptoms">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -364,7 +365,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
                         <div class="doctors-card">
                             <div class="doctors-img">
                                 <img src="../assets/images/doctors/doctor1.png" class="dr-thumbnail"
@@ -976,8 +977,8 @@
     <!-- footer -->
     <div class="container">
         <footer class="main-footer">
-            <div class="row footer-top-row">
-                <div class="col-12 col-md-6">
+            <div class="footer-top-row">
+                <div class="footer-blocks">
                     <a href="index.html" class="navbar-brand">
                         <img src="../assets/images/loqalare-light-logo.png" class="localcare_logo" alt="Localcare Logo">
                     </a>
@@ -988,7 +989,7 @@
                         even while working remotely.
                     </p>
                 </div>
-                <div class="col-12 col-md-2">
+                <div class="footer-ul-blocks">
                     <h5>Other Link 1</h5>
                     <ul>
                         <li>
@@ -1005,8 +1006,8 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-12 col-md-2">
-                    <h5>Other Link 1</h5>
+                <div class="footer-ul-blocks">
+                    <h5 class="mt-4 mt-md-0">Other Link 1</h5>
                     <ul>
                         <li>
                             <a href="#">Home</a>
@@ -1022,8 +1023,8 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-12 col-md-2">
-                    <h5>Other Link 1</h5>
+                <div class="footer-ul-blocks">
+                    <h5 class="mt-4 mt-md-0">Other Link 1</h5>
                     <ul>
                         <li>
                             <a href="#">Home</a>
@@ -1041,10 +1042,10 @@
                 </div>
             </div>
             <div class="footer-bottom-row">
-                <p>Copyright © 2025 <a href="#">LOQALCARE. </a> All rights reserved.</p>
+                <p class="followus-lead">Copyright © 2025 <a href="#">LOQALCARE. </a> All rights reserved.</p>
                 <div class="social-icons-row">
                     <p>Follow us on</p>
-                    <div class="social-icons-row">
+                    <div class="social-icons-row social-icons-col">
                         <a href="#">
                             <svg width="56" height="56" viewBox="0 0 56 56" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -1088,7 +1089,7 @@
         </footer>
     </div>
     <!-- footer -->
-    <script src="https://code.jquery.com/jquery-3.7.1.slim.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
