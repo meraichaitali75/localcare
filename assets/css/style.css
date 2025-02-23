@@ -2142,6 +2142,7 @@ form {
     color: var(--dark-blue);
     margin: 0;
     display: flex;
+    align-items: center;
 }
 
 .appointments-wrapper .appointment-card .available-link {
@@ -2176,7 +2177,7 @@ form {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    align-items: flex-start;
+    align-items: center;
     border-bottom: 1px solid var(--gray);
 }
 
@@ -2367,100 +2368,130 @@ form {
 }
 
 /* ==========ends: footer=========== */
-@media (max-width: 480px) {
-    .doctor-login-wrapper .step-indicator {
-        padding: 10px 0;
+@media (max-width: 1500px) {
+    h1 {
+        font-size: var(--font-size-md-h1);
+        line-height: 30px;
     }
 
-    .doctor-login-wrapper .step-indicator::before {
-        left: 18%;
-        width: 64%;
+    h5 {
+        font-size: var(--font-size-md-h5);
     }
 
-    .doctor-login-wrapper .step-indicator .nav-link {
-        width: 45px;
+    h4 {
+        font-size: var(--font-size-md-h4);
+        padding-top: 20px;
+    }
+
+    p {
+        font-size: var(--font-size-md-p);
+    }
+
+    .doctor-main-wrapper .benefit-banner-section h1 {
+        line-height: 50px;
+    }
+
+    .localcare_logo {
+        width: 200px;
+        object-fit: contain;
+    }
+
+    .btn {
+        padding: 10px;
+        font-size: 12px;
+        font-size: var(--btn-font-sm-size);
         height: 45px;
+    }
+
+    .doctor-main-wrapper .aboutus-section .card img {
+        height: 70px;
+        width: 70px;
+    }
+
+    .appointments-wrapper .appointment-card h6 {
+        font-size: 20px;
+    }
+
+    .appointments-wrapper .appointment-card small {
         font-size: 18px;
     }
 
-    .doctor-login-wrapper .step-indicator span {
+    .login-main-wrapper p.auth-lead {
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    /* footer css */
+    .main-footer h5 {
+        font-size: 16px;
+    }
+
+    .main-footer li a {
+        font-size: 13px;
+    }
+
+    .footer-bottom-row a,
+    .footer-bottom-row p {
         font-size: 12px;
     }
 
-    .doctor-main-wrapper .search-section .search-container {
-        flex-direction: column-reverse;
+    .main-footer p {
+        font-size: 13px;
     }
 
-    .doctor-main-wrapper .search-section .search-frm-container {
-        max-width: unset;
-        overflow: unset;
-        height: auto;
-        background: transparent;
-        flex-direction: column-reverse;
+    /* ends: footer css */
+    .appointments-wrapper .tops-row {
+        align-items: flex-start;
     }
 
-    .doctor-main-wrapper .search-section .search-input {
-        border: none;
-        padding: 10px;
-        border-radius: 50px;
-        flex-grow: 1;
-        outline: none;
-        background: var(--gray);
-        margin: 10px 0 20px 0;
-        padding: 15px;
+    .appointments-wrapper .appointment-card .btns-row {
+        margin-bottom: 15px;
     }
 
-    .doctor-main-wrapper .top-rated-doctors-section .viewall-arrow svg {
+    .appointments-wrapper .appointment-card .btns-row .btn {
+        font-size: 13px;
         height: 30px;
-        width: 30px;
-        object-fit: contain;
     }
 }
 
-@media (max-width: 767px) {
-    .auth-row {
-        flex-direction: column-reverse;
+@media (max-width: 1400px) {
+    .navbar>.container {
+        flex-direction: column;
+        max-width: 1000px;
     }
 
-    .top-rated-doctors-section .doctors-card {
-        max-width: 100%;
+    .main-navbar .btn {
+        font-size: 11px;
+    }
+
+    /* .main-footer p {
+        max-width: 200px;
+    }
+
+    .main-footer h5 {
+        font-size: 16px;
+    }
+
+    .footer-top-row .footer-ul-blocks {
+        width: auto;
     }
 
     .main-footer {
         padding: 20px;
-        border-radius: 30px;
     }
 
-    .footer-top-row .footer-blocks {
-        width: 100%;
+    .main-footer p {
+        max-width: 300px;
+        font-size: 13px;
     }
 
-    .footer-top-row,
-    .footer-bottom-row {
-        flex-direction: column;
+    .main-footer p.followus-lead {
+        max-width: 100%;
     }
 
-    .social-icons-row,
-    .footer-bottom-row {
-        justify-content: flex-start;
-        flex-direction: column-reverse;
-    }
-
-    .social-icons-row {
-        flex-direction: column;
-    }
-
-    .social-icons-col {
-        flex-direction: row;
-    }
-
-    .sub-header-row {
-        flex-wrap: wrap;
-    }
-
-    .main-footer ul {
-        margin: 20px 0 auto 0;
-    }
+    .main-footer h5 {
+        font-size: 16px;
+    } */
 }
 
 @media (max-width: 993px) {
@@ -2519,12 +2550,6 @@ form {
         flex-direction: column;
     }
 
-    .appointments-wrapper .appointment-card .btns-row {
-        width: 100%;
-        overflow: scroll;
-        white-space: nowrap;
-        margin-bottom: 10px;
-    }
 
     .appointments-wrapper .sorting-row {
 
@@ -2538,13 +2563,14 @@ form {
 
     .appointments-wrapper .top-row {
         flex-direction: column;
-        align-items: center;
-        text-align: center;
+        /* align-items: center; */
+        /* text-align: center; */
         width: 100%;
     }
 
     .appointments-wrapper .appointment-card h6 {
         font-size: 16px;
+        line-height: 40px;
     }
 
     .appointments-wrapper .appointment-card small {
@@ -2831,116 +2857,109 @@ form {
 
 }
 
-@media (max-width: 1400px) {
-    .navbar>.container {
-        flex-direction: column;
-        max-width: 1000px;
+@media (max-width: 767px) {
+    .auth-row {
+        flex-direction: column-reverse;
     }
 
-    .main-navbar .btn {
-        font-size: 11px;
-    }
-
-    /* .main-footer p {
-        max-width: 200px;
-    }
-
-    .main-footer h5 {
-        font-size: 16px;
-    }
-
-    .footer-top-row .footer-ul-blocks {
-        width: auto;
+    .top-rated-doctors-section .doctors-card {
+        max-width: 100%;
     }
 
     .main-footer {
         padding: 20px;
+        border-radius: 30px;
     }
 
-    .main-footer p {
-        max-width: 300px;
-        font-size: 13px;
+    .footer-top-row .footer-blocks {
+        width: 100%;
     }
 
-    .main-footer p.followus-lead {
-        max-width: 100%;
+    .footer-top-row,
+    .footer-bottom-row {
+        flex-direction: column;
     }
 
-    .main-footer h5 {
-        font-size: 16px;
-    } */
+    .social-icons-row,
+    .footer-bottom-row {
+        justify-content: flex-start;
+        flex-direction: column-reverse;
+    }
+
+    .social-icons-row {
+        flex-direction: column;
+    }
+
+    .social-icons-col {
+        flex-direction: row;
+    }
+
+    .sub-header-row {
+        flex-wrap: wrap;
+    }
+
+    .main-footer ul {
+        margin: 20px 0 auto 0;
+    }
+
+    .appointments-wrapper .appointment-card .btns-row {
+        /* width: 100%;
+        overflow: scroll;
+        white-space: nowrap;
+        margin-bottom: 10px; */
+        white-space: nowrap;
+        margin-bottom: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
 
-@media (max-width: 1500px) {
-    h1 {
-        font-size: var(--font-size-md-h1);
-        line-height: 30px;
+@media (max-width: 480px) {
+    .doctor-login-wrapper .step-indicator {
+        padding: 10px 0;
     }
 
-    h5 {
-        font-size: var(--font-size-md-h5);
+    .doctor-login-wrapper .step-indicator::before {
+        left: 18%;
+        width: 64%;
     }
 
-    h4 {
-        font-size: var(--font-size-md-h4);
-        padding-top: 20px;
-    }
-
-    p {
-        font-size: var(--font-size-md-p);
-    }
-
-    .doctor-main-wrapper .benefit-banner-section h1 {
-        line-height: 50px;
-    }
-
-    .localcare_logo {
-        width: 200px;
-        object-fit: contain;
-    }
-
-    .btn {
-        padding: 10px;
-        font-size: 12px;
-        font-size: var(--btn-font-sm-size);
+    .doctor-login-wrapper .step-indicator .nav-link {
+        width: 45px;
         height: 45px;
-    }
-
-    .doctor-main-wrapper .aboutus-section .card img {
-        height: 70px;
-        width: 70px;
-    }
-
-    .appointments-wrapper .appointment-card h6 {
-        font-size: 20px;
-    }
-
-    .appointments-wrapper .appointment-card small {
         font-size: 18px;
     }
 
-    .login-main-wrapper p.auth-lead {
-        font-size: 14px;
-        line-height: 25px;
-    }
-
-    /* footer css */
-    .main-footer h5 {
-        font-size: 16px;
-    }
-
-    .main-footer li a {
-        font-size: 13px;
-    }
-
-    .footer-bottom-row a,
-    .footer-bottom-row p {
+    .doctor-login-wrapper .step-indicator span {
         font-size: 12px;
     }
 
-    .main-footer p {
-        font-size: 13px;
+    .doctor-main-wrapper .search-section .search-container {
+        flex-direction: column-reverse;
     }
 
-    /* ends: footer css */
+    .doctor-main-wrapper .search-section .search-frm-container {
+        max-width: unset;
+        overflow: unset;
+        height: auto;
+        background: transparent;
+        flex-direction: column-reverse;
+    }
+
+    .doctor-main-wrapper .search-section .search-input {
+        border: none;
+        padding: 10px;
+        border-radius: 50px;
+        flex-grow: 1;
+        outline: none;
+        background: var(--gray);
+        margin: 10px 0 20px 0;
+        padding: 15px;
+    }
+
+    .doctor-main-wrapper .top-rated-doctors-section .viewall-arrow svg {
+        height: 30px;
+        width: 30px;
+        object-fit: contain;
+    }
 }
