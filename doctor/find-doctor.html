@@ -70,27 +70,26 @@
     <!-- header: ends here -->
     <!-- main -->
     <main class="doctor-main-wrapper find-doctor-wrapper main-wrapper">
-        <div class="container">
-            <div class="row sub-header">
-                <div class="col-12 col-md-8">
-                    <h1>Find A Doctor</h1>
-                </div>
-                <div class="col-12 col-md-4">
-                    <div class="d-flex align-items-center justify-content-end">
-                        <a href="#">
-                            <h6>Home
-                                <svg width="8" height="14" viewBox="0 0 8 14" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M7.70685 6.29294C7.89433 6.48046 7.99964 6.73477 7.99964 6.99994C7.99964 7.2651 7.89433 7.51941 7.70685 7.70694L2.04985 13.3639C1.95761 13.4594 1.84726 13.5356 1.72526 13.588C1.60326 13.6404 1.47204 13.668 1.33926 13.6692C1.20648 13.6703 1.0748 13.645 0.951901 13.5948C0.829005 13.5445 0.717352 13.4702 0.623459 13.3763C0.529567 13.2824 0.455314 13.1708 0.405033 13.0479C0.354752 12.925 0.32945 12.7933 0.330604 12.6605C0.331758 12.5278 0.359344 12.3965 0.411753 12.2745C0.464162 12.1525 0.540344 12.0422 0.635854 11.9499L5.58586 6.99994L0.635854 2.04994C0.453696 1.86133 0.352902 1.60873 0.35518 1.34653C0.357459 1.08434 0.462628 0.833526 0.648036 0.648118C0.833444 0.46271 1.08426 0.357541 1.34645 0.355262C1.60865 0.352984 1.86125 0.453778 2.04985 0.635936L7.70685 6.29294Z"
-                                        fill="black" />
-                                </svg>
-                            </h6>
-                        </a>
-                        <p>Doctors</p>
-                    </div>
+        <!-- bredcrumb -->
+        <div class="sub-header">
+            <div class="container sub-header-row">
+                <h1>Find A Doctor</h1>
+                <div class="d-flex align-items-center justify-content-end">
+                    <a href="#">
+                        <h6>Home
+                            <svg width="8" height="14" viewBox="0 0 8 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M7.70685 6.29294C7.89433 6.48046 7.99964 6.73477 7.99964 6.99994C7.99964 7.2651 7.89433 7.51941 7.70685 7.70694L2.04985 13.3639C1.95761 13.4594 1.84726 13.5356 1.72526 13.588C1.60326 13.6404 1.47204 13.668 1.33926 13.6692C1.20648 13.6703 1.0748 13.645 0.951901 13.5948C0.829005 13.5445 0.717352 13.4702 0.623459 13.3763C0.529567 13.2824 0.455314 13.1708 0.405033 13.0479C0.354752 12.925 0.32945 12.7933 0.330604 12.6605C0.331758 12.5278 0.359344 12.3965 0.411753 12.2745C0.464162 12.1525 0.540344 12.0422 0.635854 11.9499L5.58586 6.99994L0.635854 2.04994C0.453696 1.86133 0.352902 1.60873 0.35518 1.34653C0.357459 1.08434 0.462628 0.833526 0.648036 0.648118C0.833444 0.46271 1.08426 0.357541 1.34645 0.355262C1.60865 0.352984 1.86125 0.453778 2.04985 0.635936L7.70685 6.29294Z"
+                                    fill="black" />
+                            </svg>
+                        </h6>
+                    </a>
+                    <p>Doctors</p>
                 </div>
             </div>
+        </div>
+        <div class="container">
             <!-- search symptoms section -->
             <section class="search-section sections">
                 <div class="search-container">
@@ -107,71 +106,84 @@
                     </a>
                 </div>
                 <div class="symptoms-frm-row row">
-                    <div class="col-12 col-lg-3">
-                        <div class="select-container">
-                            <select class="form-select mb-3 mb-ml-0" aria-label="Large select example">
-                                <option selected>Treats</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                            </select>
+                    <div class="col-12 col-lg-10 p-0">
+                        <div class="row">
+                            <div class="col-12 col-lg-4">
+                                <div class="select-container">
+                                    <select class="secondary-form-select form-select-sm mb-3 mb-md-0"
+                                        aria-label="Large select example">
+                                        <option selected>Cardiology</option>
+                                        <option>Dermatology</option>
+                                        <option>Neurology</option>
+                                        <option>Pediatrics</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4">
+                                <div class="form-group mb-3 mb-md-0">
+                                    <input type="number" class="secondary-form-control" name="form-contact-no"
+                                        placeholder="Enter Postal Code">
+                                    <span class="user-icons postal-icon">
+                                        <img src="../assets/images/icon/postal-code.svg" alt="postal-code icon" />
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4">
+                                <div class="form-group mb-3 mb-md-0">
+                                    <input type="datetime-local" class="secondary-form-control datetime-input" id="dob"
+                                        name="form-date-time" />
+                                    <label for="dob" class="datetime-label">Date of Birth</label>
+                                    <span class="user-icons calendar-icon">
+                                        <svg width="23" height="22" viewBox="0 0 23 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g opacity="0.5">
+                                                <path d="M7.83337 1.83203V4.58203" stroke="black" stroke-width="1.5"
+                                                    stroke-miterlimit="10" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path d="M15.1666 1.83203V4.58203" stroke="black" stroke-width="1.5"
+                                                    stroke-miterlimit="10" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path d="M3.70837 8.33203H19.2917" stroke="black" stroke-width="1.5"
+                                                    stroke-miterlimit="10" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path
+                                                    d="M19.75 7.79036V15.582C19.75 18.332 18.375 20.1654 15.1667 20.1654H7.83333C4.625 20.1654 3.25 18.332 3.25 15.582V7.79036C3.25 5.04036 4.625 3.20703 7.83333 3.20703H15.1667C18.375 3.20703 19.75 5.04036 19.75 7.79036Z"
+                                                    stroke="black" stroke-width="1.5" stroke-miterlimit="10"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M14.8868 12.5579H14.895" stroke="black" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M14.8868 15.3079H14.895" stroke="black" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M11.4959 12.5579H11.5041" stroke="black" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M11.4959 15.3079H11.5041" stroke="black" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M8.10308 12.5579H8.11131" stroke="black" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M8.10308 15.3079H8.11131" stroke="black" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </g>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-3">
-                        <div class="form-group">
-                            <input type="number" class="form-control" name="form-contact-no"
-                                placeholder="Enter Location/Postal Code">
-                            <span class="user-icons postal-icon">
-                                <img src="../assets/images/icon/postal-code.svg" alt="postal-code icon" />
-                            </span>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-3">
-                        <div class="form-group position-relative">
-                            <input type="datetime-local" class="form-control datetime-input" name="form-date-time"
-                                placeholder="Select date" />
-                            <span class="user-icons calendar-icon">
-                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                    <div class="col-12 col-lg-2">
+                        <div class="col-12 col-lg-2 w-100 d-flex justify-content-end">
+                            <button type="submit" class="btn btn-dark search-btn-symptoms">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7.3335 1.8335V4.5835" stroke="black" stroke-width="1.5"
-                                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M14.6665 1.8335V4.5835" stroke="black" stroke-width="1.5"
-                                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M3.2085 8.33276H18.7918" stroke="black" stroke-width="1.5"
-                                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                                     <path
-                                        d="M19.25 7.79183V15.5835C19.25 18.3335 17.875 20.1668 14.6667 20.1668H7.33333C4.125 20.1668 2.75 18.3335 2.75 15.5835V7.79183C2.75 5.04183 4.125 3.2085 7.33333 3.2085H14.6667C17.875 3.2085 19.25 5.04183 19.25 7.79183Z"
-                                        stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                        d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z"
+                                        stroke="white" stroke-width="2" stroke-linecap="round"
                                         stroke-linejoin="round" />
-                                    <path d="M14.3869 12.5582H14.3951" stroke="black" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M14.3869 15.3082H14.3951" stroke="black" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M10.9958 12.5582H11.004" stroke="black" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M10.9958 15.3082H11.004" stroke="black" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M7.6032 12.5582H7.61143" stroke="black" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M7.6032 15.3082H7.61143" stroke="black" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M22 22L20 20" stroke="white" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
                                 </svg>
-
-                            </span>
+                                Search
+                            </button>
                         </div>
-                    </div>
-                    <div class="col-12 col-lg-2 d-flex justify-content-end">
-                        <button type="submit" class="btn btn-dark search-btn-symptoms">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z"
-                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M22 22L20 20" stroke="white" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
-                            Search
-                        </button>
                     </div>
                 </div>
                 <div class="row align-items-center mt-3">
@@ -180,16 +192,17 @@
                         <div class="range-container">
                             <input type="range" class="custom-range-slider" min="0" max="100" id="distanceRange"
                                 value="35">
-                            <p class="distance-value" id="distanceValue">35 km</p>
+                            <p class="distance-value" id="distanceValue">35</p>
                         </div>
                     </div>
                     <div class="col-12 col-md-6">
                         <div class="select-container">
-                            <select class="form-select mb-3 mb-ml-0" aria-label="Large select example">
+                            <select class="secondary-form-select form-select-sm mb-3 mb-md-0"
+                                aria-label="Large select example">
                                 <option selected>Treats</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
+                                <option>Dermatology</option>
+                                <option>Neurology</option>
+                                <option>Pediatrics</option>
                             </select>
                         </div>
                     </div>
@@ -201,12 +214,13 @@
                     <h3 class="mb-4 mb-md-0">Showing 1-12 of 20 Results</h3>
                 </div>
                 <div class="col-12 col-md-4 col-lg-2">
-                    <div class="select-container">
-                        <select class="form-select mb-3 mb-ml-0" aria-label="Large select example">
+                    <div class="select-container doctor-search-container">
+                        <select class="secondary-form-select form-select-sm mb-3 mb-md-0"
+                            aria-label="Large select example">
                             <option selected>Treats</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
+                            <option>Dermatology</option>
+                            <option>Neurology</option>
+                            <option>Pediatrics</option>
                         </select>
                     </div>
                 </div>
@@ -350,7 +364,7 @@
                                 <button class="slot btn btn-outline-secondary">3:30 PM</button>
                                 <button class="slot btn btn-outline-secondary">4:30 PM</button>
                             </div>
-                            <div class="btns-row">
+                            <div class="btns-row doctor-btns-row">
                                 <button class="btn btn-light">Know More</button>
                                 <button type="button" class="btn btn-dark" data-bs-toggle="modal"
                                     data-bs-target="#appointmentModal" style="display: block;">
@@ -797,7 +811,7 @@
 
         function updateSliderUI() {
             let value = rangeSlider.value;
-            distanceValue.innerText = value + " km";
+            distanceValue.innerText = value;
             let percentage = (value / rangeSlider.max) * 100;
             rangeSlider.style.background = `linear-gradient(to right, black ${percentage}%, #e0e0e0 ${percentage}%)`;
         }

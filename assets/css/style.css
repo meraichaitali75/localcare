@@ -1007,7 +1007,7 @@ form {
     border-radius: 50px;
     overflow: hidden;
     height: 54px;
-    background: var(--gray);
+    background: #F4F4F4;
 }
 
 .doctor-main-wrapper .search-section .search-btn {
@@ -1026,7 +1026,7 @@ form {
     border-radius: 0 50px 50px 0;
     flex-grow: 1;
     outline: none;
-    background: var(--gray);
+    background: #F4F4F4;
 }
 
 .doctor-main-wrapper .search-section .question-icon svg {
@@ -1060,13 +1060,15 @@ form {
     margin: 0;
 }
 
+.select-container.doctor-search-container::after,
 .doctor-main-wrapper .search-section .select-container::after {
     top: 50%;
 }
 
+
 .doctor-main-wrapper .search-section .symptoms-frm-row div {
-    margin: 0;
-    padding: 0;
+    /* margin: 0;
+    padding: 0; */
 }
 
 .doctor-main-wrapper .aboutus-section {
@@ -1486,6 +1488,8 @@ form {
     border-radius: 20px;
     padding: 10px 15px;
     font-size: 14px;
+    color: #777777;
+    font-weight: var(--font-weight-regular);
 }
 
 .search-timeslot-col .appointment-slot {
@@ -1517,6 +1521,10 @@ form {
     justify-content: center;
     align-items: center;
     gap: 20px;
+}
+
+.doctor-btns-row .btn {
+    font-size: 16px;
 }
 
 /* ==========ends: find a doctor main content css=========== */
@@ -2719,7 +2727,11 @@ form {
     }
 
     .search-card .card-badge-row {
-        overflow-x: scroll;
+        flex-wrap: wrap;
+    }
+
+    .search-card .card-badge-row .badge {
+        margin-bottom: 10px;
     }
 
     .search-card .card-badge-row::-webkit-scrollbar {
@@ -2733,10 +2745,12 @@ form {
 
     .search-card .card-detail-col {
         padding-left: 0;
+        padding-top: 20px;
     }
 
     .search-card .available-link {
         font-size: var(--font-size-sm-a);
+        padding-top: 10px;
     }
 
     .search-card .card-top-row {
@@ -2752,7 +2766,7 @@ form {
     }
 
     .search-card .card-badge-row p {
-        margin: 0;
+        margin-bottom: 10px;
     }
 
     .search-card .card-badge-row span {
@@ -2868,6 +2882,21 @@ form {
         flex-direction: column;
     }
 
+    .doctor-main-wrapper .search-section .search-btn-symptoms {
+        width: 100%;
+    }
+
+    .search-timeslot-col .doctor-btns-row {
+        flex-direction: column;
+    }
+
+    .search-timeslot-col .doctor-btns-row .btn {
+        width: 100%;
+    }
+
+    .search-card span.clinic-text {
+        margin-bottom: 20px;
+    }
 }
 
 @media (max-width: 767px) {
