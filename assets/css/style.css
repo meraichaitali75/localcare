@@ -2065,6 +2065,7 @@ form {
     overflow: hidden;
     height: 80vh;
     position: relative;
+    margin-bottom: 20px;
 }
 
 .chat-wrapper .form-control::placeholder {
