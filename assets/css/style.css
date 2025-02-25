@@ -99,6 +99,48 @@ a {
     margin-bottom: 100px;
 }
 
+/* custom toggle switch */
+.toggle-switch-container .toggle-switch {
+    display: flex;
+    align-items: center;
+    background: #f4f4f4;
+    border-radius: 30px;
+    padding: 10px 7px;
+    width: 100%;
+    max-width: 408px;
+    height: 54px;
+    position: relative;
+    overflow: hidden;
+}
+
+.toggle-switch-container .toggle-option {
+    flex: 1;
+    text-align: center;
+    padding: 10px 15px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3sease;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+    white-space: normal;
+    min-width: 0;
+    height: 44px;
+    max-width: 194px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toggle-switch-container .inactive {
+    color: gray;
+}
+
+.toggle-switch-container .active {
+    background: black;
+    color: white;
+}
 
 /* customized radio button */
 .custom-radio input[type="radio"] {
@@ -310,7 +352,7 @@ select::-ms-expand {
 }
 
 .btn-light {
-    background-color: var(--gray);
+    background-color: rgba(0, 0, 0, 0.1);
     color: var(--bs-body-color);
 }
 
@@ -449,6 +491,11 @@ h5 {
     color: #000000;
 }
 
+.doctor-main-wrapper .doctor-register-btn-row .btn {
+    font-weight: 600;
+    font-size: 16px;
+}
+
 .doctor-main-wrapper h4 span {
     color: var(--info);
 }
@@ -525,7 +572,9 @@ form {
 }
 
 .main-navbar .localcare_logo {
-    height: 50px;
+    /* width: 265px; */
+    height: 35px;
+    object-fit: contain;
 }
 
 .main-navbar .nav-tabs {
@@ -547,6 +596,10 @@ form {
     line-height: 24px;
     color: var(--secondary);
     border: 0;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .main-navbar .nav-link.active {
@@ -582,9 +635,9 @@ form {
     box-shadow: 0px 8px 34px rgba(0, 0, 0, 0.15);
 }
 
-.secondary-navbar .localcare_logo {
-    height: 35px;
-}
+/* .secondary-navbar .localcare_logo {
+    height: 51px;
+} */
 
 .secondary-navbar .nav-link {
     border-radius: 34px;
@@ -633,8 +686,8 @@ form {
 }
 
 .secondary-navbar .notification-icon {
-    height: 30px;
-    width: 30px;
+    height: 36px;
+    width: 36px;
     object-fit: contain;
 }
 
@@ -649,9 +702,19 @@ form {
     text-decoration: none;
 }
 
+.secondary-navbar .user-profile-row .user-profile {
+    height: 34px;
+    width: 34px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
 .secondary-navbar .user-profile-row span {
     padding-left: 10px;
     color: var(--bs-body-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
 }
 
 /* ==========ends: secondary navbar css=========== */
@@ -975,6 +1038,13 @@ form {
     justify-content: center;
 }
 
+.doctor-main-wrapper .banner-columns .success-h4 {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 33.93px;
+    color: #000000;
+}
+
 .doctor-main-wrapper .banner-section .home-banner {
     max-width: 100%;
 }
@@ -1003,6 +1073,11 @@ form {
     display: flex;
     align-items: center;
 
+}
+
+.doctor-main-wrapper .search-section .toggle-switch-container {
+    display: flex;
+    align-items: center;
 }
 
 .doctor-main-wrapper .search-section .search-frm-container {
@@ -1537,14 +1612,16 @@ form {
 
 /* ========== appointment-dialog css=========== */
 .appointment-card-modal {
-    margin: 20px 0;
+    margin: 20px 0 0 0;
     border: 0;
     box-shadow: none;
 }
 
 .appointment-card-modal .btn {
-    height: 44px;
-    padding: 10px 30px;
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 129px;
+    margin-top: -20px;
 }
 
 .modal-body .lead {
@@ -1554,8 +1631,23 @@ form {
     letter-spacing: 1px;
 }
 
+.modal-body .top-lead {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+    color: rgba(84, 84, 84, 1);
+    font-size: 14px;
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+
 .appointment-card-modal .card-top-row {
     display: flex;
+    padding-bottom: 20px;
+}
+
+.appointment-card-modal .top-badge-row {
+    padding-bottom: 15px;
+    margin: 0;
 }
 
 .appointment-card-modal .search-card-col {
@@ -1585,9 +1677,10 @@ form {
 }
 
 .appointment-card-modal .span-text {
-    font-size: var(--card-font-size-span);
-    color: var(--gray_shade1);
-    font-weight: var(--font-weight-medium);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #545454;
 }
 
 .appointment-card-modal .available-link {
@@ -1619,6 +1712,14 @@ form {
 
 /* appointment-dialog */
 
+.appointment-dialog .modal-content {
+    background: #FFFFFF;
+    border-radius: 30px;
+    border: 0;
+    max-height: 650px;
+    overflow-y: auto
+}
+
 .appointment-dialog .appointment-card-modal .card-badge-row .badge {
     padding: 10px 15px;
     display: flex;
@@ -1626,6 +1727,17 @@ form {
     align-items: center;
     text-align: center;
     margin-right: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    height: 29px;
+}
+
+.appointment-dialog .appointment-card-modal .card-badge-row .treats-lead {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #545454;
 }
 
 .appointment-dialog .appointment-card-modal .card-badge-row .text-bg-light {
@@ -1637,20 +1749,25 @@ form {
     text-align: center;
 }
 
-.appointment-dialog .appointment-modal-pills .tab-content {
-    max-height: 400px;
+.appointment-dialog .appointment-modal-pills .modal-body {
+    position: relative;
+    flex: 1 1 auto;
+    padding: var(--bs-modal-padding);
+    max-height: 600px;
     overflow-y: scroll;
 }
 
 .appointment-dialog .appointment-modal-pills .nav-pills .nav-link {
-    font-size: var(--btn-font-size);
     border-radius: 52px;
-    height: 48px;
+    height: 41px;
     padding: 10px 18px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: rgba(84, 84, 84, 1);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #545454;
 }
 
 .appointment-dialog .appointment-modal-pills .nav-pills .nav-link.active {
@@ -1672,9 +1789,9 @@ form {
 
 .appointment-dialog .appointment-modal-pills .review-card {
     display: flex;
-    padding-bottom: 10px;
+    padding: 10px;
     margin-bottom: 10px;
-    border-bottom: 1px solid var(--gray);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .appointment-dialog .appointment-modal-pills .review-col {
@@ -1682,15 +1799,49 @@ form {
     justify-content: space-between;
 }
 
-.appointment-dialog .appointment-modal-pills .lead {
-    letter-spacing: normal;
-    font-weight: var(--font-weight-regular);
-    margin: 0;
-    line-height: 20px;
+.appointment-dialog .appointment-modal-pills .review-left-col {
+    display: flex;
 }
 
-.appointment-dialog .appointment-modal-pills .lead.date {
-    font-weight: var(--font-weight-medium);
+.appointment-dialog .review-left-col .badge {
+    margin-left: 20px;
+}
+
+.appointment-dialog .appointment-modal-pills .review-left-col {
+    display: flex;
+}
+
+.appointment-dialog .appointment-modal-pills .lead {
+    margin: 0;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 21px;
+    color: #000000;
+    opacity: 0.7;
+}
+
+.appointment-dialog .appointment-modal-pills .review-name {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+}
+
+.appointment-dialog .appointment-modal-pills .review-star {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+
+.appointment-dialog .appointment-modal-pills .date {
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #000000;
+    opacity: 0.7;
+
 }
 
 .appointment-dialog .practice-tab-row {
@@ -1698,17 +1849,30 @@ form {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid var(--gray);
-    padding-bottom: 10px;
+    padding: 0 10px 15px 10px;
     margin-bottom: 10px;
+}
+
+.appointment-dialog .practice-tab-pane .practice-sub-row {
+    display: flex;
+    align-items: center;
 }
 
 .appointment-dialog .practice-tab-row .lead {
     margin-bottom: 5px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #545454;
 }
 
 .appointment-dialog .practice-tab-row span {
     margin-bottom: 5px;
+    font-weight: 400;
     font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 1px;
+    color: #000000;
 }
 
 .appointment-dialog .practice-tab-row .available-link {
@@ -1721,9 +1885,38 @@ form {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    border-bottom: 1px solid var(--gray);
-    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0 0 10px 10px;
     margin-bottom: 10px;
+}
+
+.appointment-dialog .service-tab-pane .service-row span {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 1px;
+    color: #000000;
+}
+
+.appointment-dialog .service-tab-pane .service-row .contact-text {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+    color: #000000;
+}
+
+
+.appointment-dialog .practice-tab-pane .available-link {
+    color: var(--info);
+    font-size: 14px;
+    font-weight: var(--font-weight-medium);
+}
+
+.appointment-dialog .practice-tab-pane .practice-left-content {
+    padding-left: 15px;
 }
 
 /* width */
@@ -1988,6 +2181,7 @@ form {
     z-index: 2;
 }
 
+
 .chat-wrapper .dropdown-menu {
     min-width: unset;
     background: #FFFFFF;
@@ -2009,7 +2203,7 @@ form {
     overflow-y: auto;
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding: 20px;
 }
 
 .chat-wrapper .message {
@@ -2112,6 +2306,55 @@ form {
     border: 0;
     background: transparent;
 }
+
+.chat-wrapper .chatDropdown .dropdown-item {
+    cursor: pointer;
+}
+
+.chat-wrapper .chatDropdown .dropdown-item.active,
+.chat-wrapper .chatDropdown .dropdown-item:active {
+    color: transparent;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.delete-modal .modal-content {
+    padding: 30px;
+    max-width: 450px;
+    min-height: 210px;
+    background: #FFFFFF;
+    box-shadow: 0px 14px 11px rgba(0, 0, 0, 0.13);
+    border-radius: 21px;
+
+}
+
+.delete-modal .modal-content h6 {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 44px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.delete-modal .modal-content .btn {
+    padding: 14px 10px;
+    min-width: 184px;
+    height: 54px;
+    border-radius: 72px;
+}
+
+.delete-modal .modal-body {
+    padding: 0;
+}
+
+.delete-modal .modal-footer {
+    padding: 0;
+    border: 0;
+    justify-content: center;
+}
+
 
 /* ==========ends: messages css=========== */
 
@@ -2378,9 +2621,9 @@ form {
 }
 
 .footer-bottom-row .followus-lead {
-
     font-weight: var(--font-weight-medium);
 }
+
 
 /* ==========ends: footer=========== */
 @media (max-width: 1500px) {
@@ -2467,13 +2710,17 @@ form {
         font-size: 13px;
         height: 30px;
     }
+
+    .delete-modal .modal-content .btn {
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 1400px) {
-    .navbar>.container {
+    /* .navbar>.container {
         flex-direction: column;
         max-width: 1000px;
-    }
+    } */
 
     .main-navbar .btn {
         font-size: 11px;
@@ -2510,9 +2757,27 @@ form {
     .profile-patient-wrapper .profile-card {
         padding: 10px;
     }
+
+    .main-navbar .localcare_logo {
+        width: 100px;
+    }
+
+    .main-navbar .nav-link {
+        padding: 8px;
+        margin: 0 5px;
+        font-size: 12px;
+    }
 }
 
 @media (max-width: 993px) {
+    .main-navbar .localcare_logo {
+        width: 200px;
+    }
+
+    .appointments-wrapper .sorting-row button {
+        padding-top: 10px;
+    }
+
     .custom-radio label {
         max-width: 100%;
     }
@@ -2549,7 +2814,24 @@ form {
     }
 
     .appointment-card-modal .card-badge-row {
-        overflow-x: scroll;
+        /* overflow-x: scroll; */
+        flex-wrap: wrap;
+    }
+
+    .appointment-dialog .appointment-card-modal .card-badge-row .badge {
+        margin: 10px 5px;
+    }
+
+    .appointment-dialog .appointment-modal-pills .nav-pills .nav-link {
+        padding: 10px 10px;
+    }
+
+    .appointment-dialog .appointment-modal-pills .user-img {
+        margin-bottom: 20px;
+    }
+
+    .appointment-dialog .service-tab-pane .service-row {
+        flex-direction: column;
     }
 
     .appointment-card-modal .card-badge-row::-webkit-scrollbar {
@@ -2561,17 +2843,11 @@ form {
         scrollbar-width: none;
     }
 
-    .appointment-dialog .practice-tab-row,
-    .appointment-dialog .appointment-modal-pills .review-card {
-        flex-direction: column;
-        align-items: center;
-    }
 
     /* ends: appointment-card-modal */
     .appointments-wrapper .tops-row {
         flex-direction: column;
     }
-
 
     .appointments-wrapper .sorting-row {
 
@@ -2703,7 +2979,7 @@ form {
 
     .secondary-navbar .nav-link {
         width: 100%;
-        display: block;
+        display: flex;
         text-align: center;
     }
 
@@ -2790,75 +3066,6 @@ form {
         height: 30px;
     }
 
-    /* ends: search card  */
-
-    .find-doctor-wrapper .btn {
-        padding: 10px;
-    }
-
-    .chat-wrapper .chat-container {
-        flex-direction: column;
-        height: 100vh;
-        padding: 0;
-    }
-
-    .chat-wrapper .chat-box {
-        height: calc(100vh - 120px);
-    }
-
-
-    .chat-wrapper .sidebar {
-        width: 100%;
-        height: 100vh;
-        position: fixed;
-        left: -100%;
-        top: 0;
-        z-index: 1000;
-        background: white;
-        padding: 20px;
-        transition: left 0.4s ease-in-out;
-    }
-
-    .chat-wrapper .chat-box {
-        width: 100%;
-    }
-
-    .chat-wrapper .toggle-sidebar {
-        display: block;
-        position: absolute;
-        top: 20px;
-        right: 80px;
-        background: black;
-        color: white;
-        padding: 10px 15px;
-        border-radius: 50px;
-        cursor: pointer;
-        z-index: 1100;
-        font-size: 18px;
-        font-weight: bold;
-        display: none;
-    }
-
-    .chat-wrapper .sidebar.show {
-        left: 0;
-    }
-
-    .chat-wrapper .overlay {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-        background: rgba(0, 0, 0, 0.5);
-        display: none;
-        z-index: 999;
-    }
-
-    .chat-wrapper .chat-box,
-    .chat-wrapper .sidebar {
-        width: 100%;
-    }
-
     .doctor-login-wrapper .step-indicator {
         width: 100%;
         padding: 15px 0;
@@ -2883,6 +3090,101 @@ form {
         font-size: 11px;
     }
 
+    /* ends: search card  */
+
+    .find-doctor-wrapper .btn {
+        padding: 10px;
+    }
+
+    .chat-wrapper .chat-container {
+        flex-direction: column;
+        height: 100vh;
+        padding: 0;
+    }
+
+    .chat-wrapper .chat-box {
+        height: calc(100vh - 120px);
+    }
+
+    .chat-wrapper .sidebar {
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        left: -100%;
+        top: 0;
+        z-index: 1000;
+        background: white;
+        padding: 20px;
+        transition: left 0.4s ease-in-out;
+    }
+
+    .chat-wrapper .chat-box {
+        width: 100%;
+    }
+
+    .chat-wrapper .container {
+        position: relative;
+    }
+
+    .chat-wrapper .sidebar .user-icons {
+        top: 10px;
+    }
+
+    .chat-wrapper .dropdown-toggle {
+        padding: 0;
+    }
+
+    .chat-wrapper .sidebar .close-sidebar-btn {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        font-size: 30px;
+        color: black;
+        cursor: pointer;
+        z-index: 1101;
+    }
+
+    .chat-wrapper .toggle-sidebar {
+        margin-right: 10px;
+        position: absolute;
+        display: block;
+        top: 27px;
+        right: 61px;
+        background: black;
+        color: white;
+        padding: 10px 15px;
+        border-radius: 50px;
+        cursor: pointer;
+        z-index: 9;
+        font-size: 18px;
+        font-weight: bold;
+        height: 30px;
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .chat-wrapper .sidebar.show {
+        left: 0;
+    }
+
+    .chat-wrapper .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.5);
+        display: none;
+        z-index: 999;
+    }
+
+    .chat-wrapper .chat-box,
+    .chat-wrapper .sidebar {
+        width: 100%;
+    }
+
     .chat-wrapper .chat-input button svg {
         width: 45px;
         object-fit: contain;
@@ -2902,9 +3204,6 @@ form {
         font-size: 13px;
     }
 
-    .chat-wrapper .chat-input {
-        /* flex-direction: column; */
-    }
 
     .doctor-main-wrapper .search-section .search-btn-symptoms {
         width: 100%;
@@ -2981,6 +3280,22 @@ form {
 }
 
 @media (max-width: 480px) {
+    .toggle-switch-container .toggle-option {
+        font-size: 10px;
+        padding: 0;
+    }
+
+    .toggle-switch-container .toggle-switch {
+        padding: 10px 0;
+    }
+
+    .doctor-main-wrapper .search-section .question-icon svg {
+        margin-left: 5px;
+        height: 20px;
+        width: 20px;
+        object-fit: contain;
+    }
+
     .doctor-login-wrapper .step-indicator {
         padding: 10px 0;
     }
@@ -3029,4 +3344,19 @@ form {
         width: 30px;
         object-fit: contain;
     }
+
+    .delete-modal .modal-content .btn {
+        min-width: 113px;
+    }
+
+    .delete-modal .modal-content h6 {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    .appointment-dialog .appointment-modal-pills .review-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
 }

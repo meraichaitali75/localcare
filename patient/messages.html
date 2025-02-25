@@ -28,7 +28,7 @@
         <div class="container">
             <div class="navbar-row">
                 <a href="index.html" class="navbar-brand">
-                    <img src="../assets/images/logo.png" class="localcare_logo" alt="Localcare Logo">
+                    <img src="../assets/images/logo.svg" class="localcare_logo" alt="Localcare Logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -56,7 +56,7 @@
                     </li>
                     <li class="nav-item nav-item-user">
                         <a href="../patient/message.html" class="notification-circle" data-bs-toggle="button">
-                            <img src="../assets/images/icon/notification.png" class="notification-icon"
+                            <img src="../assets/images/icon/notification.svg" class="notification-icon"
                                 alt="Notification Icon">
                         </a>
                         <a href="../patient/profile.html" class="user-profile-row">
@@ -98,6 +98,7 @@
             <div class="chat-container">
                 <!-- Sidebar -->
                 <div class="sidebar">
+                    <div class="close-sidebar-btn d-lg-none" onclick="toggleSidebar()">×</div>
                     <h4>Chats</h4>
                     <div class="form-group d-flex w-100 ">
                         <input type="text" placeholder="Search message" class="form-control" name="usercomment"
@@ -162,8 +163,11 @@
                                         stroke-linejoin="round" />
                                 </svg>
                             </button>
-                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="chatDropdown">
-                                <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
+                            <ul class="dropdown-menu dropdown-menu-end chatDropdown" aria-labelledby="chatDropdown">
+                                <li>
+                                    <a class="dropdown-item text-danger" data-bs-target="#deleteModal"
+                                        data-bs-toggle="modal">Delete</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -222,7 +226,8 @@
             <div class="footer-top-row">
                 <div class="footer-blocks">
                     <a href="index.html" class="navbar-brand">
-                        <img src="../assets/images/loqalare-light-logo.png" class="localcare_logo" alt="Localcare Logo">
+                        <img src="../assets/images/loqalare-light-logo.svg" class="localcare_logo"
+                            alt="Localcare Logo" />
                     </a>
                     <p>
                         Our company started with a simple vision of helping up-and-coming entrepreneurs and young
@@ -331,6 +336,26 @@
         </footer>
     </div>
     <!-- footer -->
+
+    <div class="modal-dialog modal-sm">
+        <div class="modal fade delete-modal" id="deleteModal" aria-hidden="true" aria-labelledby="deleteModalLabel"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+
+                    <div class="modal-body">
+                        <h6>Are you sure you want to
+                            delete this account?</h6>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-light" data-bs-dismiss="modal">No</button>
+                        <button type="button" class="btn btn-dark">Yes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
     <script src="../assets/jquery/jquery-3.7.1.slim.js"></script>
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
     <script>
@@ -351,8 +376,12 @@
                 $(".chat-body").animate({ scrollTop: $(".chat-body")[0].scrollHeight }, 500);
             });
         });
-    </script>
 
+        function toggleSidebar() {
+            document.querySelector('.sidebar').classList.toggle('show');
+            document.querySelector('.overlay').classList.toggle('show');
+        }
+    </script>
 </body>
 
 </html>

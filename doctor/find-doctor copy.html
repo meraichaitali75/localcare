@@ -7,8 +7,6 @@
     <title>LocalCare | Doctor | Home</title>
     <!-- bootstrap css -->
     <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
-    <!-- swiper slider css -->
-    <link href="../assets/css/swiper-bundle.min.css" rel="stylesheet" />
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -27,7 +25,7 @@
         <div class="container">
             <div class="navbar-row">
                 <a href="index.html" class="navbar-brand">
-                    <img src="../assets/images/logo.svg" class="localcare_logo" alt="Localcare Logo" />
+                    <img src="../assets/images/logo.png" class="localcare_logo" alt="Localcare Logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -56,7 +54,7 @@
                     </li>
                     <li class="nav-item nav-item-user">
                         <a href="../patient/messages.html" class="notification-circle" data-bs-toggle="button">
-                            <img src="../assets/images/icon/notification.svg" class="notification-icon"
+                            <img src="../assets/images/icon/notification.png" class="notification-icon"
                                 alt="Notification Icon">
                         </a>
                         <a href="../patient/profile.html" class="user-profile-row">
@@ -93,19 +91,11 @@
         <div class="container">
             <!-- search symptoms section -->
             <section class="search-section sections">
-                <div class="toggle-switch-container">
-                    <div class="toggle-switch">
-                        <div class="toggle-option inactive">Search for specialist</div>
-                        <div class="toggle-option active">Search for symptoms</div>
-                    </div>
-                    <a href="#" class="question-icon">
-                        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M17.0002 2.83325C24.8244 2.83325 31.1668 9.17567 31.1668 16.9999C31.1668 24.8242 24.8244 31.1666 17.0002 31.1666C9.17591 31.1666 2.8335 24.8242 2.8335 16.9999C2.8335 9.17567 9.17591 2.83325 17.0002 2.83325ZM17.0002 5.66659C13.9944 5.66659 11.1117 6.86063 8.98629 8.98604C6.86087 11.1115 5.66683 13.9941 5.66683 16.9999C5.66683 20.0057 6.86087 22.8884 8.98629 25.0138C11.1117 27.1392 13.9944 28.3333 17.0002 28.3333C20.0059 28.3333 22.8886 27.1392 25.014 25.0138C27.1395 22.8884 28.3335 20.0057 28.3335 16.9999C28.3335 13.9941 27.1395 11.1115 25.014 8.98604C22.8886 6.86063 20.0059 5.66659 17.0002 5.66659ZM17.0002 22.6666C17.3759 22.6666 17.7362 22.8158 18.0019 23.0815C18.2676 23.3472 18.4168 23.7075 18.4168 24.0833C18.4168 24.459 18.2676 24.8193 18.0019 25.085C17.7362 25.3507 17.3759 25.4999 17.0002 25.4999C16.6244 25.4999 16.2641 25.3507 15.9984 25.085C15.7328 24.8193 15.5835 24.459 15.5835 24.0833C15.5835 23.7075 15.7328 23.3472 15.9984 23.0815C16.2641 22.8158 16.6244 22.6666 17.0002 22.6666ZM17.0002 9.20825C18.1934 9.20829 19.3494 9.62384 20.2695 10.3835C21.1897 11.1432 21.8166 12.1996 22.0425 13.3712C22.2685 14.5429 22.0794 15.7566 21.5077 16.804C20.936 17.8514 20.0175 18.667 18.9098 19.1108C18.7458 19.1711 18.5979 19.2685 18.4777 19.3955C18.4154 19.4663 18.4055 19.557 18.4069 19.6505L18.4168 19.8333C18.4164 20.1943 18.2782 20.5416 18.0303 20.8042C17.7824 21.0667 17.4436 21.2248 17.0832 21.2459C16.7227 21.2671 16.3678 21.1498 16.0909 20.918C15.814 20.6863 15.6361 20.3576 15.5934 19.999L15.5835 19.8333V19.4791C15.5835 17.8457 16.901 16.8653 17.8558 16.4814C18.2444 16.3262 18.5834 16.0681 18.8364 15.7348C19.0894 15.4015 19.2468 15.0056 19.2918 14.5895C19.3367 14.1735 19.2675 13.7531 19.0915 13.3735C18.9155 12.9938 18.6394 12.6693 18.2929 12.4347C17.9464 12.2001 17.5425 12.0643 17.1247 12.042C16.7068 12.0196 16.2908 12.1115 15.9212 12.3077C15.5516 12.504 15.2425 12.7972 15.027 13.1559C14.8115 13.5146 14.6978 13.9252 14.6981 14.3437C14.6981 14.7194 14.5488 15.0797 14.2831 15.3454C14.0175 15.6111 13.6571 15.7603 13.2814 15.7603C12.9057 15.7603 12.5454 15.6111 12.2797 15.3454C12.014 15.0797 11.8647 14.7194 11.8647 14.3437C11.8647 12.9817 12.4058 11.6755 13.3689 10.7124C14.332 9.7493 15.6382 9.20825 17.0002 9.20825Z"
-                                fill="black" />
-                        </svg>
-                    </a>
+                <div class="toggle-switch">
+                    <div class="toggle-option inactive">Search for specialist</div>
+                    <div class="toggle-option active">Search for symptoms</div>
                 </div>
+
                 <div class="symptoms-frm-row row">
                     <div class="col-12 col-lg-10 p-0">
                         <div class="row">
@@ -486,327 +476,13 @@
             </div>
         </div>
     </main>
-    <!-- Scrollable modal -->
-    <!-- <div class="modal-dialog modal-dialog-centered "> -->
-    <div class="modal fade" id="appointmentModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog appointment-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="appointment-card-modal card">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="card-top-row">
-                                    <img src="../assets/images/doctors/user1.png" class="rounded-circle" width="80"
-                                        height="80" alt="Doctor">
-                                    <div class="card-detail-col">
-                                        <h6>Dr. Naidan Smith </h6>
-                                        <div class="clinic-row">
-                                            <span class="clinic-text">Pediatric Clinic</span>
-                                            <button type="button" class="btn btn-dark">Message</button>
-                                        </div>
-                                        <div class="card-row review-row">
-                                            <span class="badge rounded-pill text-bg-danger">
-                                                <svg width="17" height="18" viewBox="0 0 17 18" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M8.49965 12.7324L11.4392 14.5103C11.9776 14.8362 12.6363 14.3545 12.4947 13.7453L11.7155 10.402L14.3151 8.14951C14.7897 7.73868 14.5347 6.95951 13.9113 6.90992L10.4901 6.61951L9.15132 3.46034C8.91049 2.88659 8.08882 2.88659 7.84799 3.46034L6.50924 6.61243L3.08799 6.90284C2.46465 6.95242 2.20965 7.73159 2.68424 8.14242L5.28382 10.3949L4.50465 13.7383C4.36299 14.3474 5.02174 14.8291 5.56007 14.5033L8.49965 12.7324Z"
-                                                        fill="white" />
-                                                </svg>
-
-                                                <span>4.5</span>
-                                            </span>
-                                            <span class="badge-dot"></span>
-                                            <div class="review-row">
-                                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M7.79134 17.4171H7.33301C3.66634 17.4171 1.83301 16.5004 1.83301 11.9171V7.33374C1.83301 3.66707 3.66634 1.83374 7.33301 1.83374H14.6663C18.333 1.83374 20.1663 3.66707 20.1663 7.33374V11.9171C20.1663 15.5837 18.333 17.4171 14.6663 17.4171H14.208C13.9238 17.4171 13.6488 17.5546 13.4747 17.7837L12.0997 19.6171C11.4947 20.4237 10.5047 20.4237 9.89967 19.6171L8.52467 17.7837C8.37801 17.5821 8.03884 17.4171 7.79134 17.4171Z"
-                                                        stroke="#547DCB" stroke-width="1.5" stroke-miterlimit="10"
-                                                        stroke-linecap="round" stroke-linejoin="round" />
-                                                    <path d="M6.41699 7.33374H15.5837" stroke="#547DCB"
-                                                        stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
-                                                    <path d="M6.41699 11.9163H11.917" stroke="#547DCB"
-                                                        stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
-                                                </svg>
-
-                                            </div>
-                                            <span class="span-text">35 Reviews</i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-badge-row top-badge-row">
-                                    <span class="badge rounded-pill text-bg-dark">
-                                        <span>Cardiology</span>
-                                    </span>
-                                    <span class="badge rounded-pill text-bg-dark">
-                                        <span>Dermatology</span>
-                                    </span>
-                                    <span class="badge rounded-pill text-bg-dark">
-                                        <span>Family Medicine</span>
-                                    </span>
-                                </div>
-                                <div class="card-badge-row">
-                                    <p class="treats-lead">Treats :</p>
-                                    <span class="badge rounded-pill text-bg-light">
-                                        <span>Public Health Insurance</span>
-                                    </span>
-                                    <span class="badge rounded-pill text-bg-light">
-                                        <span>Private Patients</span>
-                                    </span>
-                                </div>
-                                <p class="top-lead">
-                                    I am delighted that you would like to find out more about me and our cardiology
-                                    practice at the MVZ Policum Berlin Fennpfuhl. As a specialist in internal
-                                    medicine and cardiology.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="appointment-modal-pills">
-                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="pills-services-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-services" type="button" role="tab">Services</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link active" id="pills-practices-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-practices" type="button" role="tab">Practices</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="pills-reviews-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-reviews" type="button" role="tab">Reviews</button>
-                            </li>
-                        </ul>
-                        <div class="tab-content" id="pills-tabContent">
-                            <div class="tab-pane fade service-tab-pane" id="pills-services" role="tabpanel">
-                                <div class="service-row">
-                                    <span>• Initial Examination (New Patient)</span>
-                                    <span class="contact-text">€50</span>
-                                </div>
-                                <div class="service-row">
-                                    <span>• Blood Pressure Measurement</span>
-                                    <span class="contact-text">€100</span>
-                                </div>
-                                <div class="service-row">
-                                    <span>• ECG</span>
-                                    <span>€25</span>
-                                </div>
-                                <div class="service-row">
-                                    <span>• Heart Attack Aftercare</span>
-                                    <span class="contact-text">€80</span>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade practice-tab-pane  show active" id="pills-practices"
-                                role="tabpanel">
-                                <div class="practice-tab-row">
-                                    <div class="practice-sub-row">
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M12.398 17.804L12.0527 17.1382L12.0527 17.1382L12.398 17.804ZM11.602 17.804L11.9473 17.1382L11.9473 17.1382L11.602 17.804ZM18.25 9C18.25 11.2364 17.111 13.0661 15.7225 14.4666C14.3347 15.8664 12.7605 16.7711 12.0527 17.1382L12.7434 18.4697C13.5185 18.0677 15.2453 17.0785 16.7877 15.5227C18.3295 13.9676 19.75 11.78 19.75 9H18.25ZM12 2.75C15.4518 2.75 18.25 5.54822 18.25 9H19.75C19.75 4.71979 16.2802 1.25 12 1.25V2.75ZM5.75 9C5.75 5.54822 8.54822 2.75 12 2.75V1.25C7.71979 1.25 4.25 4.71979 4.25 9H5.75ZM11.9473 17.1382C11.2395 16.7711 9.66527 15.8664 8.27749 14.4666C6.88902 13.0661 5.75 11.2364 5.75 9H4.25C4.25 11.78 5.67049 13.9676 7.21227 15.5227C8.75474 17.0785 10.4815 18.0677 11.2566 18.4697L11.9473 17.1382ZM12.0527 17.1382C12.0164 17.157 11.9836 17.157 11.9473 17.1382L11.2566 18.4697C11.726 18.7132 12.274 18.7132 12.7434 18.4697L12.0527 17.1382ZM14.25 9C14.25 10.2426 13.2426 11.25 12 11.25V12.75C14.0711 12.75 15.75 11.0711 15.75 9H14.25ZM12 6.75C13.2426 6.75 14.25 7.75736 14.25 9H15.75C15.75 6.92893 14.0711 5.25 12 5.25V6.75ZM9.75 9C9.75 7.75736 10.7574 6.75 12 6.75V5.25C9.92893 5.25 8.25 6.92893 8.25 9H9.75ZM12 11.25C10.7574 11.25 9.75 10.2426 9.75 9H8.25C8.25 11.0711 9.92893 12.75 12 12.75V11.25Z"
-                                                fill="#547DCB" />
-                                            <path
-                                                d="M19.7942 17.5C20.5841 17.9561 21 18.4734 21 19C21 19.5266 20.5841 20.0439 19.7942 20.5C19.0043 20.9561 17.8682 21.3348 16.5 21.5981C15.1318 21.8614 13.5798 22 12 22C10.4202 22 8.86817 21.8614 7.5 21.5981C6.13183 21.3348 4.99569 20.9561 4.20577 20.5C3.41586 20.0439 3 19.5266 3 19C3 18.4734 3.41586 17.9561 4.20577 17.5"
-                                                stroke="#547DCB" stroke-width="1.5" stroke-linecap="round" />
-                                        </svg>
-                                        <div class="practice-left-content">
-                                            <p class="lead">4517 Washington Ave. Manchester</p>
-                                            <span>28-01-2025, 09:00AM To 05:00PM</span>
-                                        </div>
-                                    </div>
-                                    <a href="#" class="available-link ps-2 align-self-end">View On Map
-                                        <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M1.81154 4.02502C2.51154 0.99752 7.07029 0.99752 7.76154 4.02502C8.17279 5.80127 7.04404 7.30627 6.06404 8.24252C5.34654 8.92502 4.21779 8.91627 3.50029 8.24252C2.52904 7.30627 1.40029 5.80127 1.81154 4.02502Z"
-                                                stroke="#547DCB" stroke-width="1.5" />
-                                            <path
-                                                d="M13.1865 14.525C13.8865 11.4975 18.4715 11.4975 19.1715 14.525C19.5827 16.3013 18.454 17.8063 17.4652 18.7425C16.7477 19.425 15.6102 19.4163 14.8927 18.7425C13.904 17.8063 12.7752 16.3013 13.1865 14.525Z"
-                                                stroke="#547DCB" stroke-width="1.5" />
-                                            <path
-                                                d="M10.5 4.375H12.845C14.4637 4.375 15.2162 6.37875 14 7.44625L7.00873 13.5625C5.79248 14.6213 6.54498 16.625 8.15498 16.625H10.5"
-                                                stroke="#547DCB" stroke-width="1.5" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                            <path d="M4.80074 4.8125H4.81085" stroke="#547DCB" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                            <path d="M16.1757 15.3125H16.1859" stroke="#547DCB" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                    </a>
-                                </div>
-                                <div class="practice-tab-row">
-                                    <div class="practice-sub-row">
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M12.398 17.804L12.0527 17.1382L12.0527 17.1382L12.398 17.804ZM11.602 17.804L11.9473 17.1382L11.9473 17.1382L11.602 17.804ZM18.25 9C18.25 11.2364 17.111 13.0661 15.7225 14.4666C14.3347 15.8664 12.7605 16.7711 12.0527 17.1382L12.7434 18.4697C13.5185 18.0677 15.2453 17.0785 16.7877 15.5227C18.3295 13.9676 19.75 11.78 19.75 9H18.25ZM12 2.75C15.4518 2.75 18.25 5.54822 18.25 9H19.75C19.75 4.71979 16.2802 1.25 12 1.25V2.75ZM5.75 9C5.75 5.54822 8.54822 2.75 12 2.75V1.25C7.71979 1.25 4.25 4.71979 4.25 9H5.75ZM11.9473 17.1382C11.2395 16.7711 9.66527 15.8664 8.27749 14.4666C6.88902 13.0661 5.75 11.2364 5.75 9H4.25C4.25 11.78 5.67049 13.9676 7.21227 15.5227C8.75474 17.0785 10.4815 18.0677 11.2566 18.4697L11.9473 17.1382ZM12.0527 17.1382C12.0164 17.157 11.9836 17.157 11.9473 17.1382L11.2566 18.4697C11.726 18.7132 12.274 18.7132 12.7434 18.4697L12.0527 17.1382ZM14.25 9C14.25 10.2426 13.2426 11.25 12 11.25V12.75C14.0711 12.75 15.75 11.0711 15.75 9H14.25ZM12 6.75C13.2426 6.75 14.25 7.75736 14.25 9H15.75C15.75 6.92893 14.0711 5.25 12 5.25V6.75ZM9.75 9C9.75 7.75736 10.7574 6.75 12 6.75V5.25C9.92893 5.25 8.25 6.92893 8.25 9H9.75ZM12 11.25C10.7574 11.25 9.75 10.2426 9.75 9H8.25C8.25 11.0711 9.92893 12.75 12 12.75V11.25Z"
-                                                fill="#547DCB" />
-                                            <path
-                                                d="M19.7942 17.5C20.5841 17.9561 21 18.4734 21 19C21 19.5266 20.5841 20.0439 19.7942 20.5C19.0043 20.9561 17.8682 21.3348 16.5 21.5981C15.1318 21.8614 13.5798 22 12 22C10.4202 22 8.86817 21.8614 7.5 21.5981C6.13183 21.3348 4.99569 20.9561 4.20577 20.5C3.41586 20.0439 3 19.5266 3 19C3 18.4734 3.41586 17.9561 4.20577 17.5"
-                                                stroke="#547DCB" stroke-width="1.5" stroke-linecap="round" />
-                                        </svg>
-                                        <div class="practice-left-content">
-                                            <p class="lead">2118 Thornridge Cir. Syracuse</p>
-                                            <span>29-01-2025, 09:00AM To 05:00PM</span>
-                                        </div>
-                                    </div>
-                                    <a href="#" class="available-link ps-2 align-self-end">View On Map
-                                        <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M1.81154 4.02502C2.51154 0.99752 7.07029 0.99752 7.76154 4.02502C8.17279 5.80127 7.04404 7.30627 6.06404 8.24252C5.34654 8.92502 4.21779 8.91627 3.50029 8.24252C2.52904 7.30627 1.40029 5.80127 1.81154 4.02502Z"
-                                                stroke="#547DCB" stroke-width="1.5" />
-                                            <path
-                                                d="M13.1865 14.525C13.8865 11.4975 18.4715 11.4975 19.1715 14.525C19.5827 16.3013 18.454 17.8063 17.4652 18.7425C16.7477 19.425 15.6102 19.4163 14.8927 18.7425C13.904 17.8063 12.7752 16.3013 13.1865 14.525Z"
-                                                stroke="#547DCB" stroke-width="1.5" />
-                                            <path
-                                                d="M10.5 4.375H12.845C14.4637 4.375 15.2162 6.37875 14 7.44625L7.00873 13.5625C5.79248 14.6213 6.54498 16.625 8.15498 16.625H10.5"
-                                                stroke="#547DCB" stroke-width="1.5" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                            <path d="M4.80074 4.8125H4.81085" stroke="#547DCB" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                            <path d="M16.1757 15.3125H16.1859" stroke="#547DCB" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                    </a>
-                                </div>
-                                <div class="practice-tab-row">
-                                    <div class="practice-sub-row">
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M12.398 17.804L12.0527 17.1382L12.0527 17.1382L12.398 17.804ZM11.602 17.804L11.9473 17.1382L11.9473 17.1382L11.602 17.804ZM18.25 9C18.25 11.2364 17.111 13.0661 15.7225 14.4666C14.3347 15.8664 12.7605 16.7711 12.0527 17.1382L12.7434 18.4697C13.5185 18.0677 15.2453 17.0785 16.7877 15.5227C18.3295 13.9676 19.75 11.78 19.75 9H18.25ZM12 2.75C15.4518 2.75 18.25 5.54822 18.25 9H19.75C19.75 4.71979 16.2802 1.25 12 1.25V2.75ZM5.75 9C5.75 5.54822 8.54822 2.75 12 2.75V1.25C7.71979 1.25 4.25 4.71979 4.25 9H5.75ZM11.9473 17.1382C11.2395 16.7711 9.66527 15.8664 8.27749 14.4666C6.88902 13.0661 5.75 11.2364 5.75 9H4.25C4.25 11.78 5.67049 13.9676 7.21227 15.5227C8.75474 17.0785 10.4815 18.0677 11.2566 18.4697L11.9473 17.1382ZM12.0527 17.1382C12.0164 17.157 11.9836 17.157 11.9473 17.1382L11.2566 18.4697C11.726 18.7132 12.274 18.7132 12.7434 18.4697L12.0527 17.1382ZM14.25 9C14.25 10.2426 13.2426 11.25 12 11.25V12.75C14.0711 12.75 15.75 11.0711 15.75 9H14.25ZM12 6.75C13.2426 6.75 14.25 7.75736 14.25 9H15.75C15.75 6.92893 14.0711 5.25 12 5.25V6.75ZM9.75 9C9.75 7.75736 10.7574 6.75 12 6.75V5.25C9.92893 5.25 8.25 6.92893 8.25 9H9.75ZM12 11.25C10.7574 11.25 9.75 10.2426 9.75 9H8.25C8.25 11.0711 9.92893 12.75 12 12.75V11.25Z"
-                                                fill="#547DCB" />
-                                            <path
-                                                d="M19.7942 17.5C20.5841 17.9561 21 18.4734 21 19C21 19.5266 20.5841 20.0439 19.7942 20.5C19.0043 20.9561 17.8682 21.3348 16.5 21.5981C15.1318 21.8614 13.5798 22 12 22C10.4202 22 8.86817 21.8614 7.5 21.5981C6.13183 21.3348 4.99569 20.9561 4.20577 20.5C3.41586 20.0439 3 19.5266 3 19C3 18.4734 3.41586 17.9561 4.20577 17.5"
-                                                stroke="#547DCB" stroke-width="1.5" stroke-linecap="round" />
-                                        </svg>
-                                        <div class="practice-left-content">
-                                            <p class="lead">2118 Thornridge Cir. Syracuse</p>
-                                            <span>30-01-2025, 09:00AM To 05:00PM</span>
-                                        </div>
-                                    </div>
-                                    <a href="#" class="available-link ps-2 align-self-end">View On Map
-                                        <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M1.81154 4.02502C2.51154 0.99752 7.07029 0.99752 7.76154 4.02502C8.17279 5.80127 7.04404 7.30627 6.06404 8.24252C5.34654 8.92502 4.21779 8.91627 3.50029 8.24252C2.52904 7.30627 1.40029 5.80127 1.81154 4.02502Z"
-                                                stroke="#547DCB" stroke-width="1.5" />
-                                            <path
-                                                d="M13.1865 14.525C13.8865 11.4975 18.4715 11.4975 19.1715 14.525C19.5827 16.3013 18.454 17.8063 17.4652 18.7425C16.7477 19.425 15.6102 19.4163 14.8927 18.7425C13.904 17.8063 12.7752 16.3013 13.1865 14.525Z"
-                                                stroke="#547DCB" stroke-width="1.5" />
-                                            <path
-                                                d="M10.5 4.375H12.845C14.4637 4.375 15.2162 6.37875 14 7.44625L7.00873 13.5625C5.79248 14.6213 6.54498 16.625 8.15498 16.625H10.5"
-                                                stroke="#547DCB" stroke-width="1.5" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                            <path d="M4.80074 4.8125H4.81085" stroke="#547DCB" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                            <path d="M16.1757 15.3125H16.1859" stroke="#547DCB" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade review-tab-pane" id="pills-reviews" role="tabpanel">
-                                <div class="review-card">
-                                    <img src="../assets/images/doctors/user2.png" class="user-img" alt="Jack Jones">
-                                    <div class="review-row">
-                                        <div class="review-col">
-                                            <div class="review-left-col">
-                                                <span class="review-name ps-0 ps-md-3">Jack Jones</span>
-                                                <span class="badge rounded-pill text-bg-danger">
-                                                    <svg width="14" height="15" viewBox="0 0 14 15" fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="M6.99937 10.5742L9.4202 12.0384C9.86354 12.3067 10.406 11.91 10.2894 11.4084L9.64771 8.65503L11.7885 6.80003C12.1794 6.46169 11.9694 5.82003 11.456 5.77919L8.63854 5.54003L7.53604 2.93836C7.3377 2.46586 6.66104 2.46586 6.4627 2.93836L5.3602 5.53419L2.5427 5.77336C2.02937 5.81419 1.81937 6.45586 2.2102 6.79419L4.35104 8.64919L3.70937 11.4025C3.5927 11.9042 4.1352 12.3009 4.57854 12.0325L6.99937 10.5742Z"
-                                                            fill="white" />
-                                                    </svg>
-
-                                                    <span>4.5</span>
-                                                </span>
-                                            </div>
-                                            <p class="lead date">July 9, 2023</p>
-                                        </div>
-                                        <p class="lead ps-0 ps-md-3">Not only is there a heart of gold in the
-                                            practice, Dr.
-                                            Maszyski has a heart of gold. Everything is just right and I am
-                                            grateful
-                                            to be a patient of this experienced doctor.</p>
-                                    </div>
-                                </div>
-                                <div class="review-card">
-                                    <img src="../assets/images/doctors/user2.png" class="user-img" alt="Jack Jones">
-                                    <div class="review-row">
-                                        <div class="review-col">
-                                            <div class="review-left-col">
-                                                <span class="review-name ps-0 ps-md-3">Jack Jones</span>
-                                                <span class="badge rounded-pill text-bg-danger">
-                                                    <svg width="14" height="15" viewBox="0 0 14 15" fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="M6.99937 10.5742L9.4202 12.0384C9.86354 12.3067 10.406 11.91 10.2894 11.4084L9.64771 8.65503L11.7885 6.80003C12.1794 6.46169 11.9694 5.82003 11.456 5.77919L8.63854 5.54003L7.53604 2.93836C7.3377 2.46586 6.66104 2.46586 6.4627 2.93836L5.3602 5.53419L2.5427 5.77336C2.02937 5.81419 1.81937 6.45586 2.2102 6.79419L4.35104 8.64919L3.70937 11.4025C3.5927 11.9042 4.1352 12.3009 4.57854 12.0325L6.99937 10.5742Z"
-                                                            fill="white" />
-                                                    </svg>
-
-                                                    <span>4.5</span>
-                                                </span>
-                                            </div>
-                                            <p class="lead date">July 9, 2023</p>
-                                        </div>
-                                        <p class="lead ps-0 ps-md-3">Not only is there a heart of gold in the
-                                            practice, Dr.
-                                            Maszyski has a heart of gold. Everything is just right and I am
-                                            grateful
-                                            to be a patient of this experienced doctor.</p>
-                                    </div>
-                                </div>
-                                <div class="review-card">
-                                    <img src="../assets/images/doctors/user2.png" class="user-img" alt="Jack Jones">
-                                    <div class="review-row">
-                                        <div class="review-col">
-                                            <div class="review-left-col">
-                                                <span class="review-name ps-0 ps-md-3">Jack Jones</span>
-                                                <span class="badge rounded-pill text-bg-danger">
-                                                    <svg width="14" height="15" viewBox="0 0 14 15" fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="M6.99937 10.5742L9.4202 12.0384C9.86354 12.3067 10.406 11.91 10.2894 11.4084L9.64771 8.65503L11.7885 6.80003C12.1794 6.46169 11.9694 5.82003 11.456 5.77919L8.63854 5.54003L7.53604 2.93836C7.3377 2.46586 6.66104 2.46586 6.4627 2.93836L5.3602 5.53419L2.5427 5.77336C2.02937 5.81419 1.81937 6.45586 2.2102 6.79419L4.35104 8.64919L3.70937 11.4025C3.5927 11.9042 4.1352 12.3009 4.57854 12.0325L6.99937 10.5742Z"
-                                                            fill="white" />
-                                                    </svg>
-
-                                                    <span>4.5</span>
-                                                </span>
-                                            </div>
-                                            <p class="lead date">July 9, 2023</p>
-                                        </div>
-                                        <p class="lead ps-0 ps-md-3">Not only is there a heart of gold in the
-                                            practice, Dr.
-                                            Maszyski has a heart of gold. Everything is just right and I am
-                                            grateful
-                                            to be a patient of this experienced doctor.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     <!-- footer -->
     <div class="container">
         <footer class="main-footer">
             <div class="footer-top-row">
                 <div class="footer-blocks">
                     <a href="index.html" class="navbar-brand">
-                        <img src="../assets/images/loqalare-light-logo.svg" class="localcare_logo"
-                            alt="Localcare Logo" />
+                        <img src="../assets/images/loqalare-light-logo.svg" class="localcare_logo" alt="Localcare Logo" />
                     </a>
                     <p>
                         Our company started with a simple vision of helping up-and-coming entrepreneurs and young
@@ -915,8 +591,209 @@
         </footer>
     </div>
     <!-- footer -->
+
+    <!-- <div class="modal-dialog modal-dialog-centered "> -->
+    <div class="modal fade" id="appointmentModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog appointment-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="appointment-card-modal card">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card-top-row">
+                                    <img src="../assets/images/doctors/user1.png" class="rounded-circle" width="80"
+                                        height="80" alt="Doctor">
+                                    <div class="card-detail-col">
+                                        <h6>Dr. Naidan Smith </h6>
+                                        <div class="clinic-row">
+                                            <span class="clinic-text">Pediatric Clinic</span>
+                                            <button type="button" class="btn btn-dark">Message</button>
+                                        </div>
+                                        <div class="card-row review-row">
+                                            <span class="badge rounded-pill text-bg-danger">
+                                                <img src="../assets/images/icon/star.png" alt="star icon">
+                                                <span>4.5</span>
+                                            </span>
+                                            <span class="badge-dot"></span>
+                                            <div class="review-row">
+                                                <img src="../assets/images/icon/message.png" alt="message icon">
+                                            </div>
+                                            <span class="span-text">35 Reviews</i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-badge-row">
+                                    <span class="badge rounded-pill text-bg-dark">
+                                        <span>Cardiology</span>
+                                    </span>
+                                    <span class="badge rounded-pill text-bg-dark">
+                                        <span>Dermatology</span>
+                                    </span>
+                                    <span class="badge rounded-pill text-bg-dark">
+                                        <span>Family Medicine</span>
+                                    </span>
+                                </div>
+                                <div class="card-badge-row">
+                                    <p>Treats :</p>
+                                    <span class="badge rounded-pill text-bg-light">
+                                        <span>Public Health Insurance</span>
+                                    </span>
+                                    <span class="badge rounded-pill text-bg-light">
+                                        <span>Private Patients</span>
+                                    </span>
+                                </div>
+                                <p class="lead">
+                                    I am delighted that you would like to find out more about me and our cardiology
+                                    practice at the MVZ Policum Berlin Fennpfuhl. As a specialist in internal
+                                    medicine and cardiology.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="appointment-modal-pills">
+                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-services-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-services" type="button" role="tab">Services</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-practices-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-practices" type="button" role="tab">Practices</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-reviews-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-reviews" type="button" role="tab">Reviews</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade service-tab-pane" id="pills-services" role="tabpanel">
+                                <div class="service-row">
+                                    <span>• Initial Examination (New Patient)</span>
+                                    <span>€50</span>
+                                </div>
+                                <div class="service-row">
+                                    <span>• Blood Pressure Measurement</span>
+                                    <span>€100</span>
+                                </div>
+                                <div class="service-row">
+                                    <span>• ECG</span>
+                                    <span>€25</span>
+                                </div>
+                                <div class="service-row">
+                                    <span>• Heart Attack Aftercare</span>
+                                    <span>€80</span>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade practice-tab-pane  show active" id="pills-practices"
+                                role="tabpanel">
+                                <div class="practice-tab-row">
+                                    <img src="../assets/images/icon/location-blue.png" alt="Location">
+                                    <div>
+                                        <p class="lead">4517 Washington Ave. Manchester</p>
+                                        <span>28-01-2025, 09:00AM To 05:00PM</span>
+                                    </div>
+                                    <a href="#" class="available-link ps-2 align-self-end">View On Map
+                                        <img src="../assets/images/icon/routing.png" alt="routing  icon" />
+                                    </a>
+                                </div>
+                                <div class="practice-tab-row">
+                                    <img src="../assets/images/icon/location-blue.png" alt="Location">
+                                    <div>
+                                        <p class="lead">4517 Washington Ave. Manchester</p>
+                                        <span>28-01-2025, 09:00AM To 05:00PM</span>
+                                    </div>
+                                    <a href="#" class="available-link ps-2 align-self-end">View On Map
+                                        <img src="../assets/images/icon/routing.png" alt="routing  icon" />
+                                    </a>
+                                </div>
+                                <div class="practice-tab-row">
+                                    <img src="../assets/images/icon/location-blue.png" alt="Location">
+                                    <div>
+                                        <p class="lead">4517 Washington Ave. Manchester</p>
+                                        <span>28-01-2025, 09:00AM To 05:00PM</span>
+                                    </div>
+                                    <a href="#" class="available-link ps-2 align-self-end">View On Map
+                                        <img src="../assets/images/icon/routing.png" alt="routing  icon" />
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade review-tab-pane" id="pills-reviews" role="tabpanel">
+                                <div class="review-card">
+                                    <img src="../assets/images/doctors/user2.png" class="user-img" alt="Jack Jones">
+                                    <div class="review-row">
+                                        <div class="review-col">
+                                            <div>
+                                                <span class="ps-0 ps-md-3">Jack Jones</span>
+                                                <span class="badge rounded-pill text-bg-danger">
+                                                    <img src="../assets/images/icon/star.png" alt="star icon" />
+                                                    <span>4.5</span>
+                                                </span>
+                                            </div>
+                                            <p class="lead date">July 9, 2023</p>
+                                        </div>
+                                        <p class="lead ps-0 ps-md-3">Not only is there a heart of gold in the
+                                            practice, Dr.
+                                            Maszyski has a heart of gold. Everything is just right and I am
+                                            grateful
+                                            to be a patient of this experienced doctor.</p>
+
+                                    </div>
+                                </div>
+                                <div class="review-card">
+                                    <img src="../assets/images/doctors/user2.png" class="user-img"
+                                        alt="Brooklyn Simmons">
+                                    <div class="review-row">
+                                        <div class="review-col">
+                                            <div>
+                                                <span class="ps-0 ps-md-3">Brooklyn Simmons</span>
+                                                <span class="badge rounded-pill text-bg-danger">
+                                                    <img src="../assets/images/icon/star.png" alt="star icon" />
+                                                    <span>4.5</span>
+                                                </span>
+                                            </div>
+                                            <p class="lead date">July 9, 2023</p>
+                                        </div>
+                                        <p class="lead ps-0 ps-md-3">Not only is there a heart of gold in the
+                                            practice, Dr.
+                                            Maszyski has a heart of gold. Everything is just right and I am
+                                            grateful
+                                            to be a patient of this experienced doctor.</p>
+
+                                    </div>
+                                </div>
+                                <div class="review-card">
+                                    <img src="../assets/images/doctors/user2.png" class="user-img" alt="Jack Jones">
+                                    <div class="review-row">
+                                        <div class="review-col">
+                                            <div>
+                                                <span class="ps-0 ps-md-3">Jack Jones</span>
+                                                <span class="badge rounded-pill text-bg-danger">
+                                                    <img src="../assets/images/icon/star.png" alt="star icon" />
+                                                    <span>4.5</span>
+                                                </span>
+                                            </div>
+                                            <p class="lead date">July 9, 2023</p>
+                                        </div>
+                                        <p class="lead ps-0 ps-md-3">Not only is there a heart of gold in the
+                                            practice, Dr.
+                                            Maszyski has a heart of gold. Everything is just right and I am
+                                            grateful
+                                            to be a patient of this experienced doctor.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="../assets/jquery/jquery-3.7.1.slim.js"></script>
-    <script src="../assets/js/bootstrap.bundle.min.js"></script>
     <script>
         const rangeSlider = document.getElementById('distanceRange');
         const distanceValue = document.getElementById('distanceValue');
