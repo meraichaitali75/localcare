@@ -1233,6 +1233,9 @@ form {
     max-width: 300px;
     overflow: hidden;
 }
+.top-rated-doctors-section .doctors-card  .btn{
+white-space: nowrap;
+}
 
 .top-rated-doctors-section .doctors-img {
     width: 100%;
